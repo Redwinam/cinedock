@@ -1,0 +1,131 @@
+1.1.0 配色更新（2026-10-18）
+本轮恢复更熟悉的原品牌颜色，9 个应用 × 4 种样式共 36 张调整为白底。下方早期记录中的“统一白色化”仅描述 1.0.x 的处理，不再适用于这些新图。
+
+百度网盘：现在同时使用百度官网 wp-logo.ad8119c1.png 的彩色图形与黑色原字标，替代旧的白色单色图形。
+QQ 音乐：恢复官网 logo@2x.png 的黄绿图形、黑色字标。
+阿里云盘：同时使用官网 384×92 组合素材中的蓝紫渐变图形与黑色字标。
+迅雷云盘：使用官网彩色组合矢量 https://static-pan.xunlei.com/_nuxt/dist/client/img/logo-pan-mix.9caf949.svg（保存为 xunlei-brand.svg），保留蓝色方块、白鸟和深色字标。
+115 网盘：保留官方矢量“5”轮廓，改为官方图形背景使用的 #2777F8 蓝色；字标保留原应用字形，改为深色，参照官方电视版白底蓝标。
+NewTV 极光、云视听极光、酷喵：保留三色／蓝橙彩色标志，将原字形改回适于白底的深色。
+网易爆米花：保留图形原色，原字标改为深色用于白底。
+其余应用与四个游戏设备图标未改动。
+素材与字形没有重新绘制，布局与资源名保持稳定。
+
+以下为原始来源及早期处理记录：
+
+图标与字标素材来源
+
+本合集为个人电视入口识别设计，非各品牌官方图标包。品牌名称与标志属于各自权利人。
+处理包括原素材分离、背景填充、白色化、等比缩放与统一排版；没有执行或安装所下载的应用资源包。
+
+01 云视听小电视
+官方入口：https://app.bilibili.com/
+素材包：https://dl.hdslb.com/mobile/latest/android_tv_yst/iBiliTV-master.apk
+图形：r/53.png（含云朵的小电视）；字标：r/9m.png。
+
+02 爱奇艺 TV / 银河奇异果
+官方入口：https://www.iqiyi.com/common/iqiyitv.html
+素材包：https://app.iqiyi.com/tv/apk/qiyiguo_official10.5.2.apk
+图形：share_floating_webview_logo.png；字标：share_status_bar_logo.png 中的“银河奇异果”。
+这是官网公开旧版资源中的品牌素材，不是建议用户安装该旧版应用。
+
+03 NewTV 极光 / 13 云视听极光
+NewTV 极光产品说明：https://www.chinaott.com/cpzx/cpzs.html
+云视听极光官方入口：https://tv.qq.com/
+品牌符号参考：https://vmat.gtimg.com/kt1/web/202201121151361196_logo.png
+高清矢量符号来源：https://commons.wikimedia.org/wiki/File:WeTV_logo.svg
+https://upload.wikimedia.org/wikipedia/commons/5/54/WeTV_logo.svg
+仅使用其中的腾讯视频三色符号，不使用 WeTV 文字；两个 TV 应用名称均已改用原应用字标。
+Wikimedia 页面标注 PD-textlogo。
+
+云视听极光字标：从官网 tv.qq.com 链接的原版 APK 提取 thumb_logo.png 中的五字品牌名称，排除下方宣传语。
+https://dldir1.qq.com/qqmi/kt/snm/video/tv_video_4.7.0.1023_android_16118.apk
+资源路径：res/drawable-xhdpi-v4/thumb_logo.png。
+
+NewTV 极光字标：从原应用横幅 r/g/hf.png 中提取“NewTV极光”原字样，去除白底后改为白字；未重打字体，未使用低清宣传截图。
+该应用包由下载镜像提供，不能把此下载站描述为官方站：
+https://www.xlhs.com/app/62442.html
+https://x1.ydyspc.com/newtvjg_8.6.0.2028_xlhs.com.apk
+已做的来源校验：
+1. 签名证书与 tv.qq.com 官网 APK 中的 Tencent 签名证书 SHA-256 一致。
+2. 验证了 SIGNEDKE.RSA 对 SIGNEDKE.SF 的 CMS 签名。
+3. 验证了签名保护的 MANIFEST.MF 摘要。
+4. 验证了 r/g/hf.png 的内容摘要与签名保护的资源清单一致。
+签名证书 SHA-256：42bb7203cd3f7ecc02f265e53221c97227f75048645f80f0815ea59d2ca9d44d。
+这里只读取图像资源，没有安装或运行该应用。
+
+04 酷喵
+官方入口：https://pd.youku.com/CIBN?screen=phone
+官方组合字标：https://gw.alicdn.com/imgextra/i3/O1CN011uW9Rh1IkRf3VMb26_!!6000000000931-2-tps-640-221.png
+
+05 Keep
+官方入口：https://www.gotokeep.com/
+原版 K 矢量符号：Keep 官网字体中的 logo_k（U+E822）。
+https://staticweb.keepcdn.com/staticShow/vendors/webfont/font/keep_icon-e9d1d2f0e2.svg?49173785
+原版字标：https://staticweb.keepcdn.com/staticShow/images/newhome/keep_logo-8479674405.png
+
+06 乐播投屏
+官方入口：https://www.lebo.cn/
+原版字标：https://www.lebo.cn/static/images/logo.png
+高清符号：开发者发布的 App Store 应用图标，应用 ID 1116038378。
+https://apps.apple.com/cn/app/id1116038378
+提取白色投屏符号，去除原图方形背景。
+
+07 网易云音乐
+官方入口：https://music.163.com/st/download
+原版字标：官方标题图片前半段的“网易云音乐”，不含宣传语。
+https://s5.music.126.net/static_public/5d2e7e0f4c302eee822efc3d_5d2e7e0f4c302eee822efc3f/first_title.a9d99d34d152eba2e179966241432537.png
+矢量符号：https://github.com/simple-icons/simple-icons/blob/11.15.0/icons/neteasecloudmusic.svg
+使用其原始内部符号路径，移除外部圆盘并改为白色；Simple Icons 项目许可 CC0-1.0。
+
+08 QQ 音乐
+官方入口：https://y.qq.com/
+原版图形与字标：https://y.qq.com/mediastyle/yqq/img/logo@2x.png
+图形保留黄色与绿色，文字改为白色。
+
+09 百度网盘
+图形来源：网易爆米花官网列出的网盘来源图形。
+https://bmh.163.com/img/source_05.png
+原图形保留外形，统一白色化。
+本轮字标改用百度网盘官网的原始 Logo 图片，提取其文字部分并改为白色：
+https://pan.baidu.com/
+https://nd-static.bdstatic.com/m-static/wp-brand/img/wp-logo.ad8119c1.png
+该资源由官网公共页面包 chunk-common.442415e2.js 引用。
+
+10 迅雷云盘
+官方入口：https://pan.xunlei.com/
+官方矢量符号与字标：
+https://static-pan.xunlei.com/_nuxt/dist/client/img/logo-pan-mix-blank.dcd3d6b.svg
+提取鸟形与“迅雷云盘”原字形，分开排版，保留比例。
+
+11 阿里云盘
+官方入口：https://www.alipan.com/
+原字标：https://img.alicdn.com/imgextra/i3/O1CN01qcJZEf1VXF0KBzyNb_!!6000000002662-2-tps-384-92.png
+原图形：https://bmh.163.com/img/source_04.png
+图形与字标均统一为白色。
+
+12 115 网盘
+官方入口：https://115.com/
+原版矢量符号：https://w.115.com/m_r/web/static/images/icon_logo_cloud.svg
+使用原白色“5”符号路径，移除原方形背景。
+本轮“115网盘”字标从 115 官方大屏下载页所列的 Android 4.0 版应用资源中提取：
+https://pc.115.com/tv.html
+https://down.115.com/client/tv/115TV_16.5.0.apk
+资源路径：res/_P.png。保留其中下方较大的一行“115网盘”原字样，不含上方应用图标。
+这是品牌素材来源，不是建议安装旧版应用。
+
+14 网易爆米花
+官方入口：https://bmh.163.com/
+原字标：https://bmh.163.com/img/logo_nav.png
+高清图形：开发者发布的 App Store 应用图标，应用 ID 6480252695。
+https://apps.apple.com/cn/app/id6480252695
+移除外部白底，保留爆米花桶与胶片盘的原色。
+
+预览页标题与说明文字使用 PingFang SC；应用图内名称使用原字标素材。最终交付为 PNG，电视无需安装字体。
+
+
+15 芒果 TV
+官方入口：https://www.mgtv.com/
+官方矢量素材：https://static.hitv.com/pc2/app.ae42b29.js
+从官网 icon-logo-white SVG 符号提取原版 M 图形及“芒果tv”字标，分别排版并统一为白色。
+背景采用原素材中声明的橙色 #FF5F00。

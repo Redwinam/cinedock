@@ -1,0 +1,15 @@
+{
+  "name": "cinedock-artwork",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Optional artwork tools for the CineDock TV icon pack",
+  "scripts": {
+    "render:colors": "node tools/render_brand_colors.cjs"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "devDependencies": {
+    "sharp": "0.35.5"
+  }
+}

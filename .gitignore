@@ -14,3 +14,16 @@ target/
 .dev.vars
 .dev.vars.*
 !.dev.vars.example
+.toolchain/
+.signing/
+build/
+local.properties
+__pycache__/
+*.pyc
+
+# Android signing credentials remain local.
+*.jks
+*.keystore
+*.p12
+*.pfx
+password.txt

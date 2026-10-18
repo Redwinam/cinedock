@@ -1,0 +1,310 @@
+[
+  {
+    "key": "bilibili_tv",
+    "name": "云视听小电视",
+    "group": "应用",
+    "resources": {
+      "a": "app/src/main/res/drawable-nodpi/a_bilibili_tv.png",
+      "b": "app/src/main/res/drawable-nodpi/b_bilibili_tv.png",
+      "c": "app/src/main/res/drawable-nodpi/c_bilibili_tv.png",
+      "d": "app/src/main/res/drawable-nodpi/d_bilibili_tv.png"
+    }
+  },
+  {
+    "key": "iqiyi_tv",
+    "name": "银河奇异果",
+    "group": "应用",
+    "resources": {
+      "a": "app/src/main/res/drawable-nodpi/a_iqiyi_tv.png",
+      "b": "app/src/main/res/drawable-nodpi/b_iqiyi_tv.png",
+      "c": "app/src/main/res/drawable-nodpi/c_iqiyi_tv.png",
+      "d": "app/src/main/res/drawable-nodpi/d_iqiyi_tv.png"
+    }
+  },
+  {
+    "key": "newtv_aurora",
+    "name": "NewTV 极光",
+    "group": "应用",
+    "palette": {
+      "since": "1.1.0",
+      "background": "#FFFFFF",
+      "foreground": "original colored mark and original wordmark in dark ink"
+    },
+    "current_layouts": {
+      "a": "artwork/brand-layouts/a_newtv_aurora.svg",
+      "b": "artwork/brand-layouts/b_newtv_aurora.svg",
+      "c": "artwork/brand-layouts/c_newtv_aurora.svg",
+      "d": "artwork/brand-layouts/d_newtv_aurora.svg"
+    },
+    "resources": {
+      "a": "app/src/main/res/drawable-nodpi/a_newtv_aurora.png",
+      "b": "app/src/main/res/drawable-nodpi/b_newtv_aurora.png",
+      "c": "app/src/main/res/drawable-nodpi/c_newtv_aurora.png",
+      "d": "app/src/main/res/drawable-nodpi/d_newtv_aurora.png"
+    }
+  },
+  {
+    "key": "youku_kumiao",
+    "name": "酷喵",
+    "group": "应用",
+    "palette": {
+      "since": "1.1.0",
+      "background": "#FFFFFF",
+      "foreground": "original colored mark and original wordmark in dark ink"
+    },
+    "current_layouts": {
+      "a": "artwork/brand-layouts/a_youku_kumiao.svg",
+      "b": "artwork/brand-layouts/b_youku_kumiao.svg",
+      "c": "artwork/brand-layouts/c_youku_kumiao.svg",
+      "d": "artwork/brand-layouts/d_youku_kumiao.svg"
+    },
+    "resources": {
+      "a": "app/src/main/res/drawable-nodpi/a_youku_kumiao.png",
+      "b": "app/src/main/res/drawable-nodpi/b_youku_kumiao.png",
+      "c": "app/src/main/res/drawable-nodpi/c_youku_kumiao.png",
+      "d": "app/src/main/res/drawable-nodpi/d_youku_kumiao.png"
+    }
+  },
+  {
+    "key": "keep",
+    "name": "Keep 健身",
+    "group": "应用",
+    "resources": {
+      "a": "app/src/main/res/drawable-nodpi/a_keep.png",
+      "b": "app/src/main/res/drawable-nodpi/b_keep.png",
+      "c": "app/src/main/res/drawable-nodpi/c_keep.png",
+      "d": "app/src/main/res/drawable-nodpi/d_keep.png"
+    }
+  },
+  {
+    "key": "lebo_cast",
+    "name": "乐播投屏",
+    "group": "应用",
+    "resources": {
+      "a": "app/src/main/res/drawable-nodpi/a_lebo_cast.png",
+      "b": "app/src/main/res/drawable-nodpi/b_lebo_cast.png",
+      "c": "app/src/main/res/drawable-nodpi/c_lebo_cast.png",
+      "d": "app/src/main/res/drawable-nodpi/d_lebo_cast.png"
+    }
+  },
+  {
+    "key": "netease_music",
+    "name": "网易云音乐",
+    "group": "应用",
+    "resources": {
+      "a": "app/src/main/res/drawable-nodpi/a_netease_music.png",
+      "b": "app/src/main/res/drawable-nodpi/b_netease_music.png",
+      "c": "app/src/main/res/drawable-nodpi/c_netease_music.png",
+      "d": "app/src/main/res/drawable-nodpi/d_netease_music.png"
+    }
+  },
+  {
+    "key": "qq_music",
+    "name": "QQ 音乐",
+    "group": "应用",
+    "palette": {
+      "since": "1.1.0",
+      "background": "#FFFFFF",
+      "foreground": "original colored mark and original wordmark in dark ink"
+    },
+    "current_layouts": {
+      "a": "artwork/brand-layouts/a_qq_music.svg",
+      "b": "artwork/brand-layouts/b_qq_music.svg",
+      "c": "artwork/brand-layouts/c_qq_music.svg",
+      "d": "artwork/brand-layouts/d_qq_music.svg"
+    },
+    "resources": {
+      "a": "app/src/main/res/drawable-nodpi/a_qq_music.png",
+      "b": "app/src/main/res/drawable-nodpi/b_qq_music.png",
+      "c": "app/src/main/res/drawable-nodpi/c_qq_music.png",
+      "d": "app/src/main/res/drawable-nodpi/d_qq_music.png"
+    }
+  },
+  {
+    "key": "baidu_netdisk",
+    "name": "百度网盘",
+    "group": "应用",
+    "palette": {
+      "since": "1.1.0",
+      "background": "#FFFFFF",
+      "foreground": "original colored mark and original wordmark in dark ink"
+    },
+    "current_layouts": {
+      "a": "artwork/brand-layouts/a_baidu_netdisk.svg",
+      "b": "artwork/brand-layouts/b_baidu_netdisk.svg",
+      "c": "artwork/brand-layouts/c_baidu_netdisk.svg",
+      "d": "artwork/brand-layouts/d_baidu_netdisk.svg"
+    },
+    "resources": {
+      "a": "app/src/main/res/drawable-nodpi/a_baidu_netdisk.png",
+      "b": "app/src/main/res/drawable-nodpi/b_baidu_netdisk.png",
+      "c": "app/src/main/res/drawable-nodpi/c_baidu_netdisk.png",
+      "d": "app/src/main/res/drawable-nodpi/d_baidu_netdisk.png"
+    }
+  },
+  {
+    "key": "xunlei_cloud",
+    "name": "迅雷云盘",
+    "group": "应用",
+    "palette": {
+      "since": "1.1.0",
+      "background": "#FFFFFF",
+      "foreground": "original colored mark and original wordmark in dark ink"
+    },
+    "current_layouts": {
+      "a": "artwork/brand-layouts/a_xunlei_cloud.svg",
+      "b": "artwork/brand-layouts/b_xunlei_cloud.svg",
+      "c": "artwork/brand-layouts/c_xunlei_cloud.svg",
+      "d": "artwork/brand-layouts/d_xunlei_cloud.svg"
+    },
+    "resources": {
+      "a": "app/src/main/res/drawable-nodpi/a_xunlei_cloud.png",
+      "b": "app/src/main/res/drawable-nodpi/b_xunlei_cloud.png",
+      "c": "app/src/main/res/drawable-nodpi/c_xunlei_cloud.png",
+      "d": "app/src/main/res/drawable-nodpi/d_xunlei_cloud.png"
+    }
+  },
+  {
+    "key": "aliyun_drive",
+    "name": "阿里云盘",
+    "group": "应用",
+    "palette": {
+      "since": "1.1.0",
+      "background": "#FFFFFF",
+      "foreground": "original colored mark and original wordmark in dark ink"
+    },
+    "current_layouts": {
+      "a": "artwork/brand-layouts/a_aliyun_drive.svg",
+      "b": "artwork/brand-layouts/b_aliyun_drive.svg",
+      "c": "artwork/brand-layouts/c_aliyun_drive.svg",
+      "d": "artwork/brand-layouts/d_aliyun_drive.svg"
+    },
+    "resources": {
+      "a": "app/src/main/res/drawable-nodpi/a_aliyun_drive.png",
+      "b": "app/src/main/res/drawable-nodpi/b_aliyun_drive.png",
+      "c": "app/src/main/res/drawable-nodpi/c_aliyun_drive.png",
+      "d": "app/src/main/res/drawable-nodpi/d_aliyun_drive.png"
+    }
+  },
+  {
+    "key": "115_drive",
+    "name": "115 网盘",
+    "group": "应用",
+    "palette": {
+      "since": "1.1.0",
+      "background": "#FFFFFF",
+      "foreground": "original colored mark and original wordmark in dark ink"
+    },
+    "current_layouts": {
+      "a": "artwork/brand-layouts/a_115_drive.svg",
+      "b": "artwork/brand-layouts/b_115_drive.svg",
+      "c": "artwork/brand-layouts/c_115_drive.svg",
+      "d": "artwork/brand-layouts/d_115_drive.svg"
+    },
+    "resources": {
+      "a": "app/src/main/res/drawable-nodpi/a_115_drive.png",
+      "b": "app/src/main/res/drawable-nodpi/b_115_drive.png",
+      "c": "app/src/main/res/drawable-nodpi/c_115_drive.png",
+      "d": "app/src/main/res/drawable-nodpi/d_115_drive.png"
+    }
+  },
+  {
+    "key": "tencent_aurora",
+    "name": "云视听极光",
+    "group": "应用",
+    "palette": {
+      "since": "1.1.0",
+      "background": "#FFFFFF",
+      "foreground": "original colored mark and original wordmark in dark ink"
+    },
+    "current_layouts": {
+      "a": "artwork/brand-layouts/a_tencent_aurora.svg",
+      "b": "artwork/brand-layouts/b_tencent_aurora.svg",
+      "c": "artwork/brand-layouts/c_tencent_aurora.svg",
+      "d": "artwork/brand-layouts/d_tencent_aurora.svg"
+    },
+    "resources": {
+      "a": "app/src/main/res/drawable-nodpi/a_tencent_aurora.png",
+      "b": "app/src/main/res/drawable-nodpi/b_tencent_aurora.png",
+      "c": "app/src/main/res/drawable-nodpi/c_tencent_aurora.png",
+      "d": "app/src/main/res/drawable-nodpi/d_tencent_aurora.png"
+    }
+  },
+  {
+    "key": "netease_popcorn",
+    "name": "网易爆米花",
+    "group": "应用",
+    "palette": {
+      "since": "1.1.0",
+      "background": "#FFFFFF",
+      "foreground": "original colored mark and original wordmark in dark ink"
+    },
+    "current_layouts": {
+      "a": "artwork/brand-layouts/a_netease_popcorn.svg",
+      "b": "artwork/brand-layouts/b_netease_popcorn.svg",
+      "c": "artwork/brand-layouts/c_netease_popcorn.svg",
+      "d": "artwork/brand-layouts/d_netease_popcorn.svg"
+    },
+    "resources": {
+      "a": "app/src/main/res/drawable-nodpi/a_netease_popcorn.png",
+      "b": "app/src/main/res/drawable-nodpi/b_netease_popcorn.png",
+      "c": "app/src/main/res/drawable-nodpi/c_netease_popcorn.png",
+      "d": "app/src/main/res/drawable-nodpi/d_netease_popcorn.png"
+    }
+  },
+  {
+    "key": "mango_tv",
+    "name": "芒果 TV",
+    "group": "应用",
+    "resources": {
+      "a": "app/src/main/res/drawable-nodpi/a_mango_tv.png",
+      "b": "app/src/main/res/drawable-nodpi/b_mango_tv.png",
+      "c": "app/src/main/res/drawable-nodpi/c_mango_tv.png",
+      "d": "app/src/main/res/drawable-nodpi/d_mango_tv.png"
+    }
+  },
+  {
+    "key": "ps5",
+    "name": "PlayStation 5",
+    "group": "HDMI",
+    "resources": {
+      "a": "app/src/main/res/drawable-nodpi/a_ps5.png",
+      "b": "app/src/main/res/drawable-nodpi/b_ps5.png",
+      "c": "app/src/main/res/drawable-nodpi/c_ps5.png",
+      "d": "app/src/main/res/drawable-nodpi/d_ps5.png"
+    }
+  },
+  {
+    "key": "nintendo_switch",
+    "name": "Nintendo Switch",
+    "group": "HDMI",
+    "resources": {
+      "a": "app/src/main/res/drawable-nodpi/a_nintendo_switch.png",
+      "b": "app/src/main/res/drawable-nodpi/b_nintendo_switch.png",
+      "c": "app/src/main/res/drawable-nodpi/c_nintendo_switch.png",
+      "d": "app/src/main/res/drawable-nodpi/d_nintendo_switch.png"
+    }
+  },
+  {
+    "key": "xbox",
+    "name": "Xbox",
+    "group": "HDMI",
+    "resources": {
+      "a": "app/src/main/res/drawable-nodpi/a_xbox.png",
+      "b": "app/src/main/res/drawable-nodpi/b_xbox.png",
+      "c": "app/src/main/res/drawable-nodpi/c_xbox.png",
+      "d": "app/src/main/res/drawable-nodpi/d_xbox.png"
+    }
+  },
+  {
+    "key": "gaming_pc_steam",
+    "name": "游戏 PC · Steam",
+    "group": "HDMI",
+    "resources": {
+      "a": "app/src/main/res/drawable-nodpi/a_gaming_pc_steam.png",
+      "b": "app/src/main/res/drawable-nodpi/b_gaming_pc_steam.png",
+      "c": "app/src/main/res/drawable-nodpi/c_gaming_pc_steam.png",
+      "d": "app/src/main/res/drawable-nodpi/d_gaming_pc_steam.png"
+    }
+  }
+]

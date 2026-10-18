@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.redwinam.cinedock.probe">
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="35" />
+    <queries><package android:name="com.redwinam.cinedock" /><intent><action android:name="org.adw.launcher.THEMES" /></intent></queries>
+    <application android:debuggable="true" android:label="CineDock Probe">
+        <activity android:name=".ProbeActivity" android:exported="true" android:screenOrientation="landscape" />
+    </application>
+</manifest>

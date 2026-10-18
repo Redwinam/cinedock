@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">映匣 · CineDock</string>
+    <string name="pack_description">为电视整理的影音、音乐、网盘与游戏设备图标，包含四种样式。</string>
+    <style name="AppTheme" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowBackground">#101722</item>
+        <item name="android:colorAccent">#54D6C6</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">#101722</item>
+        <item name="android:navigationBarColor">#101722</item>
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+    </style>
+</resources>

@@ -1,0 +1,258 @@
+{
+  "version": "1.1.0",
+  "policy": "Preserve familiar original brand colors and wordmarks; use white cards for the listed apps. Other entries stay unchanged.",
+  "records": [
+    {
+      "key": "newtv_aurora",
+      "name": "NewTV 极光",
+      "style": "a",
+      "background": "#FFFFFF",
+      "file": "a_newtv_aurora.png"
+    },
+    {
+      "key": "newtv_aurora",
+      "name": "NewTV 极光",
+      "style": "b",
+      "background": "#FFFFFF",
+      "file": "b_newtv_aurora.png"
+    },
+    {
+      "key": "newtv_aurora",
+      "name": "NewTV 极光",
+      "style": "c",
+      "background": "#FFFFFF",
+      "file": "c_newtv_aurora.png"
+    },
+    {
+      "key": "newtv_aurora",
+      "name": "NewTV 极光",
+      "style": "d",
+      "background": "#FFFFFF",
+      "file": "d_newtv_aurora.png"
+    },
+    {
+      "key": "youku_kumiao",
+      "name": "酷喵",
+      "style": "a",
+      "background": "#FFFFFF",
+      "file": "a_youku_kumiao.png"
+    },
+    {
+      "key": "youku_kumiao",
+      "name": "酷喵",
+      "style": "b",
+      "background": "#FFFFFF",
+      "file": "b_youku_kumiao.png"
+    },
+    {
+      "key": "youku_kumiao",
+      "name": "酷喵",
+      "style": "c",
+      "background": "#FFFFFF",
+      "file": "c_youku_kumiao.png"
+    },
+    {
+      "key": "youku_kumiao",
+      "name": "酷喵",
+      "style": "d",
+      "background": "#FFFFFF",
+      "file": "d_youku_kumiao.png"
+    },
+    {
+      "key": "qq_music",
+      "name": "QQ 音乐",
+      "style": "a",
+      "background": "#FFFFFF",
+      "file": "a_qq_music.png"
+    },
+    {
+      "key": "qq_music",
+      "name": "QQ 音乐",
+      "style": "b",
+      "background": "#FFFFFF",
+      "file": "b_qq_music.png"
+    },
+    {
+      "key": "qq_music",
+      "name": "QQ 音乐",
+      "style": "c",
+      "background": "#FFFFFF",
+      "file": "c_qq_music.png"
+    },
+    {
+      "key": "qq_music",
+      "name": "QQ 音乐",
+      "style": "d",
+      "background": "#FFFFFF",
+      "file": "d_qq_music.png"
+    },
+    {
+      "key": "baidu_netdisk",
+      "name": "百度网盘",
+      "style": "a",
+      "background": "#FFFFFF",
+      "file": "a_baidu_netdisk.png"
+    },
+    {
+      "key": "baidu_netdisk",
+      "name": "百度网盘",
+      "style": "b",
+      "background": "#FFFFFF",
+      "file": "b_baidu_netdisk.png"
+    },
+    {
+      "key": "baidu_netdisk",
+      "name": "百度网盘",
+      "style": "c",
+      "background": "#FFFFFF",
+      "file": "c_baidu_netdisk.png"
+    },
+    {
+      "key": "baidu_netdisk",
+      "name": "百度网盘",
+      "style": "d",
+      "background": "#FFFFFF",
+      "file": "d_baidu_netdisk.png"
+    },
+    {
+      "key": "xunlei_cloud",
+      "name": "迅雷云盘",
+      "style": "a",
+      "background": "#FFFFFF",
+      "file": "a_xunlei_cloud.png"
+    },
+    {
+      "key": "xunlei_cloud",
+      "name": "迅雷云盘",
+      "style": "b",
+      "background": "#FFFFFF",
+      "file": "b_xunlei_cloud.png"
+    },
+    {
+      "key": "xunlei_cloud",
+      "name": "迅雷云盘",
+      "style": "c",
+      "background": "#FFFFFF",
+      "file": "c_xunlei_cloud.png"
+    },
+    {
+      "key": "xunlei_cloud",
+      "name": "迅雷云盘",
+      "style": "d",
+      "background": "#FFFFFF",
+      "file": "d_xunlei_cloud.png"
+    },
+    {
+      "key": "aliyun_drive",
+      "name": "阿里云盘",
+      "style": "a",
+      "background": "#FFFFFF",
+      "file": "a_aliyun_drive.png"
+    },
+    {
+      "key": "aliyun_drive",
+      "name": "阿里云盘",
+      "style": "b",
+      "background": "#FFFFFF",
+      "file": "b_aliyun_drive.png"
+    },
+    {
+      "key": "aliyun_drive",
+      "name": "阿里云盘",
+      "style": "c",
+      "background": "#FFFFFF",
+      "file": "c_aliyun_drive.png"
+    },
+    {
+      "key": "aliyun_drive",
+      "name": "阿里云盘",
+      "style": "d",
+      "background": "#FFFFFF",
+      "file": "d_aliyun_drive.png"
+    },
+    {
+      "key": "115_drive",
+      "name": "115 网盘",
+      "style": "a",
+      "background": "#FFFFFF",
+      "file": "a_115_drive.png"
+    },
+    {
+      "key": "115_drive",
+      "name": "115 网盘",
+      "style": "b",
+      "background": "#FFFFFF",
+      "file": "b_115_drive.png"
+    },
+    {
+      "key": "115_drive",
+      "name": "115 网盘",
+      "style": "c",
+      "background": "#FFFFFF",
+      "file": "c_115_drive.png"
+    },
+    {
+      "key": "115_drive",
+      "name": "115 网盘",
+      "style": "d",
+      "background": "#FFFFFF",
+      "file": "d_115_drive.png"
+    },
+    {
+      "key": "tencent_aurora",
+      "name": "云视听极光",
+      "style": "a",
+      "background": "#FFFFFF",
+      "file": "a_tencent_aurora.png"
+    },
+    {
+      "key": "tencent_aurora",
+      "name": "云视听极光",
+      "style": "b",
+      "background": "#FFFFFF",
+      "file": "b_tencent_aurora.png"
+    },
+    {
+      "key": "tencent_aurora",
+      "name": "云视听极光",
+      "style": "c",
+      "background": "#FFFFFF",
+      "file": "c_tencent_aurora.png"
+    },
+    {
+      "key": "tencent_aurora",
+      "name": "云视听极光",
+      "style": "d",
+      "background": "#FFFFFF",
+      "file": "d_tencent_aurora.png"
+    },
+    {
+      "key": "netease_popcorn",
+      "name": "网易爆米花",
+      "style": "a",
+      "background": "#FFFFFF",
+      "file": "a_netease_popcorn.png"
+    },
+    {
+      "key": "netease_popcorn",
+      "name": "网易爆米花",
+      "style": "b",
+      "background": "#FFFFFF",
+      "file": "b_netease_popcorn.png"
+    },
+    {
+      "key": "netease_popcorn",
+      "name": "网易爆米花",
+      "style": "c",
+      "background": "#FFFFFF",
+      "file": "c_netease_popcorn.png"
+    },
+    {
+      "key": "netease_popcorn",
+      "name": "网易爆米花",
+      "style": "d",
+      "background": "#FFFFFF",
+      "file": "d_netease_popcorn.png"
+    }
+  ]
+}

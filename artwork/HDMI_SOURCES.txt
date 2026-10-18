@@ -1,0 +1,33 @@
+横向组合版 — 素材来源与处理
+
+本版共八张 PNG：四张 640×360 横版，增加品牌原有字标；四张 512×512 方版沿用上一版。
+背景颜色不变：PlayStation #003791；Nintendo Switch #E60012；Xbox #107C10；Steam #171A21。
+全部白色标志均由矢量几何绘制；文字使用原品牌字标轮廓，没有用通用字体重新打字。各元素等比缩放。
+横版采用左侧符号、右侧字标的统一排版。PS5 与 Steam 使用来源 SVG 的完整原生横向组合；Xbox 与 Nintendo Switch 使用原有符号及文字轮廓重新横向排列，保留每个元素的宽高比例。
+
+PS5 字标：
+https://commons.wikimedia.org/wiki/File:PlayStation_5_logo_and_wordmark.svg
+https://upload.wikimedia.org/wikipedia/commons/c/cb/PlayStation_5_logo_and_wordmark.svg
+页面归属 Sony Interactive Entertainment；SVG 为 Wikimedia 收录版本，页面标注 PD-textlogo。
+使用完整 PlayStation 符号与 PS5 字标组合，包括原有商标符号，改为白色并等比缩放。
+
+Nintendo Switch 官方组合标志：
+https://www.nintendo.co.jp/common/v2/img/ncommon/_common/logo/switch.svg
+使用官网 SVG 内的 NINTENDO SWITCH 字样及 TM，放在 Switch 符号右侧；字形与符号分别等比缩放。
+
+Xbox 字标：
+https://commons.wikimedia.org/wiki/File:Xbox_logo_(2019).svg
+https://upload.wikimedia.org/wikipedia/commons/d/d7/Xbox_logo_%282019%29.svg
+页面归属 Microsoft Corporation，页面标注 PD-textlogo。
+使用素材下方 XBOX 字标区域的原始路径，改为白色并等比缩放；左侧 Xbox 符号沿用上一版。
+
+Steam 官方字标：
+https://store.fastly.steamstatic.com/public/shared/images/header/logo_steam.svg
+https://partner.steamgames.com/doc/marketing/branding
+使用 Steam 商店页眉 SVG 的完整横向符号与 STEAM 字标及注册商标组合，改为白色并等比缩放。
+
+上一版符号与方版来源：Simple Icons v11.15.0，CC0-1.0。
+https://github.com/simple-icons/simple-icons/tree/11.15.0
+https://github.com/simple-icons/simple-icons/blob/11.15.0/LICENSE.md
+
+品牌名称和标志的商标权属于各自权利人。本套图片用于个人电视入口识别，非品牌官方图标包。

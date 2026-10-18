@@ -1,0 +1,118 @@
+{
+  "bilibili_tv": {
+    "packages": [
+      "com.xiaodianshi.tv.yst",
+      "tv.danmaku.bili"
+    ],
+    "components": [
+      "com.xiaodianshi.tv.yst/com.xiaodianshi.tv.yst.ui.main.MainActivity"
+    ]
+  },
+  "iqiyi_tv": {
+    "packages": [
+      "com.gitvdemo.video",
+      "com.gitvvideo",
+      "com.qiyi.video"
+    ],
+    "components": [
+      "com.gitvdemo.video/com.gala.video.app.epg.HomeActivity"
+    ]
+  },
+  "newtv_aurora": {
+    "packages": [
+      "com.ktcp.csvideo",
+      "com.tencent.qqlivetv"
+    ],
+    "components": [
+      "com.ktcp.csvideo/com.ktcp.video.activity.MainActivity"
+    ]
+  },
+  "youku_kumiao": {
+    "packages": [
+      "com.cibn.tv",
+      "com.youku.tv"
+    ],
+    "components": []
+  },
+  "keep": {
+    "packages": [
+      "com.gotokeep.keep",
+      "com.gotokeep.keep.tv"
+    ],
+    "components": []
+  },
+  "lebo_cast": {
+    "packages": [
+      "com.hpplay.happycast"
+    ],
+    "components": []
+  },
+  "netease_music": {
+    "packages": [
+      "com.netease.cloudmusic.tv",
+      "com.netease.cloudmusic"
+    ],
+    "components": []
+  },
+  "qq_music": {
+    "packages": [
+      "com.tencent.qqmusictv",
+      "com.tencent.qqmusic"
+    ],
+    "components": []
+  },
+  "baidu_netdisk": {
+    "packages": [
+      "com.baidu.netdisk.tv",
+      "com.baidu.netdisk"
+    ],
+    "components": []
+  },
+  "xunlei_cloud": {
+    "packages": [
+      "com.xunlei.downloadprovider",
+      "com.xunlei.downloadprovider.tv",
+      "com.xunlei.pan"
+    ],
+    "components": []
+  },
+  "aliyun_drive": {
+    "packages": [
+      "com.alicloud.databox",
+      "com.alicloud.databox.tv",
+      "com.xiaobai.tv"
+    ],
+    "components": []
+  },
+  "115_drive": {
+    "packages": [
+      "com.yyw.box.androidclient",
+      "com.ylmf.androidclient"
+    ],
+    "components": [
+      "com.yyw.box.androidclient/com.yyw.box.login.LoginActivity"
+    ]
+  },
+  "netease_popcorn": {
+    "packages": [
+      "com.netease.filmlytv",
+      "com.netease.filmly"
+    ],
+    "components": []
+  },
+  "tencent_aurora": {
+    "packages": [
+      "com.ktcp.video"
+    ],
+    "components": [
+      "com.ktcp.video/com.ktcp.video.activity.MainActivity"
+    ]
+  },
+  "mango_tv": {
+    "packages": [
+      "com.hunantv.market",
+      "com.hunantv.imgo.activity"
+    ],
+    "components": []
+  }
+}

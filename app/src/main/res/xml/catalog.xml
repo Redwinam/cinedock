@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<catalog>
+  <item key="bilibili_tv" title="云视听小电视" group="应用" />
+  <item key="iqiyi_tv" title="银河奇异果" group="应用" />
+  <item key="newtv_aurora" title="NewTV 极光" group="应用" />
+  <item key="youku_kumiao" title="酷喵" group="应用" />
+  <item key="keep" title="Keep 健身" group="应用" />
+  <item key="lebo_cast" title="乐播投屏" group="应用" />
+  <item key="netease_music" title="网易云音乐" group="应用" />
+  <item key="qq_music" title="QQ 音乐" group="应用" />
+  <item key="baidu_netdisk" title="百度网盘" group="应用" />
+  <item key="xunlei_cloud" title="迅雷云盘" group="应用" />
+  <item key="aliyun_drive" title="阿里云盘" group="应用" />
+  <item key="115_drive" title="115 网盘" group="应用" />
+  <item key="tencent_aurora" title="云视听极光" group="应用" />
+  <item key="netease_popcorn" title="网易爆米花" group="应用" />
+  <item key="mango_tv" title="芒果 TV" group="应用" />
+  <item key="ps5" title="PlayStation 5" group="HDMI" />
+  <item key="nintendo_switch" title="Nintendo Switch" group="HDMI" />
+  <item key="xbox" title="Xbox" group="HDMI" />
+  <item key="gaming_pc_steam" title="游戏 PC · Steam" group="HDMI" />
+</catalog>
