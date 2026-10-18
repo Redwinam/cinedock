@@ -4,7 +4,7 @@
 
 CineDock 是为 [Projectivy Launcher](https://github.com/spocky/miproja1) 制作的 Android 图标包。包含 **15 个应用、4 个游戏设备、4 种样式，共 76 张 PNG**，可通过遥控器浏览、预览和选择。
 
-![CineDock 1.1.0 配色预览](docs/preview.png)
+[CC BY-NC-SA 4.0](LICENSE) · [许可范围与第三方素材](NOTICE.md)
 
 ## 设计与功能
 
@@ -33,6 +33,27 @@ CineDock 是为 [Projectivy Launcher](https://github.com/spocky/miproja1) 制作
 | `b_` | 上下带字：标志在上，字标在下 | 640 × 360 |
 | `c_` | 横版纯图标：标志居中 | 640 × 360 |
 | `d_` | 方版纯图标：标志居中 | 512 × 512 |
+
+
+### 四种样式预览
+
+每张预览包含全部 19 个入口，来自 APK 中实际使用的图片。点击图片可查看原尺寸预览。
+
+**A · 横向带字**
+
+[![A 横向带字完整预览](docs/preview.png)](docs/preview.png)
+
+**B · 上下带字**
+
+[![B 上下带字完整预览](docs/preview-stacked.png)](docs/preview-stacked.png)
+
+**C · 横版纯图标**
+
+[![C 横版纯图标完整预览](docs/preview-icon-only.png)](docs/preview-icon-only.png)
+
+**D · 方版纯图标**
+
+[![D 方版纯图标完整预览](docs/preview-square.png)](docs/preview-square.png)
 
 ## 安装与使用
 
@@ -113,6 +134,8 @@ python3 tools/verify_bundle.py
 
 脚本仅重建九个应用的 36 张图片，其余 40 张保持不变。`package-lock.json` 固定图片处理工具的依赖版本。
 
+更新卡片图片后，运行 `npm run render:previews`，即可重新生成 README 中四种样式的完整预览。预览说明文字使用系统的中文字体；卡片内的品牌字形仍来自图片素材。
+
 ### 增加入口
 
 1. 加入四种样式的 PNG，使用 `a_<key>`、`b_<key>`、`c_<key>`、`d_<key>` 稳定命名。
@@ -137,7 +160,7 @@ artwork/
 ├── color-sources/                # 本轮重建使用的原图形和字标
 ├── brand-layouts/                # 36 张白底卡片的 SVG 排版
 └── *SOURCES.txt                  # 第三方素材来源与处理记录
-docs/preview.png                  # 效果预览
+docs/preview*.png                 # 四种样式的完整预览
 tools/                            # 构建、资源检查、配色渲染
 tests/                            # 独立 Android 兼容性检查应用
 ```
@@ -175,8 +198,12 @@ adb -s <测试设备序列号> shell run-as com.redwinam.cinedock.probe cat file
 
 本项目为个人电视界面定制项目，与 Sony、Projectivy 及图标涉及的品牌无隶属或合作关系。
 
-品牌名称、商标、图形和字标属于相应权利人。素材出处及处理方式记录在 [应用素材来源](artwork/APPLICATION_SOURCES.txt) 和 [游戏设备素材来源](artwork/HDMI_SOURCES.txt)。来源记录不等同于统一的再分发授权，第三方素材不应被自动视为本项目原创代码许可的一部分。
+Copyright © 2026 Redwinam.
 
-**代码开源许可证尚未选定。** 仓库目前没有 `LICENSE`；正式开放许可时，应单独声明原创代码的许可证，并保留第三方素材的来源与适用许可说明。
+本项目采用 **[CC BY-NC-SA 4.0（署名—非商业性使用—相同方式共享 4.0 国际）](https://creativecommons.org/licenses/by-nc-sa/4.0/)**，适用于维护者拥有并有权许可的原创代码、文档、排版及创作部分。完整条款见 [LICENSE](LICENSE)，具体适用范围见 [NOTICE.md](NOTICE.md)。
+
+使用这些受许可内容时，应保留署名及许可信息，说明修改，并遵守非商业性使用和相同方式共享的条款。建议署名为 **映匣 · CineDock — Redwinam**，附上 [项目链接](https://github.com/Redwinam/cinedock)。
+
+第三方品牌名称、商标、标志及字标仍属于各自权利人，不因本仓库的许可而重新授权。CC0、公有领域或采用其他许可的原素材继续保持其原有状态；第三方软件依赖遵循各自许可。素材来源与处理记录见 [应用素材来源](artwork/APPLICATION_SOURCES.txt) 和 [游戏设备素材来源](artwork/HDMI_SOURCES.txt)。
 
 相关兼容性参考：[Projectivy 4.72 内置选图器](https://github.com/spocky/miproja1/releases/tag/4.72)、[Blueprint](https://github.com/jahirfiquitiva/Blueprint)、[Candybar 原尺寸资源返回说明](https://github.com/zixpo/candybar/pull/202)。
