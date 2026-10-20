@@ -1,5 +1,5 @@
 {
-  "version": "1.2.3",
+  "version": "1.2.4",
   "policy": "Preserve familiar original brand colors and wordmarks. Every card is rendered from artwork/ by tools/render_cards.cjs.",
   "records": [
     {
@@ -366,13 +366,13 @@
       "key": "ps5",
       "style": "a",
       "background": "#003791",
-      "file": "a_ps5_v1_2_2.png"
+      "file": "a_ps5_v1_2_4.png"
     },
     {
       "key": "ps5",
       "style": "b",
       "background": "#003791",
-      "file": "b_ps5_v1_2_2.png"
+      "file": "b_ps5_v1_2_4.png"
     },
     {
       "key": "ps5",
@@ -390,13 +390,13 @@
       "key": "nintendo_switch",
       "style": "a",
       "background": "#E60012",
-      "file": "a_nintendo_switch_v1_2_2.png"
+      "file": "a_nintendo_switch_v1_2_4.png"
     },
     {
       "key": "nintendo_switch",
       "style": "b",
       "background": "#E60012",
-      "file": "b_nintendo_switch_v1_2_2.png"
+      "file": "b_nintendo_switch_v1_2_4.png"
     },
     {
       "key": "nintendo_switch",

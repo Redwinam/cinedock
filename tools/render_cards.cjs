@@ -28,7 +28,8 @@ const output = style => style==='d' ? [320,320] : [400,225];
 //     next to Chinese glyphs of the same height.
 // Text cards are also nudged toward visual balance (see balance()).
 // tweak: hand adjustments in px per style, applied after balancing — icon / word move one element
-//     down, group moves both down, x moves both right (negative values go up / left).
+//     down, wordX moves the wordmark right, group moves both down, x moves both right (negative
+//     values go up / left).
 const layout = {
   a: {icon:[140,140], word:[340,84], compact:[240,104], gap:30},
   b: {icon:140, iconMaxWidth:176, word:58, wordMaxWidth:420, gap:30},
@@ -93,15 +94,20 @@ async function tight(component) {
   const sx=v[2]/info.width,sy=v[3]/info.height,view=[v[0]+x0*sx,v[1]+y0*sy,width*sx,height*sy];
   return {...component,view,width:view[2],height:view[3],cy,core:trademark(data,info,ink)};
 }
-// A trailing ™ or ® (narrow, short, set apart by a gap) hangs outside the wordmark: centring uses
-// only the core, the fraction of the width before the mark.
+// A trailing ™ or ® (short pieces set apart by gaps; ™ is two, T and M) hangs outside the wordmark:
+// centring uses only the core, the fraction of the width before the mark.
 function trademark(data, {width:w,height:h}, {x0,width,height}) {
   const column=x=>{ let top=-1,bottom=-1; for(let y=0;y<h;y++) if(data[(y*w+x)*4+3]>0) { if(top<0) top=y; bottom=y; } return [top,bottom]; };
-  let x=x0+width-1,top=h,bottom=-1;
-  for(;x>=x0;x--) { const [t,b]=column(x); if(t<0) break; top=Math.min(top,t); bottom=Math.max(bottom,b); }
-  const markWidth=x0+width-1-x;
-  while(x>=x0&&column(x)[0]<0) x--;
-  return x>=x0&&markWidth<0.08*width&&bottom-top+1<0.35*height ? (x-x0+1)/width : 1;
+  let x=x0+width-1,core=1;
+  while(x>=x0) {
+    let top=h,bottom=-1;
+    for(;x>=x0;x--) { const [t,b]=column(x); if(t<0) break; top=Math.min(top,t); bottom=Math.max(bottom,b); }
+    // Stop at the first full-height piece, or if the "mark" grows too wide to be one.
+    if(x<x0||bottom-top+1>=0.35*height||x0+width-1-x>=0.1*width) break;
+    while(x>=x0&&column(x)[0]<0) x--;
+    core=(x-x0+1)/width;
+  }
+  return core;
 }
 const place = (c,[x,y,w,h]) => `<svg x="${x}" y="${y}" width="${w}" height="${h}" viewBox="${c.view.join(' ')}" overflow="hidden">${white_g(c.body)}</svg>`;
 // Keep's own badge from its official lockup: the K knocked out of a white rounded square
@@ -141,7 +147,7 @@ const move = ([x,y,w,h], [dx,dy]) => [x+dx,y+dy,w,h];
 function appCard(app, style, [dx,dy]=[0,0], tweak={}) {
   const card=size(style),body=background(app.background),x=dx+(tweak.x??0);
   const {icon:si=1,word:sw=1}=app.scale?.[style]??{};
-  const pair=([icon,word])=>body+image(app.icon,move(icon,[x,dy+(tweak.icon??0)]))+image(app.word,move(word,[x,dy+(tweak.word??0)]));
+  const pair=([icon,word])=>body+image(app.icon,move(icon,[x,dy+(tweak.icon??0)]))+image(app.word,move(word,[x+(tweak.wordX??0),dy+(tweak.word??0)]));
   if(style==='a') {
     const l=layout.a,[bw,bh]=app.compact?l.compact:l.word;
     return pair(sideBySide(card,app.icon,fit(app.icon,l.icon[0]*si,l.icon[1]*si),app.word,fit(app.word,bw*sw,bh*sw),l.gap));
@@ -161,7 +167,7 @@ async function hdmiCard(device, style, words, [dx,dy]=[0,0], tweak={}) {
   }
   // Side by side, PS5 and Steam use the symbol from their official lockups; elsewhere the Simple Icons mark.
   const icon=await tight(style==='a'&&device.mark?words[device.mark]:{view:[0,0,24,24],body:geometry}),word=await tight(words[device.word]);
-  const x=dx+(tweak.x??0),pair=([iconBox,wordBox])=>body+place(icon,move(iconBox,[x,dy+(tweak.icon??0)]))+place(word,move(wordBox,[x,dy+(tweak.word??0)]));
+  const x=dx+(tweak.x??0),pair=([iconBox,wordBox])=>body+place(icon,move(iconBox,[x,dy+(tweak.icon??0)]))+place(word,move(wordBox,[x+(tweak.wordX??0),dy+(tweak.word??0)]));
   // Marks with a firm outline (the Xbox and Steam circles, the PlayStation symbol) are judged by that
   // outline; their cut-outs and wide base would otherwise pull the ink centroid down and lift them.
   if(device.outline) icon.cy=0.5;
@@ -230,7 +236,7 @@ async function main() {
   ];
   const words=JSON.parse(await fs.readFile(path.join(hdmiSources,'wordmarks.json'),'utf8'));
   const devices=[
-    {key:'ps5',slug:'playstation',outline:true,background:'#003791',iconSize:224,word:'ps5_word',scale:{b:{word:0.8}},mark:'ps5_mark',iconHeight:104,wordWidth:280,gap:35,tweak:{a:{x:-9},b:{word:-4}}},
+    {key:'ps5',slug:'playstation',outline:true,background:'#003791',iconSize:224,word:'ps5_word',scale:{b:{word:0.8}},mark:'ps5_mark',iconHeight:104,wordWidth:280,gap:35,tweak:{a:{x:-9},b:{word:-4,wordX:6}}},
     {key:'nintendo_switch',slug:'nintendoswitch',background:'#E60012',iconSize:172,word:'switch_word',iconHeight:120,wordWidth:290,tweak:{a:{word:5}}},
     {key:'xbox',slug:'xbox',outline:true,background:'#107C10',iconSize:176,word:'xbox_word',scale:{b:{word:1,icon:1.07}},iconHeight:120,wordWidth:252,gap:36,tweak:{a:{x:-5}}},
     {key:'gaming_pc_steam',slug:'steam',outline:true,background:'#171A21',iconSize:176,word:'steam_word',scale:{b:{word:0.86}},mark:'steam_mark',iconHeight:136,wordWidth:312,gap:36,tweak:{a:{x:-12}}},
@@ -244,7 +250,7 @@ async function main() {
     let body=await draw([0,0],{});
     const [dx,dy]=await balance(style,entry.background,body),shift=[dx,dy+(tweak.group??0)];
     if(dx||dy) balanced.push(`${card} ${dx?`←${-dx}`:`↑${-dy}`}`);
-    if(shift[0]||shift[1]||tweak.icon||tweak.word||tweak.x) body=await draw(shift,tweak);
+    if(shift[0]||shift[1]||Object.keys(tweak).length) body=await draw(shift,tweak);
     const source=svg(body,...size(style));
     await fs.writeFile(path.join(svgOut,card+'.svg'),source);
     const current=drawables.filter(f=>new RegExp(`^${card}(_v\\d+_\\d+_\\d+)?\\.png$`).test(f));

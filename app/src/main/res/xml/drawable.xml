@@ -18,8 +18,8 @@
   <item drawable="a_netease_popcorn_v1_2_2" name="网易爆米花" title="网易爆米花 · A · 横向带字" />
   <item drawable="a_mango_tv_v1_2_2" name="芒果 TV" title="芒果 TV · A · 横向带字" />
   <category title="A · 横向带字 / HDMI" />
-  <item drawable="a_ps5_v1_2_2" name="PlayStation 5" title="PlayStation 5 · A · 横向带字" />
-  <item drawable="a_nintendo_switch_v1_2_2" name="Nintendo Switch" title="Nintendo Switch · A · 横向带字" />
+  <item drawable="a_ps5_v1_2_4" name="PlayStation 5" title="PlayStation 5 · A · 横向带字" />
+  <item drawable="a_nintendo_switch_v1_2_4" name="Nintendo Switch" title="Nintendo Switch · A · 横向带字" />
   <item drawable="a_xbox_v1_2_2" name="Xbox" title="Xbox · A · 横向带字" />
   <item drawable="a_gaming_pc_steam_v1_2_2" name="游戏 PC · Steam" title="游戏 PC · Steam · A · 横向带字" />
   <category title="B · 上下带字 / 应用" />
@@ -39,8 +39,8 @@
   <item drawable="b_netease_popcorn_v1_2_2" name="网易爆米花" title="网易爆米花 · B · 上下带字" />
   <item drawable="b_mango_tv_v1_2_2" name="芒果 TV" title="芒果 TV · B · 上下带字" />
   <category title="B · 上下带字 / HDMI" />
-  <item drawable="b_ps5_v1_2_2" name="PlayStation 5" title="PlayStation 5 · B · 上下带字" />
-  <item drawable="b_nintendo_switch_v1_2_2" name="Nintendo Switch" title="Nintendo Switch · B · 上下带字" />
+  <item drawable="b_ps5_v1_2_4" name="PlayStation 5" title="PlayStation 5 · B · 上下带字" />
+  <item drawable="b_nintendo_switch_v1_2_4" name="Nintendo Switch" title="Nintendo Switch · B · 上下带字" />
   <item drawable="b_xbox_v1_2_2" name="Xbox" title="Xbox · B · 上下带字" />
   <item drawable="b_gaming_pc_steam_v1_2_2" name="游戏 PC · Steam" title="游戏 PC · Steam · B · 上下带字" />
   <category title="C · 横版纯图标 / 应用" />

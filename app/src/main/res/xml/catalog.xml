@@ -15,8 +15,8 @@
   <item key="tencent_aurora" title="云视听极光" group="应用" a="a_tencent_aurora_v1_2_2" b="b_tencent_aurora_v1_2_3" c="c_tencent_aurora_v1_2_2" d="d_tencent_aurora_v1_2_2" />
   <item key="netease_popcorn" title="网易爆米花" group="应用" a="a_netease_popcorn_v1_2_2" b="b_netease_popcorn_v1_2_2" c="c_netease_popcorn_v1_2_2" d="d_netease_popcorn_v1_2_2" />
   <item key="mango_tv" title="芒果 TV" group="应用" a="a_mango_tv_v1_2_2" b="b_mango_tv_v1_2_2" c="c_mango_tv_v1_2_2" d="d_mango_tv_v1_2_2" />
-  <item key="ps5" title="PlayStation 5" group="HDMI" a="a_ps5_v1_2_2" b="b_ps5_v1_2_2" c="c_ps5_v1_2_2" d="d_ps5_v1_2_2" />
-  <item key="nintendo_switch" title="Nintendo Switch" group="HDMI" a="a_nintendo_switch_v1_2_2" b="b_nintendo_switch_v1_2_2" c="c_nintendo_switch_v1_2_2" d="d_nintendo_switch_v1_2_2" />
+  <item key="ps5" title="PlayStation 5" group="HDMI" a="a_ps5_v1_2_4" b="b_ps5_v1_2_4" c="c_ps5_v1_2_2" d="d_ps5_v1_2_2" />
+  <item key="nintendo_switch" title="Nintendo Switch" group="HDMI" a="a_nintendo_switch_v1_2_4" b="b_nintendo_switch_v1_2_4" c="c_nintendo_switch_v1_2_2" d="d_nintendo_switch_v1_2_2" />
   <item key="xbox" title="Xbox" group="HDMI" a="a_xbox_v1_2_2" b="b_xbox_v1_2_2" c="c_xbox_v1_2_2" d="d_xbox_v1_2_2" />
   <item key="gaming_pc_steam" title="游戏 PC · Steam" group="HDMI" a="a_gaming_pc_steam_v1_2_2" b="b_gaming_pc_steam_v1_2_2" c="c_gaming_pc_steam_v1_2_2" d="d_gaming_pc_steam_v1_2_2" />
 </catalog>

@@ -315,8 +315,8 @@
       "d": "artwork/brand-layouts/d_ps5.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_ps5_v1_2_2.png",
-      "b": "app/src/main/res/drawable-nodpi/b_ps5_v1_2_2.png",
+      "a": "app/src/main/res/drawable-nodpi/a_ps5_v1_2_4.png",
+      "b": "app/src/main/res/drawable-nodpi/b_ps5_v1_2_4.png",
       "c": "app/src/main/res/drawable-nodpi/c_ps5_v1_2_2.png",
       "d": "app/src/main/res/drawable-nodpi/d_ps5_v1_2_2.png"
     }
@@ -332,8 +332,8 @@
       "d": "artwork/brand-layouts/d_nintendo_switch.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_nintendo_switch_v1_2_2.png",
-      "b": "app/src/main/res/drawable-nodpi/b_nintendo_switch_v1_2_2.png",
+      "a": "app/src/main/res/drawable-nodpi/a_nintendo_switch_v1_2_4.png",
+      "b": "app/src/main/res/drawable-nodpi/b_nintendo_switch_v1_2_4.png",
       "c": "app/src/main/res/drawable-nodpi/c_nintendo_switch_v1_2_2.png",
       "d": "app/src/main/res/drawable-nodpi/d_nintendo_switch_v1_2_2.png"
     }
