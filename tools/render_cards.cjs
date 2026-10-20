@@ -211,11 +211,11 @@ async function main() {
   const tencent=await asset('aurora-icon.png');
   const xl=(await fs.readFile(path.join(sources,'xunlei-brand.svg'),'utf8')).match(/<path\b[\s\S]*?<\/path>/g);
   const five=(await fs.readFile(path.join(sources,'115-cloud.svg'),'utf8')).match(/<path\b[\s\S]*?\/>/g).join('').replace(/fill="[^"]+"/g,'fill="#2777F8"');
-  const keepPurple='#62536E',aurora={a:{icon:0.8,word:1.22}};
-  // 云视听小电视, 银河奇异果 and both aurora cards share one mark size side by side (0.8 of the box).
+  const keepPurple='#62536E',aurora={a:{icon:0.84,word:1.2}};
+  // 云视听小电视, 银河奇异果 and both aurora cards share one mark size side by side (0.84 of the box).
   const apps=[
-    {key:'bilibili_tv',background:'#E85C89',icon:await asset('bili-icon.png'),word:await asset('bili-word.png'),scale:{a:{icon:0.8,word:1.1},b:{word:0.92}},tweak:{b:{icon:4}}},
-    {key:'iqiyi_tv',background:kiwiGradient,icon:await asset('iqiyi-icon.png'),word:await asset('iqiyi-word.png',{color:white,crisp:4}),scale:{a:{icon:0.8,word:1.08}},tweak:{b:{icon:4}}},
+    {key:'bilibili_tv',background:'#E85C89',icon:await asset('bili-icon.png'),word:await asset('bili-word.png'),scale:{a:{icon:0.84,word:1.16},b:{word:0.92}},tweak:{b:{icon:4}}},
+    {key:'iqiyi_tv',background:kiwiGradient,icon:await asset('iqiyi-icon.png'),word:await asset('iqiyi-word.png',{color:white,crisp:4}),scale:{a:{icon:0.84,word:1.08}},tweak:{b:{icon:4}}},
     // Both aurora wordmarks are a light weight that reads faint on TV: larger side by side, with the mark
     // yielding room. Stacked cards keep the standard rows.
     {key:'newtv_aurora',background:white,icon:tencent,word:await asset('newtv-word.png',{color:ink,crisp:3}),scale:aurora},

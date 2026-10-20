@@ -2,9 +2,9 @@
 <resources>
   <version>1</version>
   <category title="A · 横向带字 / 应用" />
-  <item drawable="a_bilibili_tv_v1_2_8" name="云视听小电视" title="云视听小电视 · A · 横向带字" />
-  <item drawable="a_iqiyi_tv_v1_2_8" name="银河奇异果 · 爱奇艺 TV" title="银河奇异果 · 爱奇艺 TV · A · 横向带字" />
-  <item drawable="a_newtv_aurora_v1_2_8" name="NewTV 极光" title="NewTV 极光 · A · 横向带字" />
+  <item drawable="a_bilibili_tv_v1_2_9" name="云视听小电视" title="云视听小电视 · A · 横向带字" />
+  <item drawable="a_iqiyi_tv_v1_2_9" name="银河奇异果 · 爱奇艺 TV" title="银河奇异果 · 爱奇艺 TV · A · 横向带字" />
+  <item drawable="a_newtv_aurora_v1_2_9" name="NewTV 极光" title="NewTV 极光 · A · 横向带字" />
   <item drawable="a_youku_kumiao_v1_2_2" name="酷喵 · 优酷 TV" title="酷喵 · 优酷 TV · A · 横向带字" />
   <item drawable="a_keep_v1_2_8" name="Keep 健身" title="Keep 健身 · A · 横向带字" />
   <item drawable="a_lebo_cast_v1_2_2" name="乐播投屏" title="乐播投屏 · A · 横向带字" />
@@ -14,7 +14,7 @@
   <item drawable="a_xunlei_cloud_v1_2_2" name="迅雷云盘" title="迅雷云盘 · A · 横向带字" />
   <item drawable="a_aliyun_drive_v1_2_2" name="阿里云盘" title="阿里云盘 · A · 横向带字" />
   <item drawable="a_115_drive_v1_2_2" name="115 网盘" title="115 网盘 · A · 横向带字" />
-  <item drawable="a_tencent_aurora_v1_2_8" name="云视听极光" title="云视听极光 · A · 横向带字" />
+  <item drawable="a_tencent_aurora_v1_2_9" name="云视听极光" title="云视听极光 · A · 横向带字" />
   <item drawable="a_netease_popcorn_v1_2_2" name="网易爆米花" title="网易爆米花 · A · 横向带字" />
   <item drawable="a_mango_tv_v1_2_2" name="芒果 TV" title="芒果 TV · A · 横向带字" />
   <category title="A · 横向带字 / HDMI" />

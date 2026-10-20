@@ -10,7 +10,7 @@
       "d": "artwork/brand-layouts/d_bilibili_tv.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_bilibili_tv_v1_2_8.png",
+      "a": "app/src/main/res/drawable-nodpi/a_bilibili_tv_v1_2_9.png",
       "b": "app/src/main/res/drawable-nodpi/b_bilibili_tv_v1_2_2.png",
       "c": "app/src/main/res/drawable-nodpi/c_bilibili_tv_v1_2_2.png",
       "d": "app/src/main/res/drawable-nodpi/d_bilibili_tv_v1_2_2.png"
@@ -32,7 +32,7 @@
       "d": "artwork/brand-layouts/d_iqiyi_tv.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_iqiyi_tv_v1_2_8.png",
+      "a": "app/src/main/res/drawable-nodpi/a_iqiyi_tv_v1_2_9.png",
       "b": "app/src/main/res/drawable-nodpi/b_iqiyi_tv_v1_2_2.png",
       "c": "app/src/main/res/drawable-nodpi/c_iqiyi_tv_v1_2_2.png",
       "d": "app/src/main/res/drawable-nodpi/d_iqiyi_tv_v1_2_2.png"
@@ -54,7 +54,7 @@
       "d": "artwork/brand-layouts/d_newtv_aurora.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_newtv_aurora_v1_2_8.png",
+      "a": "app/src/main/res/drawable-nodpi/a_newtv_aurora_v1_2_9.png",
       "b": "app/src/main/res/drawable-nodpi/b_newtv_aurora_v1_2_3.png",
       "c": "app/src/main/res/drawable-nodpi/c_newtv_aurora_v1_2_2.png",
       "d": "app/src/main/res/drawable-nodpi/d_newtv_aurora_v1_2_2.png"
@@ -259,7 +259,7 @@
       "d": "artwork/brand-layouts/d_tencent_aurora.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_tencent_aurora_v1_2_8.png",
+      "a": "app/src/main/res/drawable-nodpi/a_tencent_aurora_v1_2_9.png",
       "b": "app/src/main/res/drawable-nodpi/b_tencent_aurora_v1_2_3.png",
       "c": "app/src/main/res/drawable-nodpi/c_tencent_aurora_v1_2_2.png",
       "d": "app/src/main/res/drawable-nodpi/d_tencent_aurora_v1_2_2.png"
