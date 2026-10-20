@@ -32,7 +32,7 @@
       "d": "artwork/brand-layouts/d_iqiyi_tv.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_iqiyi_tv_v1_2_6.png",
+      "a": "app/src/main/res/drawable-nodpi/a_iqiyi_tv_v1_2_7.png",
       "b": "app/src/main/res/drawable-nodpi/b_iqiyi_tv_v1_2_2.png",
       "c": "app/src/main/res/drawable-nodpi/c_iqiyi_tv_v1_2_2.png",
       "d": "app/src/main/res/drawable-nodpi/d_iqiyi_tv_v1_2_2.png"
@@ -93,7 +93,7 @@
       "d": "artwork/brand-layouts/d_keep.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_keep_v1_2_5.png",
+      "a": "app/src/main/res/drawable-nodpi/a_keep_v1_2_7.png",
       "b": "app/src/main/res/drawable-nodpi/b_keep_v1_2_5.png",
       "c": "app/src/main/res/drawable-nodpi/c_keep_v1_2_2.png",
       "d": "app/src/main/res/drawable-nodpi/d_keep_v1_2_2.png"

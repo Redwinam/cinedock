@@ -1,5 +1,5 @@
 {
-  "version": "1.2.6",
+  "version": "1.2.7",
   "policy": "Preserve familiar original brand colors and wordmarks. Every card is rendered from artwork/ by tools/render_cards.cjs.",
   "records": [
     {
@@ -30,7 +30,7 @@
       "key": "iqiyi_tv",
       "style": "a",
       "background": "radial-gradient(at top left, #32EC82 0%, #2CEA7E 12%, #18E46C 29%, #05D862 42%, #07C970 55%, #14B686 62%, #2FA29B 69%, #4C88B9 75%, #7374CF 80%, #A25CE5 88%, #C64AE7 92%, #D343E6 100%)",
-      "file": "a_iqiyi_tv_v1_2_6.png"
+      "file": "a_iqiyi_tv_v1_2_7.png"
     },
     {
       "key": "iqiyi_tv",
@@ -102,7 +102,7 @@
       "key": "keep",
       "style": "a",
       "background": "#62536E",
-      "file": "a_keep_v1_2_5.png"
+      "file": "a_keep_v1_2_7.png"
     },
     {
       "key": "keep",
