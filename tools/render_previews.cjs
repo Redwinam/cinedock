@@ -17,6 +17,33 @@ const styles = [
   {prefix:'h', file:'preview-mark-stacked.png', title:'H · 上下带字 · 光晕印记', width:400, height:225},
 ];
 
+// README banner: two launcher rows of the glow-and-watermark cards (G above, H below) at their real size,
+// white and colour cards alternating, with one card focused the way Projectivy lifts it.
+const rows = [
+  {prefix:'g', keys:['bilibili_tv','qq_music','netease_music','baidu_netdisk','ps5']},
+  {prefix:'h', keys:['newtv_aurora','iqiyi_tv','aliyun_drive','mango_tv','gaming_pc_steam']},
+];
+async function showcase(entries) {
+  const w=400, h=225, gap=28, margin=64, focused=[0,2];
+  const width=margin*2+5*w+4*gap, height=margin*2+rows.length*h+(rows.length-1)*36;
+  let cards='', lifted='';
+  for (const [r,row] of rows.entries()) for (const [i,key] of row.keys.entries()) {
+    const file=entries.find(e=>e.key===key).resources[row.prefix];
+    const data=(await fs.readFile(path.resolve(root,file))).toString('base64');
+    const x=margin+i*(w+gap), y=margin+r*(h+36);
+    const card=`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="14"/>`;
+    const image=`<clipPath id="card${r}${i}">${card}</clipPath><image x="${x}" y="${y}" width="${w}" height="${h}" clip-path="url(#card${r}${i})" href="data:image/png;base64,${data}"/>`;
+    if (r===focused[0]&&i===focused[1]) lifted=`<g transform="translate(${x+w/2} ${y+h/2}) scale(1.07) translate(${-x-w/2} ${-y-h/2})">`+
+      `<g filter="url(#lift)">${image}</g><rect x="${x-3}" y="${y-3}" width="${w+6}" height="${h+6}" rx="16" fill="none" stroke="#FFFFFF" stroke-width="5"/></g>`;
+    else cards+=image;
+  }
+  const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}"><defs><filter id="lift" x="-20%" y="-20%" width="140%" height="160%">`+
+    `<feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.55"/></filter></defs>`+
+    `<rect width="100%" height="100%" fill="#101722"/>${cards}${lifted}</svg>`;
+  await sharp(Buffer.from(svg)).removeAlpha().png({compressionLevel:9}).toFile(path.join(output,'showcase.png'));
+  console.log(`showcase.png: ${width}×${height}`);
+}
+
 async function main() {
   const entries = JSON.parse(await fs.readFile(path.join(root, 'artwork/catalog.json'), 'utf8'));
   const version = JSON.parse(await fs.readFile(path.join(root, 'package.json'), 'utf8')).version;
@@ -48,5 +75,6 @@ async function main() {
     await sharp(Buffer.from(svg)).removeAlpha().png({compressionLevel:9}).toFile(path.join(output,style.file));
     console.log(`${style.file}: ${entries.length} icons, ${width}×${height}`);
   }
+  await showcase(entries);
 }
 main().catch(error=>{console.error(error);process.exit(1)});

@@ -6,6 +6,8 @@ CineDock 是为 [Projectivy Launcher](https://github.com/spocky/miproja1) 制作
 
 [CC BY-NC-SA 4.0](LICENSE) · [许可范围与第三方素材](NOTICE.md)
 
+[![映匣 1.3.0 光晕印记背景：横向带字与上下带字](docs/showcase.png)](docs/showcase.png)
+
 ## 设计与功能
 
 - 保留熟悉的品牌配色与原字标：适合白底的应用使用白底和彩色标志，不强行统一成彩底白标。
@@ -161,7 +163,7 @@ python3 tools/verify_bundle.py
 
 脚本按原素材重新渲染全部 152 张图片。像素没有变化的图片保持原名、不改写；有变化的图片改名为 `<样式>_<key>_v<版本号>`，并同步更新 `catalog.xml`、`drawable.xml`、`appfilter.xml`（含 `assets/` 副本）、`icon_pack.xml` 和 `artwork/catalog.json` 中的引用。因此请先在 `package.json` 与 `AndroidManifest.xml` 中升级版本号，再运行渲染。`package-lock.json` 固定图片处理工具的依赖版本。
 
-更新卡片图片后，运行 `npm run render:previews`，即可重新生成 README 中各样式的完整预览。预览说明文字使用系统的中文字体；卡片内的品牌字形仍来自图片素材。
+更新卡片图片后，运行 `npm run render:previews`，即可重新生成 README 开头的展示图和各样式的完整预览。预览说明文字使用系统的中文字体；卡片内的品牌字形仍来自图片素材。
 
 ### 增加入口
 
@@ -188,6 +190,7 @@ artwork/
 ├── hdmi-sources/                 # 游戏设备的矢量符号和字标
 ├── brand-layouts/                # 152 张卡片的 SVG 排版
 └── *SOURCES.txt                  # 第三方素材来源与处理记录
+docs/showcase.png                 # README 开头的展示图
 docs/preview*.png                 # 各样式的完整预览
 tools/                            # 构建、资源检查、卡片渲染
 tests/                            # 独立 Android 兼容性检查应用
