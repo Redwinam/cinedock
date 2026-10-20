@@ -2,7 +2,7 @@
 <resources>
   <version>1</version>
   <category title="A · 横向带字 / 应用" />
-  <item drawable="a_bilibili_tv_v1_2_12" name="云视听小电视" title="云视听小电视 · A · 横向带字" />
+  <item drawable="a_bilibili_tv_v1_2_13" name="云视听小电视" title="云视听小电视 · A · 横向带字" />
   <item drawable="a_iqiyi_tv_v1_2_10" name="银河奇异果 · 爱奇艺 TV" title="银河奇异果 · 爱奇艺 TV · A · 横向带字" />
   <item drawable="a_newtv_aurora_v1_2_10" name="NewTV 极光" title="NewTV 极光 · A · 横向带字" />
   <item drawable="a_youku_kumiao_v1_2_2" name="酷喵 · 优酷 TV" title="酷喵 · 优酷 TV · A · 横向带字" />

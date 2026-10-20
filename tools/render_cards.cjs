@@ -216,7 +216,7 @@ async function main() {
   // wide 小电视 mark gets 0.94 so it reads as tall as the others);
   // the aurora marks point right, so their long wordmarks can sit a little closer (gap, side by side only).
   const apps=[
-    {key:'bilibili_tv',background:'#E85C89',icon:await asset('bili-icon.png'),word:await asset('bili-word.png'),scale:{a:{icon:0.94,word:1.26},b:{word:0.92}},
+    {key:'bilibili_tv',background:'#E85C89',icon:await asset('bili-icon.png'),word:await asset('bili-word.png'),scale:{a:{icon:0.94,word:1.21},b:{word:0.92}},
      // Only the 小电视 mark's cloud reaches out at its lower right; at text height the gap is ~11 px wider.
      gap:10,tweak:{b:{icon:4}}},
     {key:'iqiyi_tv',background:kiwiGradient,icon:await asset('iqiyi-icon.png'),word:await asset('iqiyi-word.png',{color:white,crisp:4}),scale:{a:{icon:0.88,word:1.08}},tweak:{b:{icon:4}}},
