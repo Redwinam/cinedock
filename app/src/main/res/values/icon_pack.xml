@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
   <string-array name="icon_pack">
-    <item>a_bilibili_tv_v1_2_9</item>
-    <item>a_iqiyi_tv_v1_2_9</item>
-    <item>a_newtv_aurora_v1_2_9</item>
+    <item>a_bilibili_tv_v1_2_10</item>
+    <item>a_iqiyi_tv_v1_2_10</item>
+    <item>a_newtv_aurora_v1_2_10</item>
     <item>a_youku_kumiao_v1_2_2</item>
     <item>a_keep_v1_2_8</item>
     <item>a_lebo_cast_v1_2_2</item>
@@ -13,7 +13,7 @@
     <item>a_xunlei_cloud_v1_2_2</item>
     <item>a_aliyun_drive_v1_2_2</item>
     <item>a_115_drive_v1_2_2</item>
-    <item>a_tencent_aurora_v1_2_9</item>
+    <item>a_tencent_aurora_v1_2_10</item>
     <item>a_netease_popcorn_v1_2_2</item>
     <item>a_mango_tv_v1_2_2</item>
     <item>a_ps5_v1_2_4</item>

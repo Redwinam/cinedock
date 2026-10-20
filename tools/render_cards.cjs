@@ -150,7 +150,7 @@ function appCard(app, style, [dx,dy]=[0,0], tweak={}) {
   const pair=([icon,word])=>body+image(app.icon,move(icon,[x,dy+(tweak.icon??0)]))+image(app.word,move(word,[x+(tweak.wordX??0),dy+(tweak.word??0)]));
   if(style==='a') {
     const l=layout.a,[bw,bh]=app.compact?l.compact:l.word;
-    return pair(sideBySide(card,app.icon,fit(app.icon,l.icon[0]*si,l.icon[1]*si),app.word,fit(app.word,bw*sw,bh*sw),l.gap));
+    return pair(sideBySide(card,app.icon,fit(app.icon,l.icon[0]*si,l.icon[1]*si),app.word,fit(app.word,bw*sw,bh*sw),app.gap??l.gap));
   }
   if(style==='b') return pair(stacked(card,app.icon,app.word,sw,si));
   const box=(style==='d'?256:192)*si;
@@ -211,14 +211,15 @@ async function main() {
   const tencent=await asset('aurora-icon.png');
   const xl=(await fs.readFile(path.join(sources,'xunlei-brand.svg'),'utf8')).match(/<path\b[\s\S]*?<\/path>/g);
   const five=(await fs.readFile(path.join(sources,'115-cloud.svg'),'utf8')).match(/<path\b[\s\S]*?\/>/g).join('').replace(/fill="[^"]+"/g,'fill="#2777F8"');
-  const keepPurple='#62536E',aurora={a:{icon:0.84,word:1.2}};
-  // 云视听小电视, 银河奇异果 and both aurora cards share one mark size side by side (0.84 of the box).
+  const keepPurple='#62536E',aurora={a:{icon:0.88,word:1.2}};
+  // 云视听小电视, 银河奇异果 and both aurora cards share one mark size side by side (0.88 of the box);
+  // the aurora marks point right, so their long wordmarks can sit a little closer (gap, side by side only).
   const apps=[
-    {key:'bilibili_tv',background:'#E85C89',icon:await asset('bili-icon.png'),word:await asset('bili-word.png'),scale:{a:{icon:0.84,word:1.16},b:{word:0.92}},tweak:{b:{icon:4}}},
-    {key:'iqiyi_tv',background:kiwiGradient,icon:await asset('iqiyi-icon.png'),word:await asset('iqiyi-word.png',{color:white,crisp:4}),scale:{a:{icon:0.84,word:1.08}},tweak:{b:{icon:4}}},
+    {key:'bilibili_tv',background:'#E85C89',icon:await asset('bili-icon.png'),word:await asset('bili-word.png'),scale:{a:{icon:0.88,word:1.16},b:{word:0.92}},tweak:{b:{icon:4}}},
+    {key:'iqiyi_tv',background:kiwiGradient,icon:await asset('iqiyi-icon.png'),word:await asset('iqiyi-word.png',{color:white,crisp:4}),scale:{a:{icon:0.88,word:1.08}},tweak:{b:{icon:4}}},
     // Both aurora wordmarks are a light weight that reads faint on TV: larger side by side, with the mark
     // yielding room. Stacked cards keep the standard rows.
-    {key:'newtv_aurora',background:white,icon:tencent,word:await asset('newtv-word.png',{color:ink,crisp:3}),scale:aurora},
+    {key:'newtv_aurora',background:white,icon:tencent,word:await asset('newtv-word.png',{color:ink,crisp:3}),scale:aurora,gap:26},
     {key:'youku_kumiao',background:white,icon:await asset('youku-icon.png'),word:await asset('youku-word.png',{color:ink}),compact:true,scale:{b:{word:1.1}},tweak:{a:{x:-8}}},
     // The solid badge outweighs the old outline K, so it sits smaller than the box. Side by side the
     // badge centres on the x-height of "keep" (not its ascender-to-descender box) on the card's midline,
@@ -232,7 +233,7 @@ async function main() {
     {key:'xunlei_cloud',background:white,icon:await vector(xl.slice(0,2).join(''),[0,0,1024,1024]),word:await vector(xl.slice(2).join(''),[1024,0,3672,1024])},
     {key:'aliyun_drive',background:white,icon:await asset('alipan-word.png',{crop:[0,0,115,92]}),word:await asset('alipan-word.png',{crop:[128,0,256,92]})},
     {key:'115_drive',background:white,icon:await vector(five,[0,0,36,36]),word:await asset('115-word.png',{color:ink})},
-    {key:'tencent_aurora',background:white,icon:tencent,word:await asset('aurora-word.png',{color:ink}),scale:aurora},
+    {key:'tencent_aurora',background:white,icon:tencent,word:await asset('aurora-word.png',{color:ink}),scale:aurora,gap:26},
     {key:'netease_popcorn',background:white,icon:await asset('popcorn-icon.png'),word:await asset('popcorn-word.png',{color:ink,crisp:3}),scale:{a:{icon:0.8,word:1.18}},tweak:{b:{group:5,icon:4}}},
     {key:'mango_tv',background:'#FF5F00',icon:await asset('mango-icon.png'),word:await asset('mango-word.png'),tweak:{b:{group:-5}}},
   ];
