@@ -110,7 +110,7 @@ public final class MainActivity extends Activity {
             // Projectivy/Candybar compatibility: this identifies the full-size packaged drawable.
             result.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, Intent.ShortcutIconResource.fromContext(this, id));
             // A bounded legacy bitmap keeps older icon pickers below Binder transaction limits.
-            BitmapFactory.Options options = new BitmapFactory.Options(); options.inSampleSize = style == 3 ? 2 : 4;
+            BitmapFactory.Options options = new BitmapFactory.Options(); options.inSampleSize = 2;
             Bitmap fallback = BitmapFactory.decodeResource(getResources(), id, options);
             result.putExtra("icon", fallback);
             setResult(RESULT_OK, result); finish();
@@ -161,8 +161,8 @@ public final class MainActivity extends Activity {
             ViewGroup.LayoutParams imageLayout = tile.getChildAt(0).getLayoutParams();
             imageLayout.height = style == 3 ? imageWidth : Math.round(imageWidth * 9f / 16f);
             tile.getChildAt(0).setLayoutParams(imageLayout);
-            BitmapFactory.Options options = new BitmapFactory.Options(); options.inSampleSize = 2;
-            ((ImageView) tile.getChildAt(0)).setImageBitmap(BitmapFactory.decodeResource(getResources(), entry.resourceId(MainActivity.this, style), options));
+            // Cards ship near their on-screen size; decode them whole so the preview stays smooth.
+            ((ImageView) tile.getChildAt(0)).setImageBitmap(BitmapFactory.decodeResource(getResources(), entry.resourceId(MainActivity.this, style)));
             ((TextView) tile.getChildAt(1)).setText(entry.title);
             tile.setContentDescription(entry.title + "，" + Catalog.STYLES[style]);
             return tile;

@@ -2,87 +2,87 @@
 <resources>
   <version>1</version>
   <category title="A · 横向带字 / 应用" />
-  <item drawable="a_bilibili_tv_v1_2_0" name="云视听小电视" title="云视听小电视 · A · 横向带字" />
-  <item drawable="a_iqiyi_tv_v1_2_0" name="银河奇异果 · 爱奇艺 TV" title="银河奇异果 · 爱奇艺 TV · A · 横向带字" />
-  <item drawable="a_newtv_aurora_v1_2_1" name="NewTV 极光" title="NewTV 极光 · A · 横向带字" />
-  <item drawable="a_youku_kumiao_v1_2_0" name="酷喵 · 优酷 TV" title="酷喵 · 优酷 TV · A · 横向带字" />
-  <item drawable="a_keep_v1_2_1" name="Keep 健身" title="Keep 健身 · A · 横向带字" />
-  <item drawable="a_lebo_cast_v1_2_0" name="乐播投屏" title="乐播投屏 · A · 横向带字" />
-  <item drawable="a_netease_music_v1_2_0" name="网易云音乐" title="网易云音乐 · A · 横向带字" />
-  <item drawable="a_qq_music_v1_2_0" name="QQ 音乐" title="QQ 音乐 · A · 横向带字" />
-  <item drawable="a_baidu_netdisk_v1_2_0" name="百度网盘" title="百度网盘 · A · 横向带字" />
-  <item drawable="a_xunlei_cloud_v1_2_0" name="迅雷云盘" title="迅雷云盘 · A · 横向带字" />
-  <item drawable="a_aliyun_drive_v1_2_0" name="阿里云盘" title="阿里云盘 · A · 横向带字" />
-  <item drawable="a_115_drive_v1_2_0" name="115 网盘" title="115 网盘 · A · 横向带字" />
-  <item drawable="a_tencent_aurora_v1_2_1" name="云视听极光" title="云视听极光 · A · 横向带字" />
-  <item drawable="a_netease_popcorn_v1_2_0" name="网易爆米花" title="网易爆米花 · A · 横向带字" />
-  <item drawable="a_mango_tv_v1_2_0" name="芒果 TV" title="芒果 TV · A · 横向带字" />
+  <item drawable="a_bilibili_tv_v1_2_2" name="云视听小电视" title="云视听小电视 · A · 横向带字" />
+  <item drawable="a_iqiyi_tv_v1_2_2" name="银河奇异果 · 爱奇艺 TV" title="银河奇异果 · 爱奇艺 TV · A · 横向带字" />
+  <item drawable="a_newtv_aurora_v1_2_2" name="NewTV 极光" title="NewTV 极光 · A · 横向带字" />
+  <item drawable="a_youku_kumiao_v1_2_2" name="酷喵 · 优酷 TV" title="酷喵 · 优酷 TV · A · 横向带字" />
+  <item drawable="a_keep_v1_2_2" name="Keep 健身" title="Keep 健身 · A · 横向带字" />
+  <item drawable="a_lebo_cast_v1_2_2" name="乐播投屏" title="乐播投屏 · A · 横向带字" />
+  <item drawable="a_netease_music_v1_2_2" name="网易云音乐" title="网易云音乐 · A · 横向带字" />
+  <item drawable="a_qq_music_v1_2_2" name="QQ 音乐" title="QQ 音乐 · A · 横向带字" />
+  <item drawable="a_baidu_netdisk_v1_2_2" name="百度网盘" title="百度网盘 · A · 横向带字" />
+  <item drawable="a_xunlei_cloud_v1_2_2" name="迅雷云盘" title="迅雷云盘 · A · 横向带字" />
+  <item drawable="a_aliyun_drive_v1_2_2" name="阿里云盘" title="阿里云盘 · A · 横向带字" />
+  <item drawable="a_115_drive_v1_2_2" name="115 网盘" title="115 网盘 · A · 横向带字" />
+  <item drawable="a_tencent_aurora_v1_2_2" name="云视听极光" title="云视听极光 · A · 横向带字" />
+  <item drawable="a_netease_popcorn_v1_2_2" name="网易爆米花" title="网易爆米花 · A · 横向带字" />
+  <item drawable="a_mango_tv_v1_2_2" name="芒果 TV" title="芒果 TV · A · 横向带字" />
   <category title="A · 横向带字 / HDMI" />
-  <item drawable="a_ps5_v1_2_0" name="PlayStation 5" title="PlayStation 5 · A · 横向带字" />
-  <item drawable="a_nintendo_switch_v1_2_0" name="Nintendo Switch" title="Nintendo Switch · A · 横向带字" />
-  <item drawable="a_xbox_v1_2_0" name="Xbox" title="Xbox · A · 横向带字" />
-  <item drawable="a_gaming_pc_steam_v1_2_0" name="游戏 PC · Steam" title="游戏 PC · Steam · A · 横向带字" />
+  <item drawable="a_ps5_v1_2_2" name="PlayStation 5" title="PlayStation 5 · A · 横向带字" />
+  <item drawable="a_nintendo_switch_v1_2_2" name="Nintendo Switch" title="Nintendo Switch · A · 横向带字" />
+  <item drawable="a_xbox_v1_2_2" name="Xbox" title="Xbox · A · 横向带字" />
+  <item drawable="a_gaming_pc_steam_v1_2_2" name="游戏 PC · Steam" title="游戏 PC · Steam · A · 横向带字" />
   <category title="B · 上下带字 / 应用" />
-  <item drawable="b_bilibili_tv_v1_2_0" name="云视听小电视" title="云视听小电视 · B · 上下带字" />
-  <item drawable="b_iqiyi_tv_v1_2_0" name="银河奇异果 · 爱奇艺 TV" title="银河奇异果 · 爱奇艺 TV · B · 上下带字" />
-  <item drawable="b_newtv_aurora_v1_2_1" name="NewTV 极光" title="NewTV 极光 · B · 上下带字" />
-  <item drawable="b_youku_kumiao_v1_2_0" name="酷喵 · 优酷 TV" title="酷喵 · 优酷 TV · B · 上下带字" />
-  <item drawable="b_keep_v1_2_1" name="Keep 健身" title="Keep 健身 · B · 上下带字" />
-  <item drawable="b_lebo_cast_v1_2_0" name="乐播投屏" title="乐播投屏 · B · 上下带字" />
-  <item drawable="b_netease_music_v1_2_0" name="网易云音乐" title="网易云音乐 · B · 上下带字" />
-  <item drawable="b_qq_music_v1_2_0" name="QQ 音乐" title="QQ 音乐 · B · 上下带字" />
-  <item drawable="b_baidu_netdisk_v1_2_0" name="百度网盘" title="百度网盘 · B · 上下带字" />
-  <item drawable="b_xunlei_cloud_v1_2_0" name="迅雷云盘" title="迅雷云盘 · B · 上下带字" />
-  <item drawable="b_aliyun_drive_v1_2_0" name="阿里云盘" title="阿里云盘 · B · 上下带字" />
-  <item drawable="b_115_drive_v1_2_0" name="115 网盘" title="115 网盘 · B · 上下带字" />
-  <item drawable="b_tencent_aurora_v1_2_1" name="云视听极光" title="云视听极光 · B · 上下带字" />
-  <item drawable="b_netease_popcorn_v1_2_0" name="网易爆米花" title="网易爆米花 · B · 上下带字" />
-  <item drawable="b_mango_tv_v1_2_0" name="芒果 TV" title="芒果 TV · B · 上下带字" />
+  <item drawable="b_bilibili_tv_v1_2_2" name="云视听小电视" title="云视听小电视 · B · 上下带字" />
+  <item drawable="b_iqiyi_tv_v1_2_2" name="银河奇异果 · 爱奇艺 TV" title="银河奇异果 · 爱奇艺 TV · B · 上下带字" />
+  <item drawable="b_newtv_aurora_v1_2_2" name="NewTV 极光" title="NewTV 极光 · B · 上下带字" />
+  <item drawable="b_youku_kumiao_v1_2_2" name="酷喵 · 优酷 TV" title="酷喵 · 优酷 TV · B · 上下带字" />
+  <item drawable="b_keep_v1_2_2" name="Keep 健身" title="Keep 健身 · B · 上下带字" />
+  <item drawable="b_lebo_cast_v1_2_2" name="乐播投屏" title="乐播投屏 · B · 上下带字" />
+  <item drawable="b_netease_music_v1_2_2" name="网易云音乐" title="网易云音乐 · B · 上下带字" />
+  <item drawable="b_qq_music_v1_2_2" name="QQ 音乐" title="QQ 音乐 · B · 上下带字" />
+  <item drawable="b_baidu_netdisk_v1_2_2" name="百度网盘" title="百度网盘 · B · 上下带字" />
+  <item drawable="b_xunlei_cloud_v1_2_2" name="迅雷云盘" title="迅雷云盘 · B · 上下带字" />
+  <item drawable="b_aliyun_drive_v1_2_2" name="阿里云盘" title="阿里云盘 · B · 上下带字" />
+  <item drawable="b_115_drive_v1_2_2" name="115 网盘" title="115 网盘 · B · 上下带字" />
+  <item drawable="b_tencent_aurora_v1_2_2" name="云视听极光" title="云视听极光 · B · 上下带字" />
+  <item drawable="b_netease_popcorn_v1_2_2" name="网易爆米花" title="网易爆米花 · B · 上下带字" />
+  <item drawable="b_mango_tv_v1_2_2" name="芒果 TV" title="芒果 TV · B · 上下带字" />
   <category title="B · 上下带字 / HDMI" />
-  <item drawable="b_ps5_v1_2_0" name="PlayStation 5" title="PlayStation 5 · B · 上下带字" />
-  <item drawable="b_nintendo_switch_v1_2_0" name="Nintendo Switch" title="Nintendo Switch · B · 上下带字" />
-  <item drawable="b_xbox_v1_2_0" name="Xbox" title="Xbox · B · 上下带字" />
-  <item drawable="b_gaming_pc_steam_v1_2_0" name="游戏 PC · Steam" title="游戏 PC · Steam · B · 上下带字" />
+  <item drawable="b_ps5_v1_2_2" name="PlayStation 5" title="PlayStation 5 · B · 上下带字" />
+  <item drawable="b_nintendo_switch_v1_2_2" name="Nintendo Switch" title="Nintendo Switch · B · 上下带字" />
+  <item drawable="b_xbox_v1_2_2" name="Xbox" title="Xbox · B · 上下带字" />
+  <item drawable="b_gaming_pc_steam_v1_2_2" name="游戏 PC · Steam" title="游戏 PC · Steam · B · 上下带字" />
   <category title="C · 横版纯图标 / 应用" />
-  <item drawable="c_bilibili_tv_v1_2_0" name="云视听小电视" title="云视听小电视 · C · 横版纯图标" />
-  <item drawable="c_iqiyi_tv_v1_2_0" name="银河奇异果 · 爱奇艺 TV" title="银河奇异果 · 爱奇艺 TV · C · 横版纯图标" />
-  <item drawable="c_newtv_aurora" name="NewTV 极光" title="NewTV 极光 · C · 横版纯图标" />
-  <item drawable="c_youku_kumiao_v1_2_0" name="酷喵 · 优酷 TV" title="酷喵 · 优酷 TV · C · 横版纯图标" />
-  <item drawable="c_keep_v1_2_1" name="Keep 健身" title="Keep 健身 · C · 横版纯图标" />
-  <item drawable="c_lebo_cast_v1_2_0" name="乐播投屏" title="乐播投屏 · C · 横版纯图标" />
-  <item drawable="c_netease_music_v1_2_0" name="网易云音乐" title="网易云音乐 · C · 横版纯图标" />
-  <item drawable="c_qq_music" name="QQ 音乐" title="QQ 音乐 · C · 横版纯图标" />
-  <item drawable="c_baidu_netdisk_v1_2_0" name="百度网盘" title="百度网盘 · C · 横版纯图标" />
-  <item drawable="c_xunlei_cloud" name="迅雷云盘" title="迅雷云盘 · C · 横版纯图标" />
-  <item drawable="c_aliyun_drive_v1_2_0" name="阿里云盘" title="阿里云盘 · C · 横版纯图标" />
-  <item drawable="c_115_drive_v1_2_0" name="115 网盘" title="115 网盘 · C · 横版纯图标" />
-  <item drawable="c_tencent_aurora" name="云视听极光" title="云视听极光 · C · 横版纯图标" />
-  <item drawable="c_netease_popcorn_v1_2_0" name="网易爆米花" title="网易爆米花 · C · 横版纯图标" />
-  <item drawable="c_mango_tv_v1_2_0" name="芒果 TV" title="芒果 TV · C · 横版纯图标" />
+  <item drawable="c_bilibili_tv_v1_2_2" name="云视听小电视" title="云视听小电视 · C · 横版纯图标" />
+  <item drawable="c_iqiyi_tv_v1_2_2" name="银河奇异果 · 爱奇艺 TV" title="银河奇异果 · 爱奇艺 TV · C · 横版纯图标" />
+  <item drawable="c_newtv_aurora_v1_2_2" name="NewTV 极光" title="NewTV 极光 · C · 横版纯图标" />
+  <item drawable="c_youku_kumiao_v1_2_2" name="酷喵 · 优酷 TV" title="酷喵 · 优酷 TV · C · 横版纯图标" />
+  <item drawable="c_keep_v1_2_2" name="Keep 健身" title="Keep 健身 · C · 横版纯图标" />
+  <item drawable="c_lebo_cast_v1_2_2" name="乐播投屏" title="乐播投屏 · C · 横版纯图标" />
+  <item drawable="c_netease_music_v1_2_2" name="网易云音乐" title="网易云音乐 · C · 横版纯图标" />
+  <item drawable="c_qq_music_v1_2_2" name="QQ 音乐" title="QQ 音乐 · C · 横版纯图标" />
+  <item drawable="c_baidu_netdisk_v1_2_2" name="百度网盘" title="百度网盘 · C · 横版纯图标" />
+  <item drawable="c_xunlei_cloud_v1_2_2" name="迅雷云盘" title="迅雷云盘 · C · 横版纯图标" />
+  <item drawable="c_aliyun_drive_v1_2_2" name="阿里云盘" title="阿里云盘 · C · 横版纯图标" />
+  <item drawable="c_115_drive_v1_2_2" name="115 网盘" title="115 网盘 · C · 横版纯图标" />
+  <item drawable="c_tencent_aurora_v1_2_2" name="云视听极光" title="云视听极光 · C · 横版纯图标" />
+  <item drawable="c_netease_popcorn_v1_2_2" name="网易爆米花" title="网易爆米花 · C · 横版纯图标" />
+  <item drawable="c_mango_tv_v1_2_2" name="芒果 TV" title="芒果 TV · C · 横版纯图标" />
   <category title="C · 横版纯图标 / HDMI" />
-  <item drawable="c_ps5" name="PlayStation 5" title="PlayStation 5 · C · 横版纯图标" />
-  <item drawable="c_nintendo_switch" name="Nintendo Switch" title="Nintendo Switch · C · 横版纯图标" />
-  <item drawable="c_xbox" name="Xbox" title="Xbox · C · 横版纯图标" />
-  <item drawable="c_gaming_pc_steam" name="游戏 PC · Steam" title="游戏 PC · Steam · C · 横版纯图标" />
+  <item drawable="c_ps5_v1_2_2" name="PlayStation 5" title="PlayStation 5 · C · 横版纯图标" />
+  <item drawable="c_nintendo_switch_v1_2_2" name="Nintendo Switch" title="Nintendo Switch · C · 横版纯图标" />
+  <item drawable="c_xbox_v1_2_2" name="Xbox" title="Xbox · C · 横版纯图标" />
+  <item drawable="c_gaming_pc_steam_v1_2_2" name="游戏 PC · Steam" title="游戏 PC · Steam · C · 横版纯图标" />
   <category title="D · 方版纯图标 / 应用" />
-  <item drawable="d_bilibili_tv_v1_2_0" name="云视听小电视" title="云视听小电视 · D · 方版纯图标" />
-  <item drawable="d_iqiyi_tv_v1_2_0" name="银河奇异果 · 爱奇艺 TV" title="银河奇异果 · 爱奇艺 TV · D · 方版纯图标" />
-  <item drawable="d_newtv_aurora" name="NewTV 极光" title="NewTV 极光 · D · 方版纯图标" />
-  <item drawable="d_youku_kumiao_v1_2_0" name="酷喵 · 优酷 TV" title="酷喵 · 优酷 TV · D · 方版纯图标" />
-  <item drawable="d_keep_v1_2_1" name="Keep 健身" title="Keep 健身 · D · 方版纯图标" />
-  <item drawable="d_lebo_cast_v1_2_0" name="乐播投屏" title="乐播投屏 · D · 方版纯图标" />
-  <item drawable="d_netease_music_v1_2_0" name="网易云音乐" title="网易云音乐 · D · 方版纯图标" />
-  <item drawable="d_qq_music" name="QQ 音乐" title="QQ 音乐 · D · 方版纯图标" />
-  <item drawable="d_baidu_netdisk_v1_2_0" name="百度网盘" title="百度网盘 · D · 方版纯图标" />
-  <item drawable="d_xunlei_cloud" name="迅雷云盘" title="迅雷云盘 · D · 方版纯图标" />
-  <item drawable="d_aliyun_drive_v1_2_0" name="阿里云盘" title="阿里云盘 · D · 方版纯图标" />
-  <item drawable="d_115_drive_v1_2_0" name="115 网盘" title="115 网盘 · D · 方版纯图标" />
-  <item drawable="d_tencent_aurora" name="云视听极光" title="云视听极光 · D · 方版纯图标" />
-  <item drawable="d_netease_popcorn_v1_2_0" name="网易爆米花" title="网易爆米花 · D · 方版纯图标" />
-  <item drawable="d_mango_tv_v1_2_0" name="芒果 TV" title="芒果 TV · D · 方版纯图标" />
+  <item drawable="d_bilibili_tv_v1_2_2" name="云视听小电视" title="云视听小电视 · D · 方版纯图标" />
+  <item drawable="d_iqiyi_tv_v1_2_2" name="银河奇异果 · 爱奇艺 TV" title="银河奇异果 · 爱奇艺 TV · D · 方版纯图标" />
+  <item drawable="d_newtv_aurora_v1_2_2" name="NewTV 极光" title="NewTV 极光 · D · 方版纯图标" />
+  <item drawable="d_youku_kumiao_v1_2_2" name="酷喵 · 优酷 TV" title="酷喵 · 优酷 TV · D · 方版纯图标" />
+  <item drawable="d_keep_v1_2_2" name="Keep 健身" title="Keep 健身 · D · 方版纯图标" />
+  <item drawable="d_lebo_cast_v1_2_2" name="乐播投屏" title="乐播投屏 · D · 方版纯图标" />
+  <item drawable="d_netease_music_v1_2_2" name="网易云音乐" title="网易云音乐 · D · 方版纯图标" />
+  <item drawable="d_qq_music_v1_2_2" name="QQ 音乐" title="QQ 音乐 · D · 方版纯图标" />
+  <item drawable="d_baidu_netdisk_v1_2_2" name="百度网盘" title="百度网盘 · D · 方版纯图标" />
+  <item drawable="d_xunlei_cloud_v1_2_2" name="迅雷云盘" title="迅雷云盘 · D · 方版纯图标" />
+  <item drawable="d_aliyun_drive_v1_2_2" name="阿里云盘" title="阿里云盘 · D · 方版纯图标" />
+  <item drawable="d_115_drive_v1_2_2" name="115 网盘" title="115 网盘 · D · 方版纯图标" />
+  <item drawable="d_tencent_aurora_v1_2_2" name="云视听极光" title="云视听极光 · D · 方版纯图标" />
+  <item drawable="d_netease_popcorn_v1_2_2" name="网易爆米花" title="网易爆米花 · D · 方版纯图标" />
+  <item drawable="d_mango_tv_v1_2_2" name="芒果 TV" title="芒果 TV · D · 方版纯图标" />
   <category title="D · 方版纯图标 / HDMI" />
-  <item drawable="d_ps5" name="PlayStation 5" title="PlayStation 5 · D · 方版纯图标" />
-  <item drawable="d_nintendo_switch" name="Nintendo Switch" title="Nintendo Switch · D · 方版纯图标" />
-  <item drawable="d_xbox" name="Xbox" title="Xbox · D · 方版纯图标" />
-  <item drawable="d_gaming_pc_steam" name="游戏 PC · Steam" title="游戏 PC · Steam · D · 方版纯图标" />
+  <item drawable="d_ps5_v1_2_2" name="PlayStation 5" title="PlayStation 5 · D · 方版纯图标" />
+  <item drawable="d_nintendo_switch_v1_2_2" name="Nintendo Switch" title="Nintendo Switch · D · 方版纯图标" />
+  <item drawable="d_xbox_v1_2_2" name="Xbox" title="Xbox · D · 方版纯图标" />
+  <item drawable="d_gaming_pc_steam_v1_2_2" name="游戏 PC · Steam" title="游戏 PC · Steam · D · 方版纯图标" />
 </resources>

@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <catalog>
-  <item key="bilibili_tv" title="云视听小电视" group="应用" a="a_bilibili_tv_v1_2_0" b="b_bilibili_tv_v1_2_0" c="c_bilibili_tv_v1_2_0" d="d_bilibili_tv_v1_2_0" />
-  <item key="iqiyi_tv" title="银河奇异果" group="应用" a="a_iqiyi_tv_v1_2_0" b="b_iqiyi_tv_v1_2_0" c="c_iqiyi_tv_v1_2_0" d="d_iqiyi_tv_v1_2_0" />
-  <item key="newtv_aurora" title="NewTV 极光" group="应用" a="a_newtv_aurora_v1_2_1" b="b_newtv_aurora_v1_2_1" c="c_newtv_aurora" d="d_newtv_aurora" />
-  <item key="youku_kumiao" title="酷喵" group="应用" a="a_youku_kumiao_v1_2_0" b="b_youku_kumiao_v1_2_0" c="c_youku_kumiao_v1_2_0" d="d_youku_kumiao_v1_2_0" />
-  <item key="keep" title="Keep 健身" group="应用" a="a_keep_v1_2_1" b="b_keep_v1_2_1" c="c_keep_v1_2_1" d="d_keep_v1_2_1" />
-  <item key="lebo_cast" title="乐播投屏" group="应用" a="a_lebo_cast_v1_2_0" b="b_lebo_cast_v1_2_0" c="c_lebo_cast_v1_2_0" d="d_lebo_cast_v1_2_0" />
-  <item key="netease_music" title="网易云音乐" group="应用" a="a_netease_music_v1_2_0" b="b_netease_music_v1_2_0" c="c_netease_music_v1_2_0" d="d_netease_music_v1_2_0" />
-  <item key="qq_music" title="QQ 音乐" group="应用" a="a_qq_music_v1_2_0" b="b_qq_music_v1_2_0" c="c_qq_music" d="d_qq_music" />
-  <item key="baidu_netdisk" title="百度网盘" group="应用" a="a_baidu_netdisk_v1_2_0" b="b_baidu_netdisk_v1_2_0" c="c_baidu_netdisk_v1_2_0" d="d_baidu_netdisk_v1_2_0" />
-  <item key="xunlei_cloud" title="迅雷云盘" group="应用" a="a_xunlei_cloud_v1_2_0" b="b_xunlei_cloud_v1_2_0" c="c_xunlei_cloud" d="d_xunlei_cloud" />
-  <item key="aliyun_drive" title="阿里云盘" group="应用" a="a_aliyun_drive_v1_2_0" b="b_aliyun_drive_v1_2_0" c="c_aliyun_drive_v1_2_0" d="d_aliyun_drive_v1_2_0" />
-  <item key="115_drive" title="115 网盘" group="应用" a="a_115_drive_v1_2_0" b="b_115_drive_v1_2_0" c="c_115_drive_v1_2_0" d="d_115_drive_v1_2_0" />
-  <item key="tencent_aurora" title="云视听极光" group="应用" a="a_tencent_aurora_v1_2_1" b="b_tencent_aurora_v1_2_1" c="c_tencent_aurora" d="d_tencent_aurora" />
-  <item key="netease_popcorn" title="网易爆米花" group="应用" a="a_netease_popcorn_v1_2_0" b="b_netease_popcorn_v1_2_0" c="c_netease_popcorn_v1_2_0" d="d_netease_popcorn_v1_2_0" />
-  <item key="mango_tv" title="芒果 TV" group="应用" a="a_mango_tv_v1_2_0" b="b_mango_tv_v1_2_0" c="c_mango_tv_v1_2_0" d="d_mango_tv_v1_2_0" />
-  <item key="ps5" title="PlayStation 5" group="HDMI" a="a_ps5_v1_2_0" b="b_ps5_v1_2_0" c="c_ps5" d="d_ps5" />
-  <item key="nintendo_switch" title="Nintendo Switch" group="HDMI" a="a_nintendo_switch_v1_2_0" b="b_nintendo_switch_v1_2_0" c="c_nintendo_switch" d="d_nintendo_switch" />
-  <item key="xbox" title="Xbox" group="HDMI" a="a_xbox_v1_2_0" b="b_xbox_v1_2_0" c="c_xbox" d="d_xbox" />
-  <item key="gaming_pc_steam" title="游戏 PC · Steam" group="HDMI" a="a_gaming_pc_steam_v1_2_0" b="b_gaming_pc_steam_v1_2_0" c="c_gaming_pc_steam" d="d_gaming_pc_steam" />
+  <item key="bilibili_tv" title="云视听小电视" group="应用" a="a_bilibili_tv_v1_2_2" b="b_bilibili_tv_v1_2_2" c="c_bilibili_tv_v1_2_2" d="d_bilibili_tv_v1_2_2" />
+  <item key="iqiyi_tv" title="银河奇异果" group="应用" a="a_iqiyi_tv_v1_2_2" b="b_iqiyi_tv_v1_2_2" c="c_iqiyi_tv_v1_2_2" d="d_iqiyi_tv_v1_2_2" />
+  <item key="newtv_aurora" title="NewTV 极光" group="应用" a="a_newtv_aurora_v1_2_2" b="b_newtv_aurora_v1_2_2" c="c_newtv_aurora_v1_2_2" d="d_newtv_aurora_v1_2_2" />
+  <item key="youku_kumiao" title="酷喵" group="应用" a="a_youku_kumiao_v1_2_2" b="b_youku_kumiao_v1_2_2" c="c_youku_kumiao_v1_2_2" d="d_youku_kumiao_v1_2_2" />
+  <item key="keep" title="Keep 健身" group="应用" a="a_keep_v1_2_2" b="b_keep_v1_2_2" c="c_keep_v1_2_2" d="d_keep_v1_2_2" />
+  <item key="lebo_cast" title="乐播投屏" group="应用" a="a_lebo_cast_v1_2_2" b="b_lebo_cast_v1_2_2" c="c_lebo_cast_v1_2_2" d="d_lebo_cast_v1_2_2" />
+  <item key="netease_music" title="网易云音乐" group="应用" a="a_netease_music_v1_2_2" b="b_netease_music_v1_2_2" c="c_netease_music_v1_2_2" d="d_netease_music_v1_2_2" />
+  <item key="qq_music" title="QQ 音乐" group="应用" a="a_qq_music_v1_2_2" b="b_qq_music_v1_2_2" c="c_qq_music_v1_2_2" d="d_qq_music_v1_2_2" />
+  <item key="baidu_netdisk" title="百度网盘" group="应用" a="a_baidu_netdisk_v1_2_2" b="b_baidu_netdisk_v1_2_2" c="c_baidu_netdisk_v1_2_2" d="d_baidu_netdisk_v1_2_2" />
+  <item key="xunlei_cloud" title="迅雷云盘" group="应用" a="a_xunlei_cloud_v1_2_2" b="b_xunlei_cloud_v1_2_2" c="c_xunlei_cloud_v1_2_2" d="d_xunlei_cloud_v1_2_2" />
+  <item key="aliyun_drive" title="阿里云盘" group="应用" a="a_aliyun_drive_v1_2_2" b="b_aliyun_drive_v1_2_2" c="c_aliyun_drive_v1_2_2" d="d_aliyun_drive_v1_2_2" />
+  <item key="115_drive" title="115 网盘" group="应用" a="a_115_drive_v1_2_2" b="b_115_drive_v1_2_2" c="c_115_drive_v1_2_2" d="d_115_drive_v1_2_2" />
+  <item key="tencent_aurora" title="云视听极光" group="应用" a="a_tencent_aurora_v1_2_2" b="b_tencent_aurora_v1_2_2" c="c_tencent_aurora_v1_2_2" d="d_tencent_aurora_v1_2_2" />
+  <item key="netease_popcorn" title="网易爆米花" group="应用" a="a_netease_popcorn_v1_2_2" b="b_netease_popcorn_v1_2_2" c="c_netease_popcorn_v1_2_2" d="d_netease_popcorn_v1_2_2" />
+  <item key="mango_tv" title="芒果 TV" group="应用" a="a_mango_tv_v1_2_2" b="b_mango_tv_v1_2_2" c="c_mango_tv_v1_2_2" d="d_mango_tv_v1_2_2" />
+  <item key="ps5" title="PlayStation 5" group="HDMI" a="a_ps5_v1_2_2" b="b_ps5_v1_2_2" c="c_ps5_v1_2_2" d="d_ps5_v1_2_2" />
+  <item key="nintendo_switch" title="Nintendo Switch" group="HDMI" a="a_nintendo_switch_v1_2_2" b="b_nintendo_switch_v1_2_2" c="c_nintendo_switch_v1_2_2" d="d_nintendo_switch_v1_2_2" />
+  <item key="xbox" title="Xbox" group="HDMI" a="a_xbox_v1_2_2" b="b_xbox_v1_2_2" c="c_xbox_v1_2_2" d="d_xbox_v1_2_2" />
+  <item key="gaming_pc_steam" title="游戏 PC · Steam" group="HDMI" a="a_gaming_pc_steam_v1_2_2" b="b_gaming_pc_steam_v1_2_2" c="c_gaming_pc_steam_v1_2_2" d="d_gaming_pc_steam_v1_2_2" />
 </catalog>

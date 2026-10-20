@@ -50,8 +50,8 @@ public class ProbeActivity extends Activity {
                         Uri uri = Uri.parse("content://com.redwinam.cinedock.icons/icon/" + parser.getAttributeValue(null, style));
                         BitmapFactory.Options bounds = new BitmapFactory.Options(); bounds.inJustDecodeBounds = true;
                         try (InputStream in = getContentResolver().openInputStream(uri)) { BitmapFactory.decodeStream(in, null, bounds); }
-                        require(bounds.outWidth == ("d".equals(style) ? 512 : 640), "Wrong resource width: " + uri);
-                        require(bounds.outHeight == ("d".equals(style) ? 512 : 360), "Wrong resource height: " + uri);
+                        require(bounds.outWidth == ("d".equals(style) ? 320 : 400), "Wrong resource width: " + uri);
+                        require(bounds.outHeight == ("d".equals(style) ? 320 : 225), "Wrong resource height: " + uri);
                         try (Cursor cursor = getContentResolver().query(uri, null, null, null, null)) {
                             require(cursor != null && cursor.moveToFirst(), "No metadata");
                         }

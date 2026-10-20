@@ -7,10 +7,10 @@ const root = path.resolve(__dirname, '..');
 const output = path.join(root, 'docs');
 const escape = value => value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('"', '&quot;');
 const styles = [
-  {prefix:'a', file:'preview.png', title:'A · 横向带字', width:640, height:360},
-  {prefix:'b', file:'preview-stacked.png', title:'B · 上下带字', width:640, height:360},
-  {prefix:'c', file:'preview-icon-only.png', title:'C · 横版纯图标', width:640, height:360},
-  {prefix:'d', file:'preview-square.png', title:'D · 方版纯图标', width:512, height:512},
+  {prefix:'a', file:'preview.png', title:'A · 横向带字', width:400, height:225},
+  {prefix:'b', file:'preview-stacked.png', title:'B · 上下带字', width:400, height:225},
+  {prefix:'c', file:'preview-icon-only.png', title:'C · 横版纯图标', width:400, height:225},
+  {prefix:'d', file:'preview-square.png', title:'D · 方版纯图标', width:320, height:320},
 ];
 
 async function main() {

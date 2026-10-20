@@ -10,10 +10,10 @@
       "d": "artwork/brand-layouts/d_bilibili_tv.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_bilibili_tv_v1_2_0.png",
-      "b": "app/src/main/res/drawable-nodpi/b_bilibili_tv_v1_2_0.png",
-      "c": "app/src/main/res/drawable-nodpi/c_bilibili_tv_v1_2_0.png",
-      "d": "app/src/main/res/drawable-nodpi/d_bilibili_tv_v1_2_0.png"
+      "a": "app/src/main/res/drawable-nodpi/a_bilibili_tv_v1_2_2.png",
+      "b": "app/src/main/res/drawable-nodpi/b_bilibili_tv_v1_2_2.png",
+      "c": "app/src/main/res/drawable-nodpi/c_bilibili_tv_v1_2_2.png",
+      "d": "app/src/main/res/drawable-nodpi/d_bilibili_tv_v1_2_2.png"
     }
   },
   {
@@ -32,10 +32,10 @@
       "d": "artwork/brand-layouts/d_iqiyi_tv.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_iqiyi_tv_v1_2_0.png",
-      "b": "app/src/main/res/drawable-nodpi/b_iqiyi_tv_v1_2_0.png",
-      "c": "app/src/main/res/drawable-nodpi/c_iqiyi_tv_v1_2_0.png",
-      "d": "app/src/main/res/drawable-nodpi/d_iqiyi_tv_v1_2_0.png"
+      "a": "app/src/main/res/drawable-nodpi/a_iqiyi_tv_v1_2_2.png",
+      "b": "app/src/main/res/drawable-nodpi/b_iqiyi_tv_v1_2_2.png",
+      "c": "app/src/main/res/drawable-nodpi/c_iqiyi_tv_v1_2_2.png",
+      "d": "app/src/main/res/drawable-nodpi/d_iqiyi_tv_v1_2_2.png"
     }
   },
   {
@@ -54,10 +54,10 @@
       "d": "artwork/brand-layouts/d_newtv_aurora.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_newtv_aurora_v1_2_1.png",
-      "b": "app/src/main/res/drawable-nodpi/b_newtv_aurora_v1_2_1.png",
-      "c": "app/src/main/res/drawable-nodpi/c_newtv_aurora.png",
-      "d": "app/src/main/res/drawable-nodpi/d_newtv_aurora.png"
+      "a": "app/src/main/res/drawable-nodpi/a_newtv_aurora_v1_2_2.png",
+      "b": "app/src/main/res/drawable-nodpi/b_newtv_aurora_v1_2_2.png",
+      "c": "app/src/main/res/drawable-nodpi/c_newtv_aurora_v1_2_2.png",
+      "d": "app/src/main/res/drawable-nodpi/d_newtv_aurora_v1_2_2.png"
     }
   },
   {
@@ -76,10 +76,10 @@
       "d": "artwork/brand-layouts/d_youku_kumiao.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_youku_kumiao_v1_2_0.png",
-      "b": "app/src/main/res/drawable-nodpi/b_youku_kumiao_v1_2_0.png",
-      "c": "app/src/main/res/drawable-nodpi/c_youku_kumiao_v1_2_0.png",
-      "d": "app/src/main/res/drawable-nodpi/d_youku_kumiao_v1_2_0.png"
+      "a": "app/src/main/res/drawable-nodpi/a_youku_kumiao_v1_2_2.png",
+      "b": "app/src/main/res/drawable-nodpi/b_youku_kumiao_v1_2_2.png",
+      "c": "app/src/main/res/drawable-nodpi/c_youku_kumiao_v1_2_2.png",
+      "d": "app/src/main/res/drawable-nodpi/d_youku_kumiao_v1_2_2.png"
     }
   },
   {
@@ -93,10 +93,10 @@
       "d": "artwork/brand-layouts/d_keep.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_keep_v1_2_1.png",
-      "b": "app/src/main/res/drawable-nodpi/b_keep_v1_2_1.png",
-      "c": "app/src/main/res/drawable-nodpi/c_keep_v1_2_1.png",
-      "d": "app/src/main/res/drawable-nodpi/d_keep_v1_2_1.png"
+      "a": "app/src/main/res/drawable-nodpi/a_keep_v1_2_2.png",
+      "b": "app/src/main/res/drawable-nodpi/b_keep_v1_2_2.png",
+      "c": "app/src/main/res/drawable-nodpi/c_keep_v1_2_2.png",
+      "d": "app/src/main/res/drawable-nodpi/d_keep_v1_2_2.png"
     }
   },
   {
@@ -110,10 +110,10 @@
       "d": "artwork/brand-layouts/d_lebo_cast.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_lebo_cast_v1_2_0.png",
-      "b": "app/src/main/res/drawable-nodpi/b_lebo_cast_v1_2_0.png",
-      "c": "app/src/main/res/drawable-nodpi/c_lebo_cast_v1_2_0.png",
-      "d": "app/src/main/res/drawable-nodpi/d_lebo_cast_v1_2_0.png"
+      "a": "app/src/main/res/drawable-nodpi/a_lebo_cast_v1_2_2.png",
+      "b": "app/src/main/res/drawable-nodpi/b_lebo_cast_v1_2_2.png",
+      "c": "app/src/main/res/drawable-nodpi/c_lebo_cast_v1_2_2.png",
+      "d": "app/src/main/res/drawable-nodpi/d_lebo_cast_v1_2_2.png"
     }
   },
   {
@@ -127,10 +127,10 @@
       "d": "artwork/brand-layouts/d_netease_music.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_netease_music_v1_2_0.png",
-      "b": "app/src/main/res/drawable-nodpi/b_netease_music_v1_2_0.png",
-      "c": "app/src/main/res/drawable-nodpi/c_netease_music_v1_2_0.png",
-      "d": "app/src/main/res/drawable-nodpi/d_netease_music_v1_2_0.png"
+      "a": "app/src/main/res/drawable-nodpi/a_netease_music_v1_2_2.png",
+      "b": "app/src/main/res/drawable-nodpi/b_netease_music_v1_2_2.png",
+      "c": "app/src/main/res/drawable-nodpi/c_netease_music_v1_2_2.png",
+      "d": "app/src/main/res/drawable-nodpi/d_netease_music_v1_2_2.png"
     }
   },
   {
@@ -149,10 +149,10 @@
       "d": "artwork/brand-layouts/d_qq_music.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_qq_music_v1_2_0.png",
-      "b": "app/src/main/res/drawable-nodpi/b_qq_music_v1_2_0.png",
-      "c": "app/src/main/res/drawable-nodpi/c_qq_music.png",
-      "d": "app/src/main/res/drawable-nodpi/d_qq_music.png"
+      "a": "app/src/main/res/drawable-nodpi/a_qq_music_v1_2_2.png",
+      "b": "app/src/main/res/drawable-nodpi/b_qq_music_v1_2_2.png",
+      "c": "app/src/main/res/drawable-nodpi/c_qq_music_v1_2_2.png",
+      "d": "app/src/main/res/drawable-nodpi/d_qq_music_v1_2_2.png"
     }
   },
   {
@@ -171,10 +171,10 @@
       "d": "artwork/brand-layouts/d_baidu_netdisk.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_baidu_netdisk_v1_2_0.png",
-      "b": "app/src/main/res/drawable-nodpi/b_baidu_netdisk_v1_2_0.png",
-      "c": "app/src/main/res/drawable-nodpi/c_baidu_netdisk_v1_2_0.png",
-      "d": "app/src/main/res/drawable-nodpi/d_baidu_netdisk_v1_2_0.png"
+      "a": "app/src/main/res/drawable-nodpi/a_baidu_netdisk_v1_2_2.png",
+      "b": "app/src/main/res/drawable-nodpi/b_baidu_netdisk_v1_2_2.png",
+      "c": "app/src/main/res/drawable-nodpi/c_baidu_netdisk_v1_2_2.png",
+      "d": "app/src/main/res/drawable-nodpi/d_baidu_netdisk_v1_2_2.png"
     }
   },
   {
@@ -193,10 +193,10 @@
       "d": "artwork/brand-layouts/d_xunlei_cloud.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_xunlei_cloud_v1_2_0.png",
-      "b": "app/src/main/res/drawable-nodpi/b_xunlei_cloud_v1_2_0.png",
-      "c": "app/src/main/res/drawable-nodpi/c_xunlei_cloud.png",
-      "d": "app/src/main/res/drawable-nodpi/d_xunlei_cloud.png"
+      "a": "app/src/main/res/drawable-nodpi/a_xunlei_cloud_v1_2_2.png",
+      "b": "app/src/main/res/drawable-nodpi/b_xunlei_cloud_v1_2_2.png",
+      "c": "app/src/main/res/drawable-nodpi/c_xunlei_cloud_v1_2_2.png",
+      "d": "app/src/main/res/drawable-nodpi/d_xunlei_cloud_v1_2_2.png"
     }
   },
   {
@@ -215,10 +215,10 @@
       "d": "artwork/brand-layouts/d_aliyun_drive.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_aliyun_drive_v1_2_0.png",
-      "b": "app/src/main/res/drawable-nodpi/b_aliyun_drive_v1_2_0.png",
-      "c": "app/src/main/res/drawable-nodpi/c_aliyun_drive_v1_2_0.png",
-      "d": "app/src/main/res/drawable-nodpi/d_aliyun_drive_v1_2_0.png"
+      "a": "app/src/main/res/drawable-nodpi/a_aliyun_drive_v1_2_2.png",
+      "b": "app/src/main/res/drawable-nodpi/b_aliyun_drive_v1_2_2.png",
+      "c": "app/src/main/res/drawable-nodpi/c_aliyun_drive_v1_2_2.png",
+      "d": "app/src/main/res/drawable-nodpi/d_aliyun_drive_v1_2_2.png"
     }
   },
   {
@@ -237,10 +237,10 @@
       "d": "artwork/brand-layouts/d_115_drive.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_115_drive_v1_2_0.png",
-      "b": "app/src/main/res/drawable-nodpi/b_115_drive_v1_2_0.png",
-      "c": "app/src/main/res/drawable-nodpi/c_115_drive_v1_2_0.png",
-      "d": "app/src/main/res/drawable-nodpi/d_115_drive_v1_2_0.png"
+      "a": "app/src/main/res/drawable-nodpi/a_115_drive_v1_2_2.png",
+      "b": "app/src/main/res/drawable-nodpi/b_115_drive_v1_2_2.png",
+      "c": "app/src/main/res/drawable-nodpi/c_115_drive_v1_2_2.png",
+      "d": "app/src/main/res/drawable-nodpi/d_115_drive_v1_2_2.png"
     }
   },
   {
@@ -259,10 +259,10 @@
       "d": "artwork/brand-layouts/d_tencent_aurora.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_tencent_aurora_v1_2_1.png",
-      "b": "app/src/main/res/drawable-nodpi/b_tencent_aurora_v1_2_1.png",
-      "c": "app/src/main/res/drawable-nodpi/c_tencent_aurora.png",
-      "d": "app/src/main/res/drawable-nodpi/d_tencent_aurora.png"
+      "a": "app/src/main/res/drawable-nodpi/a_tencent_aurora_v1_2_2.png",
+      "b": "app/src/main/res/drawable-nodpi/b_tencent_aurora_v1_2_2.png",
+      "c": "app/src/main/res/drawable-nodpi/c_tencent_aurora_v1_2_2.png",
+      "d": "app/src/main/res/drawable-nodpi/d_tencent_aurora_v1_2_2.png"
     }
   },
   {
@@ -281,10 +281,10 @@
       "d": "artwork/brand-layouts/d_netease_popcorn.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_netease_popcorn_v1_2_0.png",
-      "b": "app/src/main/res/drawable-nodpi/b_netease_popcorn_v1_2_0.png",
-      "c": "app/src/main/res/drawable-nodpi/c_netease_popcorn_v1_2_0.png",
-      "d": "app/src/main/res/drawable-nodpi/d_netease_popcorn_v1_2_0.png"
+      "a": "app/src/main/res/drawable-nodpi/a_netease_popcorn_v1_2_2.png",
+      "b": "app/src/main/res/drawable-nodpi/b_netease_popcorn_v1_2_2.png",
+      "c": "app/src/main/res/drawable-nodpi/c_netease_popcorn_v1_2_2.png",
+      "d": "app/src/main/res/drawable-nodpi/d_netease_popcorn_v1_2_2.png"
     }
   },
   {
@@ -298,10 +298,10 @@
       "d": "artwork/brand-layouts/d_mango_tv.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_mango_tv_v1_2_0.png",
-      "b": "app/src/main/res/drawable-nodpi/b_mango_tv_v1_2_0.png",
-      "c": "app/src/main/res/drawable-nodpi/c_mango_tv_v1_2_0.png",
-      "d": "app/src/main/res/drawable-nodpi/d_mango_tv_v1_2_0.png"
+      "a": "app/src/main/res/drawable-nodpi/a_mango_tv_v1_2_2.png",
+      "b": "app/src/main/res/drawable-nodpi/b_mango_tv_v1_2_2.png",
+      "c": "app/src/main/res/drawable-nodpi/c_mango_tv_v1_2_2.png",
+      "d": "app/src/main/res/drawable-nodpi/d_mango_tv_v1_2_2.png"
     }
   },
   {
@@ -315,10 +315,10 @@
       "d": "artwork/brand-layouts/d_ps5.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_ps5_v1_2_0.png",
-      "b": "app/src/main/res/drawable-nodpi/b_ps5_v1_2_0.png",
-      "c": "app/src/main/res/drawable-nodpi/c_ps5.png",
-      "d": "app/src/main/res/drawable-nodpi/d_ps5.png"
+      "a": "app/src/main/res/drawable-nodpi/a_ps5_v1_2_2.png",
+      "b": "app/src/main/res/drawable-nodpi/b_ps5_v1_2_2.png",
+      "c": "app/src/main/res/drawable-nodpi/c_ps5_v1_2_2.png",
+      "d": "app/src/main/res/drawable-nodpi/d_ps5_v1_2_2.png"
     }
   },
   {
@@ -332,10 +332,10 @@
       "d": "artwork/brand-layouts/d_nintendo_switch.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_nintendo_switch_v1_2_0.png",
-      "b": "app/src/main/res/drawable-nodpi/b_nintendo_switch_v1_2_0.png",
-      "c": "app/src/main/res/drawable-nodpi/c_nintendo_switch.png",
-      "d": "app/src/main/res/drawable-nodpi/d_nintendo_switch.png"
+      "a": "app/src/main/res/drawable-nodpi/a_nintendo_switch_v1_2_2.png",
+      "b": "app/src/main/res/drawable-nodpi/b_nintendo_switch_v1_2_2.png",
+      "c": "app/src/main/res/drawable-nodpi/c_nintendo_switch_v1_2_2.png",
+      "d": "app/src/main/res/drawable-nodpi/d_nintendo_switch_v1_2_2.png"
     }
   },
   {
@@ -349,10 +349,10 @@
       "d": "artwork/brand-layouts/d_xbox.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_xbox_v1_2_0.png",
-      "b": "app/src/main/res/drawable-nodpi/b_xbox_v1_2_0.png",
-      "c": "app/src/main/res/drawable-nodpi/c_xbox.png",
-      "d": "app/src/main/res/drawable-nodpi/d_xbox.png"
+      "a": "app/src/main/res/drawable-nodpi/a_xbox_v1_2_2.png",
+      "b": "app/src/main/res/drawable-nodpi/b_xbox_v1_2_2.png",
+      "c": "app/src/main/res/drawable-nodpi/c_xbox_v1_2_2.png",
+      "d": "app/src/main/res/drawable-nodpi/d_xbox_v1_2_2.png"
     }
   },
   {
@@ -366,10 +366,10 @@
       "d": "artwork/brand-layouts/d_gaming_pc_steam.svg"
     },
     "resources": {
-      "a": "app/src/main/res/drawable-nodpi/a_gaming_pc_steam_v1_2_0.png",
-      "b": "app/src/main/res/drawable-nodpi/b_gaming_pc_steam_v1_2_0.png",
-      "c": "app/src/main/res/drawable-nodpi/c_gaming_pc_steam.png",
-      "d": "app/src/main/res/drawable-nodpi/d_gaming_pc_steam.png"
+      "a": "app/src/main/res/drawable-nodpi/a_gaming_pc_steam_v1_2_2.png",
+      "b": "app/src/main/res/drawable-nodpi/b_gaming_pc_steam_v1_2_2.png",
+      "c": "app/src/main/res/drawable-nodpi/c_gaming_pc_steam_v1_2_2.png",
+      "d": "app/src/main/res/drawable-nodpi/d_gaming_pc_steam_v1_2_2.png"
     }
   }
 ]

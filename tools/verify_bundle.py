@@ -30,7 +30,7 @@ def main():
     for name in wanted:
         data = (SOURCE / 'res/drawable-nodpi' / (name + '.png')).read_bytes()
         assert data[:8] == b'\x89PNG\r\n\x1a\n'
-        assert struct.unpack('>II', data[16:24]) == ((512, 512) if name.startswith('d_') else (640, 360))
+        assert struct.unpack('>II', data[16:24]) == ((320, 320) if name.startswith('d_') else (400, 225))
         assert data[24:26] == bytes([8, 2]), name  # Opaque RGB, not a padded transparent tile.
     mapping = ET.parse(SOURCE / 'res/xml/appfilter.xml').getroot()
     manual = set()
