@@ -230,7 +230,7 @@ async function main() {
     {key:'keep',background:keepPurple,icon:await keepBadge(keepPurple),word:await asset('keep-word.png',{color:white,crisp:3}),compact:true,
      scale:{a:{icon:0.88,word:1.06},b:{icon:0.96,word:1.35},c:{icon:0.9},d:{icon:0.9}},tweak:{a:{word:7,x:-6}}},
     {key:'lebo_cast',background:'#0878E8',icon:await asset('lebo-icon.png'),word:await asset('lebo-word.png',{color:white,crisp:3})},
-    {key:'netease_music',background:'#DF2638',icon:await asset('netease-icon.png'),word:await asset('netease-word.png'),scale:{a:{word:1.12},b:{word:0.9}},tweak:{b:{word:-4}}},
+    {key:'netease_music',background:'#DF2638',icon:await asset('netease-icon.png'),word:await asset('netease-word.png'),scale:{a:{word:1.12},b:{word:0.95}},tweak:{b:{word:-4}}},
     {key:'qq_music',background:white,icon:await asset('qqmusic-logo2.png',{crop:[0,0,90,92]}),word:await asset('qqmusic-logo2.png',{crop:[106,0,234,92]})},
     {key:'baidu_netdisk',background:white,icon:await asset('baidu-wp-logo.png',{crop:[0,0,125,90]}),word:await asset('baidu-wp-logo.png',{crop:[134,0,290,90]}),tweak:{b:{icon:6}}},
     {key:'xunlei_cloud',background:white,icon:await vector(xl.slice(0,2).join(''),[0,0,1024,1024]),word:await vector(xl.slice(2).join(''),[1024,0,3672,1024])},
