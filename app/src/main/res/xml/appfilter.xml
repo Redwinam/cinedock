@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-  <item component="ComponentInfo{com.xiaodianshi.tv.yst/com.xiaodianshi.tv.yst.ui.main.MainActivity}" drawable="a_bilibili_tv_v1_2_11" />
-  <item component="ComponentInfo{com.xiaodianshi.tv.yst/}" drawable="a_bilibili_tv_v1_2_11" />
-  <item component="ComponentInfo{tv.danmaku.bili/}" drawable="a_bilibili_tv_v1_2_11" />
+  <item component="ComponentInfo{com.xiaodianshi.tv.yst/com.xiaodianshi.tv.yst.ui.main.MainActivity}" drawable="a_bilibili_tv_v1_2_12" />
+  <item component="ComponentInfo{com.xiaodianshi.tv.yst/}" drawable="a_bilibili_tv_v1_2_12" />
+  <item component="ComponentInfo{tv.danmaku.bili/}" drawable="a_bilibili_tv_v1_2_12" />
   <item component="ComponentInfo{com.gitvdemo.video/com.gala.video.app.epg.HomeActivity}" drawable="a_iqiyi_tv_v1_2_10" />
   <item component="ComponentInfo{com.gitvdemo.video/}" drawable="a_iqiyi_tv_v1_2_10" />
   <item component="ComponentInfo{com.gitvvideo/}" drawable="a_iqiyi_tv_v1_2_10" />
@@ -15,8 +15,8 @@
   <item component="ComponentInfo{com.gotokeep.keep/}" drawable="a_keep_v1_2_8" />
   <item component="ComponentInfo{com.gotokeep.keep.tv/}" drawable="a_keep_v1_2_8" />
   <item component="ComponentInfo{com.hpplay.happycast/}" drawable="a_lebo_cast_v1_2_2" />
-  <item component="ComponentInfo{com.netease.cloudmusic.tv/}" drawable="a_netease_music_v1_2_2" />
-  <item component="ComponentInfo{com.netease.cloudmusic/}" drawable="a_netease_music_v1_2_2" />
+  <item component="ComponentInfo{com.netease.cloudmusic.tv/}" drawable="a_netease_music_v1_2_12" />
+  <item component="ComponentInfo{com.netease.cloudmusic/}" drawable="a_netease_music_v1_2_12" />
   <item component="ComponentInfo{com.tencent.qqmusictv/}" drawable="a_qq_music_v1_2_2" />
   <item component="ComponentInfo{com.tencent.qqmusic/}" drawable="a_qq_music_v1_2_2" />
   <item component="ComponentInfo{com.baidu.netdisk.tv/}" drawable="a_baidu_netdisk_v1_2_2" />
@@ -37,13 +37,13 @@
   <item component="ComponentInfo{com.hunantv.market/}" drawable="a_mango_tv_v1_2_2" />
   <item component="ComponentInfo{com.hunantv.imgo.activity/}" drawable="a_mango_tv_v1_2_2" />
   <!--Projectivy 4.72 reads this file for manual selection too; component-less entries expose all styles and HDMI devices.-->
-  <item drawable="a_bilibili_tv_v1_2_11" />
+  <item drawable="a_bilibili_tv_v1_2_12" />
   <item drawable="a_iqiyi_tv_v1_2_10" />
   <item drawable="a_newtv_aurora_v1_2_10" />
   <item drawable="a_youku_kumiao_v1_2_2" />
   <item drawable="a_keep_v1_2_8" />
   <item drawable="a_lebo_cast_v1_2_2" />
-  <item drawable="a_netease_music_v1_2_2" />
+  <item drawable="a_netease_music_v1_2_12" />
   <item drawable="a_qq_music_v1_2_2" />
   <item drawable="a_baidu_netdisk_v1_2_2" />
   <item drawable="a_xunlei_cloud_v1_2_2" />

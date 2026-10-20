@@ -1,12 +1,12 @@
 {
-  "version": "1.2.11",
+  "version": "1.2.12",
   "policy": "Preserve familiar original brand colors and wordmarks. Every card is rendered from artwork/ by tools/render_cards.cjs.",
   "records": [
     {
       "key": "bilibili_tv",
       "style": "a",
       "background": "#E85C89",
-      "file": "a_bilibili_tv_v1_2_11.png"
+      "file": "a_bilibili_tv_v1_2_12.png"
     },
     {
       "key": "bilibili_tv",
@@ -150,7 +150,7 @@
       "key": "netease_music",
       "style": "a",
       "background": "#DF2638",
-      "file": "a_netease_music_v1_2_2.png"
+      "file": "a_netease_music_v1_2_12.png"
     },
     {
       "key": "netease_music",
