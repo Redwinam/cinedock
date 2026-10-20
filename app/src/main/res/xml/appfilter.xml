@@ -32,8 +32,8 @@
   <item component="ComponentInfo{com.ylmf.androidclient/}" drawable="a_115_drive_v1_2_2" />
   <item component="ComponentInfo{com.netease.filmlytv/}" drawable="a_netease_popcorn_v1_2_2" />
   <item component="ComponentInfo{com.netease.filmly/}" drawable="a_netease_popcorn_v1_2_2" />
-  <item component="ComponentInfo{com.ktcp.video/com.ktcp.video.activity.MainActivity}" drawable="a_tencent_aurora_v1_2_2" />
-  <item component="ComponentInfo{com.ktcp.video/}" drawable="a_tencent_aurora_v1_2_2" />
+  <item component="ComponentInfo{com.ktcp.video/com.ktcp.video.activity.MainActivity}" drawable="a_tencent_aurora_v1_2_6" />
+  <item component="ComponentInfo{com.ktcp.video/}" drawable="a_tencent_aurora_v1_2_6" />
   <item component="ComponentInfo{com.hunantv.market/}" drawable="a_mango_tv_v1_2_2" />
   <item component="ComponentInfo{com.hunantv.imgo.activity/}" drawable="a_mango_tv_v1_2_2" />
   <!--Projectivy 4.72 reads this file for manual selection too; component-less entries expose all styles and HDMI devices.-->
@@ -49,7 +49,7 @@
   <item drawable="a_xunlei_cloud_v1_2_2" />
   <item drawable="a_aliyun_drive_v1_2_2" />
   <item drawable="a_115_drive_v1_2_2" />
-  <item drawable="a_tencent_aurora_v1_2_2" />
+  <item drawable="a_tencent_aurora_v1_2_6" />
   <item drawable="a_netease_popcorn_v1_2_2" />
   <item drawable="a_mango_tv_v1_2_2" />
   <item drawable="a_ps5_v1_2_4" />

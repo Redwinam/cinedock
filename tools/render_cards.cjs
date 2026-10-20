@@ -211,13 +211,13 @@ async function main() {
   const tencent=await asset('aurora-icon.png');
   const xl=(await fs.readFile(path.join(sources,'xunlei-brand.svg'),'utf8')).match(/<path\b[\s\S]*?<\/path>/g);
   const five=(await fs.readFile(path.join(sources,'115-cloud.svg'),'utf8')).match(/<path\b[\s\S]*?\/>/g).join('').replace(/fill="[^"]+"/g,'fill="#2777F8"');
-  const keepPurple='#62536E',aurora={a:{icon:0.8,word:1.18}};
+  const keepPurple='#62536E',aurora={a:{icon:0.74,word:1.24}};
   const apps=[
     {key:'bilibili_tv',background:'#E85C89',icon:await asset('bili-icon.png'),word:await asset('bili-word.png'),scale:{a:{icon:0.93,word:1.1},b:{word:0.92}},tweak:{b:{icon:4}}},
     {key:'iqiyi_tv',background:kiwiGradient,icon:await asset('iqiyi-icon.png'),word:await asset('iqiyi-word.png',{color:white,crisp:4}),scale:{a:{icon:0.88,word:1.18}},tweak:{b:{icon:4}}},
     // Both aurora wordmarks are a light weight that reads faint on TV: larger side by side, with the mark
     // yielding room. Stacked cards keep the standard rows.
-    {key:'newtv_aurora',background:white,icon:tencent,word:await asset('newtv-word.png',{color:ink,crisp:3}),scale:{a:{icon:0.74,word:1.24}}},
+    {key:'newtv_aurora',background:white,icon:tencent,word:await asset('newtv-word.png',{color:ink,crisp:3}),scale:aurora},
     {key:'youku_kumiao',background:white,icon:await asset('youku-icon.png'),word:await asset('youku-word.png',{color:ink}),compact:true,scale:{b:{word:1.1}},tweak:{a:{x:-8}}},
     // The solid badge outweighs the old outline K, so it sits smaller than the box. Side by side the
     // badge centres on the x-height of "keep" (not its ascender-to-descender box), on the card's midline.
