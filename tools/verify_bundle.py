@@ -2,19 +2,31 @@
 """Validate the real exported catalog, mappings, PNG geometry, and APK resources."""
 from pathlib import Path
 import xml.etree.ElementTree as ET
-import struct, zipfile, hashlib, json
+import struct, zipfile, hashlib, json, re
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'app/src/main'
 
 def main():
+    manifest = ET.parse(SOURCE / 'AndroidManifest.xml').getroot()
+    version = manifest.get('{http://schemas.android.com/apk/res/android}versionName')
+    assert json.loads((ROOT / 'package.json').read_text())['version'] == version, 'package.json and Manifest versions differ'
     catalog = ET.parse(SOURCE / 'res/xml/catalog.xml').getroot()
     entries = [e.attrib for e in catalog.findall('item')]
     assert len(entries) == 19
     assert len({e['key'] for e in entries}) == 19
-    wanted = {prefix + '_' + e['key'] for prefix in 'abcd' for e in entries}
+    # Changed images are renamed <style>_<key>_v<x_y_z>; the suffix never runs ahead of the release.
+    current = tuple(map(int, version.split('.')))
+    for e in entries:
+        for prefix in 'abcd':
+            match = re.fullmatch(prefix + '_' + re.escape(e['key']) + r'(?:_v(\d+)_(\d+)_(\d+))?', e[prefix])
+            assert match, e[prefix]
+            assert match.group(1) is None or tuple(map(int, match.groups())) <= current, e[prefix]
+    wanted = {e[prefix] for prefix in 'abcd' for e in entries}
     listed = [e.attrib['drawable'] for e in ET.parse(SOURCE / 'res/xml/drawable.xml').findall('item')]
     assert len(listed) == 76 and set(listed) == wanted
+    packaged = {p.stem for p in (SOURCE / 'res/drawable-nodpi').glob('[abcd]_*.png')}
+    assert packaged == wanted, 'Stale or missing card images: ' + ', '.join(sorted(packaged ^ wanted))
     for name in wanted:
         data = (SOURCE / 'res/drawable-nodpi' / (name + '.png')).read_bytes()
         assert data[:8] == b'\x89PNG\r\n\x1a\n'
@@ -34,9 +46,7 @@ def main():
     assert len(automatic) == len(set(automatic)) == 36
     for file in ['drawable.xml', 'appfilter.xml']:
         assert (SOURCE / 'res/xml' / file).read_bytes() == (SOURCE / 'assets' / file).read_bytes()
-    manifest = ET.parse(SOURCE / 'AndroidManifest.xml').getroot()
     assert manifest.findall('uses-permission') == []
-    version = manifest.get('{http://schemas.android.com/apk/res/android}versionName')
     apk = ROOT / 'dist' / ('CineDock-' + version + '.apk')
     with zipfile.ZipFile(apk) as archive:
         assert archive.testzip() is None

@@ -1,258 +1,462 @@
 {
-  "version": "1.1.0",
-  "policy": "Preserve familiar original brand colors and wordmarks; use white cards for the listed apps. Other entries stay unchanged.",
+  "version": "1.2.0",
+  "policy": "Preserve familiar original brand colors and wordmarks. Every card is rendered from artwork/ by tools/render_cards.cjs.",
   "records": [
     {
+      "key": "bilibili_tv",
+      "style": "a",
+      "background": "#E85C89",
+      "file": "a_bilibili_tv_v1_2_0.png"
+    },
+    {
+      "key": "bilibili_tv",
+      "style": "b",
+      "background": "#E85C89",
+      "file": "b_bilibili_tv_v1_2_0.png"
+    },
+    {
+      "key": "bilibili_tv",
+      "style": "c",
+      "background": "#E85C89",
+      "file": "c_bilibili_tv_v1_2_0.png"
+    },
+    {
+      "key": "bilibili_tv",
+      "style": "d",
+      "background": "#E85C89",
+      "file": "d_bilibili_tv_v1_2_0.png"
+    },
+    {
+      "key": "iqiyi_tv",
+      "style": "a",
+      "background": "radial-gradient(at top left, #32EC82 0%, #2CEA7E 12%, #18E46C 29%, #05D862 42%, #07C970 55%, #14B686 62%, #2FA29B 69%, #4C88B9 75%, #7374CF 80%, #A25CE5 88%, #C64AE7 92%, #D343E6 100%)",
+      "file": "a_iqiyi_tv_v1_2_0.png"
+    },
+    {
+      "key": "iqiyi_tv",
+      "style": "b",
+      "background": "radial-gradient(at top left, #32EC82 0%, #2CEA7E 12%, #18E46C 29%, #05D862 42%, #07C970 55%, #14B686 62%, #2FA29B 69%, #4C88B9 75%, #7374CF 80%, #A25CE5 88%, #C64AE7 92%, #D343E6 100%)",
+      "file": "b_iqiyi_tv_v1_2_0.png"
+    },
+    {
+      "key": "iqiyi_tv",
+      "style": "c",
+      "background": "radial-gradient(at top left, #32EC82 0%, #2CEA7E 12%, #18E46C 29%, #05D862 42%, #07C970 55%, #14B686 62%, #2FA29B 69%, #4C88B9 75%, #7374CF 80%, #A25CE5 88%, #C64AE7 92%, #D343E6 100%)",
+      "file": "c_iqiyi_tv_v1_2_0.png"
+    },
+    {
+      "key": "iqiyi_tv",
+      "style": "d",
+      "background": "radial-gradient(at top left, #32EC82 0%, #2CEA7E 12%, #18E46C 29%, #05D862 42%, #07C970 55%, #14B686 62%, #2FA29B 69%, #4C88B9 75%, #7374CF 80%, #A25CE5 88%, #C64AE7 92%, #D343E6 100%)",
+      "file": "d_iqiyi_tv_v1_2_0.png"
+    },
+    {
       "key": "newtv_aurora",
-      "name": "NewTV 极光",
       "style": "a",
       "background": "#FFFFFF",
-      "file": "a_newtv_aurora.png"
+      "file": "a_newtv_aurora_v1_2_0.png"
     },
     {
       "key": "newtv_aurora",
-      "name": "NewTV 极光",
       "style": "b",
       "background": "#FFFFFF",
-      "file": "b_newtv_aurora.png"
+      "file": "b_newtv_aurora_v1_2_0.png"
     },
     {
       "key": "newtv_aurora",
-      "name": "NewTV 极光",
       "style": "c",
       "background": "#FFFFFF",
       "file": "c_newtv_aurora.png"
     },
     {
       "key": "newtv_aurora",
-      "name": "NewTV 极光",
       "style": "d",
       "background": "#FFFFFF",
       "file": "d_newtv_aurora.png"
     },
     {
       "key": "youku_kumiao",
-      "name": "酷喵",
       "style": "a",
       "background": "#FFFFFF",
-      "file": "a_youku_kumiao.png"
+      "file": "a_youku_kumiao_v1_2_0.png"
     },
     {
       "key": "youku_kumiao",
-      "name": "酷喵",
       "style": "b",
       "background": "#FFFFFF",
-      "file": "b_youku_kumiao.png"
+      "file": "b_youku_kumiao_v1_2_0.png"
     },
     {
       "key": "youku_kumiao",
-      "name": "酷喵",
       "style": "c",
       "background": "#FFFFFF",
-      "file": "c_youku_kumiao.png"
+      "file": "c_youku_kumiao_v1_2_0.png"
     },
     {
       "key": "youku_kumiao",
-      "name": "酷喵",
       "style": "d",
       "background": "#FFFFFF",
-      "file": "d_youku_kumiao.png"
+      "file": "d_youku_kumiao_v1_2_0.png"
+    },
+    {
+      "key": "keep",
+      "style": "a",
+      "background": "#62536E",
+      "file": "a_keep_v1_2_0.png"
+    },
+    {
+      "key": "keep",
+      "style": "b",
+      "background": "#62536E",
+      "file": "b_keep_v1_2_0.png"
+    },
+    {
+      "key": "keep",
+      "style": "c",
+      "background": "#62536E",
+      "file": "c_keep_v1_2_0.png"
+    },
+    {
+      "key": "keep",
+      "style": "d",
+      "background": "#62536E",
+      "file": "d_keep_v1_2_0.png"
+    },
+    {
+      "key": "lebo_cast",
+      "style": "a",
+      "background": "#0878E8",
+      "file": "a_lebo_cast_v1_2_0.png"
+    },
+    {
+      "key": "lebo_cast",
+      "style": "b",
+      "background": "#0878E8",
+      "file": "b_lebo_cast_v1_2_0.png"
+    },
+    {
+      "key": "lebo_cast",
+      "style": "c",
+      "background": "#0878E8",
+      "file": "c_lebo_cast_v1_2_0.png"
+    },
+    {
+      "key": "lebo_cast",
+      "style": "d",
+      "background": "#0878E8",
+      "file": "d_lebo_cast_v1_2_0.png"
+    },
+    {
+      "key": "netease_music",
+      "style": "a",
+      "background": "#DF2638",
+      "file": "a_netease_music_v1_2_0.png"
+    },
+    {
+      "key": "netease_music",
+      "style": "b",
+      "background": "#DF2638",
+      "file": "b_netease_music_v1_2_0.png"
+    },
+    {
+      "key": "netease_music",
+      "style": "c",
+      "background": "#DF2638",
+      "file": "c_netease_music_v1_2_0.png"
+    },
+    {
+      "key": "netease_music",
+      "style": "d",
+      "background": "#DF2638",
+      "file": "d_netease_music_v1_2_0.png"
     },
     {
       "key": "qq_music",
-      "name": "QQ 音乐",
       "style": "a",
       "background": "#FFFFFF",
-      "file": "a_qq_music.png"
+      "file": "a_qq_music_v1_2_0.png"
     },
     {
       "key": "qq_music",
-      "name": "QQ 音乐",
       "style": "b",
       "background": "#FFFFFF",
-      "file": "b_qq_music.png"
+      "file": "b_qq_music_v1_2_0.png"
     },
     {
       "key": "qq_music",
-      "name": "QQ 音乐",
       "style": "c",
       "background": "#FFFFFF",
       "file": "c_qq_music.png"
     },
     {
       "key": "qq_music",
-      "name": "QQ 音乐",
       "style": "d",
       "background": "#FFFFFF",
       "file": "d_qq_music.png"
     },
     {
       "key": "baidu_netdisk",
-      "name": "百度网盘",
       "style": "a",
       "background": "#FFFFFF",
-      "file": "a_baidu_netdisk.png"
+      "file": "a_baidu_netdisk_v1_2_0.png"
     },
     {
       "key": "baidu_netdisk",
-      "name": "百度网盘",
       "style": "b",
       "background": "#FFFFFF",
-      "file": "b_baidu_netdisk.png"
+      "file": "b_baidu_netdisk_v1_2_0.png"
     },
     {
       "key": "baidu_netdisk",
-      "name": "百度网盘",
       "style": "c",
       "background": "#FFFFFF",
-      "file": "c_baidu_netdisk.png"
+      "file": "c_baidu_netdisk_v1_2_0.png"
     },
     {
       "key": "baidu_netdisk",
-      "name": "百度网盘",
       "style": "d",
       "background": "#FFFFFF",
-      "file": "d_baidu_netdisk.png"
+      "file": "d_baidu_netdisk_v1_2_0.png"
     },
     {
       "key": "xunlei_cloud",
-      "name": "迅雷云盘",
       "style": "a",
       "background": "#FFFFFF",
-      "file": "a_xunlei_cloud.png"
+      "file": "a_xunlei_cloud_v1_2_0.png"
     },
     {
       "key": "xunlei_cloud",
-      "name": "迅雷云盘",
       "style": "b",
       "background": "#FFFFFF",
-      "file": "b_xunlei_cloud.png"
+      "file": "b_xunlei_cloud_v1_2_0.png"
     },
     {
       "key": "xunlei_cloud",
-      "name": "迅雷云盘",
       "style": "c",
       "background": "#FFFFFF",
       "file": "c_xunlei_cloud.png"
     },
     {
       "key": "xunlei_cloud",
-      "name": "迅雷云盘",
       "style": "d",
       "background": "#FFFFFF",
       "file": "d_xunlei_cloud.png"
     },
     {
       "key": "aliyun_drive",
-      "name": "阿里云盘",
       "style": "a",
       "background": "#FFFFFF",
-      "file": "a_aliyun_drive.png"
+      "file": "a_aliyun_drive_v1_2_0.png"
     },
     {
       "key": "aliyun_drive",
-      "name": "阿里云盘",
       "style": "b",
       "background": "#FFFFFF",
-      "file": "b_aliyun_drive.png"
+      "file": "b_aliyun_drive_v1_2_0.png"
     },
     {
       "key": "aliyun_drive",
-      "name": "阿里云盘",
       "style": "c",
       "background": "#FFFFFF",
-      "file": "c_aliyun_drive.png"
+      "file": "c_aliyun_drive_v1_2_0.png"
     },
     {
       "key": "aliyun_drive",
-      "name": "阿里云盘",
       "style": "d",
       "background": "#FFFFFF",
-      "file": "d_aliyun_drive.png"
+      "file": "d_aliyun_drive_v1_2_0.png"
     },
     {
       "key": "115_drive",
-      "name": "115 网盘",
       "style": "a",
       "background": "#FFFFFF",
-      "file": "a_115_drive.png"
+      "file": "a_115_drive_v1_2_0.png"
     },
     {
       "key": "115_drive",
-      "name": "115 网盘",
       "style": "b",
       "background": "#FFFFFF",
-      "file": "b_115_drive.png"
+      "file": "b_115_drive_v1_2_0.png"
     },
     {
       "key": "115_drive",
-      "name": "115 网盘",
       "style": "c",
       "background": "#FFFFFF",
-      "file": "c_115_drive.png"
+      "file": "c_115_drive_v1_2_0.png"
     },
     {
       "key": "115_drive",
-      "name": "115 网盘",
       "style": "d",
       "background": "#FFFFFF",
-      "file": "d_115_drive.png"
+      "file": "d_115_drive_v1_2_0.png"
     },
     {
       "key": "tencent_aurora",
-      "name": "云视听极光",
       "style": "a",
       "background": "#FFFFFF",
-      "file": "a_tencent_aurora.png"
+      "file": "a_tencent_aurora_v1_2_0.png"
     },
     {
       "key": "tencent_aurora",
-      "name": "云视听极光",
       "style": "b",
       "background": "#FFFFFF",
-      "file": "b_tencent_aurora.png"
+      "file": "b_tencent_aurora_v1_2_0.png"
     },
     {
       "key": "tencent_aurora",
-      "name": "云视听极光",
       "style": "c",
       "background": "#FFFFFF",
       "file": "c_tencent_aurora.png"
     },
     {
       "key": "tencent_aurora",
-      "name": "云视听极光",
       "style": "d",
       "background": "#FFFFFF",
       "file": "d_tencent_aurora.png"
     },
     {
       "key": "netease_popcorn",
-      "name": "网易爆米花",
       "style": "a",
       "background": "#FFFFFF",
-      "file": "a_netease_popcorn.png"
+      "file": "a_netease_popcorn_v1_2_0.png"
     },
     {
       "key": "netease_popcorn",
-      "name": "网易爆米花",
       "style": "b",
       "background": "#FFFFFF",
-      "file": "b_netease_popcorn.png"
+      "file": "b_netease_popcorn_v1_2_0.png"
     },
     {
       "key": "netease_popcorn",
-      "name": "网易爆米花",
       "style": "c",
       "background": "#FFFFFF",
-      "file": "c_netease_popcorn.png"
+      "file": "c_netease_popcorn_v1_2_0.png"
     },
     {
       "key": "netease_popcorn",
-      "name": "网易爆米花",
       "style": "d",
       "background": "#FFFFFF",
-      "file": "d_netease_popcorn.png"
+      "file": "d_netease_popcorn_v1_2_0.png"
+    },
+    {
+      "key": "mango_tv",
+      "style": "a",
+      "background": "#FF5F00",
+      "file": "a_mango_tv_v1_2_0.png"
+    },
+    {
+      "key": "mango_tv",
+      "style": "b",
+      "background": "#FF5F00",
+      "file": "b_mango_tv_v1_2_0.png"
+    },
+    {
+      "key": "mango_tv",
+      "style": "c",
+      "background": "#FF5F00",
+      "file": "c_mango_tv_v1_2_0.png"
+    },
+    {
+      "key": "mango_tv",
+      "style": "d",
+      "background": "#FF5F00",
+      "file": "d_mango_tv_v1_2_0.png"
+    },
+    {
+      "key": "ps5",
+      "style": "a",
+      "background": "#003791",
+      "file": "a_ps5_v1_2_0.png"
+    },
+    {
+      "key": "ps5",
+      "style": "b",
+      "background": "#003791",
+      "file": "b_ps5_v1_2_0.png"
+    },
+    {
+      "key": "ps5",
+      "style": "c",
+      "background": "#003791",
+      "file": "c_ps5.png"
+    },
+    {
+      "key": "ps5",
+      "style": "d",
+      "background": "#003791",
+      "file": "d_ps5.png"
+    },
+    {
+      "key": "nintendo_switch",
+      "style": "a",
+      "background": "#E60012",
+      "file": "a_nintendo_switch_v1_2_0.png"
+    },
+    {
+      "key": "nintendo_switch",
+      "style": "b",
+      "background": "#E60012",
+      "file": "b_nintendo_switch_v1_2_0.png"
+    },
+    {
+      "key": "nintendo_switch",
+      "style": "c",
+      "background": "#E60012",
+      "file": "c_nintendo_switch.png"
+    },
+    {
+      "key": "nintendo_switch",
+      "style": "d",
+      "background": "#E60012",
+      "file": "d_nintendo_switch.png"
+    },
+    {
+      "key": "xbox",
+      "style": "a",
+      "background": "#107C10",
+      "file": "a_xbox_v1_2_0.png"
+    },
+    {
+      "key": "xbox",
+      "style": "b",
+      "background": "#107C10",
+      "file": "b_xbox_v1_2_0.png"
+    },
+    {
+      "key": "xbox",
+      "style": "c",
+      "background": "#107C10",
+      "file": "c_xbox.png"
+    },
+    {
+      "key": "xbox",
+      "style": "d",
+      "background": "#107C10",
+      "file": "d_xbox.png"
+    },
+    {
+      "key": "gaming_pc_steam",
+      "style": "a",
+      "background": "#171A21",
+      "file": "a_gaming_pc_steam_v1_2_0.png"
+    },
+    {
+      "key": "gaming_pc_steam",
+      "style": "b",
+      "background": "#171A21",
+      "file": "b_gaming_pc_steam_v1_2_0.png"
+    },
+    {
+      "key": "gaming_pc_steam",
+      "style": "c",
+      "background": "#171A21",
+      "file": "c_gaming_pc_steam.png"
+    },
+    {
+      "key": "gaming_pc_steam",
+      "style": "d",
+      "background": "#171A21",
+      "file": "d_gaming_pc_steam.png"
     }
   ]
 }

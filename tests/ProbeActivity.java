@@ -46,9 +46,8 @@ public class ProbeActivity extends Activity {
             try (XmlResourceParser parser = resources.getXml(catalog)) {
                 while (parser.next() != XmlPullParser.END_DOCUMENT) {
                     if (parser.getEventType() != XmlPullParser.START_TAG || !"item".equals(parser.getName())) continue;
-                    String key = parser.getAttributeValue(null, "key");
                     for (String style : new String[]{"a", "b", "c", "d"}) {
-                        Uri uri = Uri.parse("content://com.redwinam.cinedock.icons/icon/" + style + "_" + key);
+                        Uri uri = Uri.parse("content://com.redwinam.cinedock.icons/icon/" + parser.getAttributeValue(null, style));
                         BitmapFactory.Options bounds = new BitmapFactory.Options(); bounds.inJustDecodeBounds = true;
                         try (InputStream in = getContentResolver().openInputStream(uri)) { BitmapFactory.decodeStream(in, null, bounds); }
                         require(bounds.outWidth == ("d".equals(style) ? 512 : 640), "Wrong resource width: " + uri);

@@ -1,114 +1,114 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-  <item component="ComponentInfo{com.xiaodianshi.tv.yst/com.xiaodianshi.tv.yst.ui.main.MainActivity}" drawable="a_bilibili_tv" />
-  <item component="ComponentInfo{com.xiaodianshi.tv.yst/}" drawable="a_bilibili_tv" />
-  <item component="ComponentInfo{tv.danmaku.bili/}" drawable="a_bilibili_tv" />
-  <item component="ComponentInfo{com.gitvdemo.video/com.gala.video.app.epg.HomeActivity}" drawable="a_iqiyi_tv" />
-  <item component="ComponentInfo{com.gitvdemo.video/}" drawable="a_iqiyi_tv" />
-  <item component="ComponentInfo{com.gitvvideo/}" drawable="a_iqiyi_tv" />
-  <item component="ComponentInfo{com.qiyi.video/}" drawable="a_iqiyi_tv" />
-  <item component="ComponentInfo{com.ktcp.csvideo/com.ktcp.video.activity.MainActivity}" drawable="a_newtv_aurora" />
-  <item component="ComponentInfo{com.ktcp.csvideo/}" drawable="a_newtv_aurora" />
-  <item component="ComponentInfo{com.tencent.qqlivetv/}" drawable="a_newtv_aurora" />
-  <item component="ComponentInfo{com.cibn.tv/}" drawable="a_youku_kumiao" />
-  <item component="ComponentInfo{com.youku.tv/}" drawable="a_youku_kumiao" />
-  <item component="ComponentInfo{com.gotokeep.keep/}" drawable="a_keep" />
-  <item component="ComponentInfo{com.gotokeep.keep.tv/}" drawable="a_keep" />
-  <item component="ComponentInfo{com.hpplay.happycast/}" drawable="a_lebo_cast" />
-  <item component="ComponentInfo{com.netease.cloudmusic.tv/}" drawable="a_netease_music" />
-  <item component="ComponentInfo{com.netease.cloudmusic/}" drawable="a_netease_music" />
-  <item component="ComponentInfo{com.tencent.qqmusictv/}" drawable="a_qq_music" />
-  <item component="ComponentInfo{com.tencent.qqmusic/}" drawable="a_qq_music" />
-  <item component="ComponentInfo{com.baidu.netdisk.tv/}" drawable="a_baidu_netdisk" />
-  <item component="ComponentInfo{com.baidu.netdisk/}" drawable="a_baidu_netdisk" />
-  <item component="ComponentInfo{com.xunlei.downloadprovider/}" drawable="a_xunlei_cloud" />
-  <item component="ComponentInfo{com.xunlei.downloadprovider.tv/}" drawable="a_xunlei_cloud" />
-  <item component="ComponentInfo{com.xunlei.pan/}" drawable="a_xunlei_cloud" />
-  <item component="ComponentInfo{com.alicloud.databox/}" drawable="a_aliyun_drive" />
-  <item component="ComponentInfo{com.alicloud.databox.tv/}" drawable="a_aliyun_drive" />
-  <item component="ComponentInfo{com.xiaobai.tv/}" drawable="a_aliyun_drive" />
-  <item component="ComponentInfo{com.yyw.box.androidclient/com.yyw.box.login.LoginActivity}" drawable="a_115_drive" />
-  <item component="ComponentInfo{com.yyw.box.androidclient/}" drawable="a_115_drive" />
-  <item component="ComponentInfo{com.ylmf.androidclient/}" drawable="a_115_drive" />
-  <item component="ComponentInfo{com.netease.filmlytv/}" drawable="a_netease_popcorn" />
-  <item component="ComponentInfo{com.netease.filmly/}" drawable="a_netease_popcorn" />
-  <item component="ComponentInfo{com.ktcp.video/com.ktcp.video.activity.MainActivity}" drawable="a_tencent_aurora" />
-  <item component="ComponentInfo{com.ktcp.video/}" drawable="a_tencent_aurora" />
-  <item component="ComponentInfo{com.hunantv.market/}" drawable="a_mango_tv" />
-  <item component="ComponentInfo{com.hunantv.imgo.activity/}" drawable="a_mango_tv" />
+  <item component="ComponentInfo{com.xiaodianshi.tv.yst/com.xiaodianshi.tv.yst.ui.main.MainActivity}" drawable="a_bilibili_tv_v1_2_0" />
+  <item component="ComponentInfo{com.xiaodianshi.tv.yst/}" drawable="a_bilibili_tv_v1_2_0" />
+  <item component="ComponentInfo{tv.danmaku.bili/}" drawable="a_bilibili_tv_v1_2_0" />
+  <item component="ComponentInfo{com.gitvdemo.video/com.gala.video.app.epg.HomeActivity}" drawable="a_iqiyi_tv_v1_2_0" />
+  <item component="ComponentInfo{com.gitvdemo.video/}" drawable="a_iqiyi_tv_v1_2_0" />
+  <item component="ComponentInfo{com.gitvvideo/}" drawable="a_iqiyi_tv_v1_2_0" />
+  <item component="ComponentInfo{com.qiyi.video/}" drawable="a_iqiyi_tv_v1_2_0" />
+  <item component="ComponentInfo{com.ktcp.csvideo/com.ktcp.video.activity.MainActivity}" drawable="a_newtv_aurora_v1_2_0" />
+  <item component="ComponentInfo{com.ktcp.csvideo/}" drawable="a_newtv_aurora_v1_2_0" />
+  <item component="ComponentInfo{com.tencent.qqlivetv/}" drawable="a_newtv_aurora_v1_2_0" />
+  <item component="ComponentInfo{com.cibn.tv/}" drawable="a_youku_kumiao_v1_2_0" />
+  <item component="ComponentInfo{com.youku.tv/}" drawable="a_youku_kumiao_v1_2_0" />
+  <item component="ComponentInfo{com.gotokeep.keep/}" drawable="a_keep_v1_2_0" />
+  <item component="ComponentInfo{com.gotokeep.keep.tv/}" drawable="a_keep_v1_2_0" />
+  <item component="ComponentInfo{com.hpplay.happycast/}" drawable="a_lebo_cast_v1_2_0" />
+  <item component="ComponentInfo{com.netease.cloudmusic.tv/}" drawable="a_netease_music_v1_2_0" />
+  <item component="ComponentInfo{com.netease.cloudmusic/}" drawable="a_netease_music_v1_2_0" />
+  <item component="ComponentInfo{com.tencent.qqmusictv/}" drawable="a_qq_music_v1_2_0" />
+  <item component="ComponentInfo{com.tencent.qqmusic/}" drawable="a_qq_music_v1_2_0" />
+  <item component="ComponentInfo{com.baidu.netdisk.tv/}" drawable="a_baidu_netdisk_v1_2_0" />
+  <item component="ComponentInfo{com.baidu.netdisk/}" drawable="a_baidu_netdisk_v1_2_0" />
+  <item component="ComponentInfo{com.xunlei.downloadprovider/}" drawable="a_xunlei_cloud_v1_2_0" />
+  <item component="ComponentInfo{com.xunlei.downloadprovider.tv/}" drawable="a_xunlei_cloud_v1_2_0" />
+  <item component="ComponentInfo{com.xunlei.pan/}" drawable="a_xunlei_cloud_v1_2_0" />
+  <item component="ComponentInfo{com.alicloud.databox/}" drawable="a_aliyun_drive_v1_2_0" />
+  <item component="ComponentInfo{com.alicloud.databox.tv/}" drawable="a_aliyun_drive_v1_2_0" />
+  <item component="ComponentInfo{com.xiaobai.tv/}" drawable="a_aliyun_drive_v1_2_0" />
+  <item component="ComponentInfo{com.yyw.box.androidclient/com.yyw.box.login.LoginActivity}" drawable="a_115_drive_v1_2_0" />
+  <item component="ComponentInfo{com.yyw.box.androidclient/}" drawable="a_115_drive_v1_2_0" />
+  <item component="ComponentInfo{com.ylmf.androidclient/}" drawable="a_115_drive_v1_2_0" />
+  <item component="ComponentInfo{com.netease.filmlytv/}" drawable="a_netease_popcorn_v1_2_0" />
+  <item component="ComponentInfo{com.netease.filmly/}" drawable="a_netease_popcorn_v1_2_0" />
+  <item component="ComponentInfo{com.ktcp.video/com.ktcp.video.activity.MainActivity}" drawable="a_tencent_aurora_v1_2_0" />
+  <item component="ComponentInfo{com.ktcp.video/}" drawable="a_tencent_aurora_v1_2_0" />
+  <item component="ComponentInfo{com.hunantv.market/}" drawable="a_mango_tv_v1_2_0" />
+  <item component="ComponentInfo{com.hunantv.imgo.activity/}" drawable="a_mango_tv_v1_2_0" />
   <!--Projectivy 4.72 reads this file for manual selection too; component-less entries expose all styles and HDMI devices.-->
-  <item drawable="a_bilibili_tv" />
-  <item drawable="a_iqiyi_tv" />
-  <item drawable="a_newtv_aurora" />
-  <item drawable="a_youku_kumiao" />
-  <item drawable="a_keep" />
-  <item drawable="a_lebo_cast" />
-  <item drawable="a_netease_music" />
-  <item drawable="a_qq_music" />
-  <item drawable="a_baidu_netdisk" />
-  <item drawable="a_xunlei_cloud" />
-  <item drawable="a_aliyun_drive" />
-  <item drawable="a_115_drive" />
-  <item drawable="a_tencent_aurora" />
-  <item drawable="a_netease_popcorn" />
-  <item drawable="a_mango_tv" />
-  <item drawable="a_ps5" />
-  <item drawable="a_nintendo_switch" />
-  <item drawable="a_xbox" />
-  <item drawable="a_gaming_pc_steam" />
-  <item drawable="b_bilibili_tv" />
-  <item drawable="b_iqiyi_tv" />
-  <item drawable="b_newtv_aurora" />
-  <item drawable="b_youku_kumiao" />
-  <item drawable="b_keep" />
-  <item drawable="b_lebo_cast" />
-  <item drawable="b_netease_music" />
-  <item drawable="b_qq_music" />
-  <item drawable="b_baidu_netdisk" />
-  <item drawable="b_xunlei_cloud" />
-  <item drawable="b_aliyun_drive" />
-  <item drawable="b_115_drive" />
-  <item drawable="b_tencent_aurora" />
-  <item drawable="b_netease_popcorn" />
-  <item drawable="b_mango_tv" />
-  <item drawable="b_ps5" />
-  <item drawable="b_nintendo_switch" />
-  <item drawable="b_xbox" />
-  <item drawable="b_gaming_pc_steam" />
-  <item drawable="c_bilibili_tv" />
-  <item drawable="c_iqiyi_tv" />
+  <item drawable="a_bilibili_tv_v1_2_0" />
+  <item drawable="a_iqiyi_tv_v1_2_0" />
+  <item drawable="a_newtv_aurora_v1_2_0" />
+  <item drawable="a_youku_kumiao_v1_2_0" />
+  <item drawable="a_keep_v1_2_0" />
+  <item drawable="a_lebo_cast_v1_2_0" />
+  <item drawable="a_netease_music_v1_2_0" />
+  <item drawable="a_qq_music_v1_2_0" />
+  <item drawable="a_baidu_netdisk_v1_2_0" />
+  <item drawable="a_xunlei_cloud_v1_2_0" />
+  <item drawable="a_aliyun_drive_v1_2_0" />
+  <item drawable="a_115_drive_v1_2_0" />
+  <item drawable="a_tencent_aurora_v1_2_0" />
+  <item drawable="a_netease_popcorn_v1_2_0" />
+  <item drawable="a_mango_tv_v1_2_0" />
+  <item drawable="a_ps5_v1_2_0" />
+  <item drawable="a_nintendo_switch_v1_2_0" />
+  <item drawable="a_xbox_v1_2_0" />
+  <item drawable="a_gaming_pc_steam_v1_2_0" />
+  <item drawable="b_bilibili_tv_v1_2_0" />
+  <item drawable="b_iqiyi_tv_v1_2_0" />
+  <item drawable="b_newtv_aurora_v1_2_0" />
+  <item drawable="b_youku_kumiao_v1_2_0" />
+  <item drawable="b_keep_v1_2_0" />
+  <item drawable="b_lebo_cast_v1_2_0" />
+  <item drawable="b_netease_music_v1_2_0" />
+  <item drawable="b_qq_music_v1_2_0" />
+  <item drawable="b_baidu_netdisk_v1_2_0" />
+  <item drawable="b_xunlei_cloud_v1_2_0" />
+  <item drawable="b_aliyun_drive_v1_2_0" />
+  <item drawable="b_115_drive_v1_2_0" />
+  <item drawable="b_tencent_aurora_v1_2_0" />
+  <item drawable="b_netease_popcorn_v1_2_0" />
+  <item drawable="b_mango_tv_v1_2_0" />
+  <item drawable="b_ps5_v1_2_0" />
+  <item drawable="b_nintendo_switch_v1_2_0" />
+  <item drawable="b_xbox_v1_2_0" />
+  <item drawable="b_gaming_pc_steam_v1_2_0" />
+  <item drawable="c_bilibili_tv_v1_2_0" />
+  <item drawable="c_iqiyi_tv_v1_2_0" />
   <item drawable="c_newtv_aurora" />
-  <item drawable="c_youku_kumiao" />
-  <item drawable="c_keep" />
-  <item drawable="c_lebo_cast" />
-  <item drawable="c_netease_music" />
+  <item drawable="c_youku_kumiao_v1_2_0" />
+  <item drawable="c_keep_v1_2_0" />
+  <item drawable="c_lebo_cast_v1_2_0" />
+  <item drawable="c_netease_music_v1_2_0" />
   <item drawable="c_qq_music" />
-  <item drawable="c_baidu_netdisk" />
+  <item drawable="c_baidu_netdisk_v1_2_0" />
   <item drawable="c_xunlei_cloud" />
-  <item drawable="c_aliyun_drive" />
-  <item drawable="c_115_drive" />
+  <item drawable="c_aliyun_drive_v1_2_0" />
+  <item drawable="c_115_drive_v1_2_0" />
   <item drawable="c_tencent_aurora" />
-  <item drawable="c_netease_popcorn" />
-  <item drawable="c_mango_tv" />
+  <item drawable="c_netease_popcorn_v1_2_0" />
+  <item drawable="c_mango_tv_v1_2_0" />
   <item drawable="c_ps5" />
   <item drawable="c_nintendo_switch" />
   <item drawable="c_xbox" />
   <item drawable="c_gaming_pc_steam" />
-  <item drawable="d_bilibili_tv" />
-  <item drawable="d_iqiyi_tv" />
+  <item drawable="d_bilibili_tv_v1_2_0" />
+  <item drawable="d_iqiyi_tv_v1_2_0" />
   <item drawable="d_newtv_aurora" />
-  <item drawable="d_youku_kumiao" />
-  <item drawable="d_keep" />
-  <item drawable="d_lebo_cast" />
-  <item drawable="d_netease_music" />
+  <item drawable="d_youku_kumiao_v1_2_0" />
+  <item drawable="d_keep_v1_2_0" />
+  <item drawable="d_lebo_cast_v1_2_0" />
+  <item drawable="d_netease_music_v1_2_0" />
   <item drawable="d_qq_music" />
-  <item drawable="d_baidu_netdisk" />
+  <item drawable="d_baidu_netdisk_v1_2_0" />
   <item drawable="d_xunlei_cloud" />
-  <item drawable="d_aliyun_drive" />
-  <item drawable="d_115_drive" />
+  <item drawable="d_aliyun_drive_v1_2_0" />
+  <item drawable="d_115_drive_v1_2_0" />
   <item drawable="d_tencent_aurora" />
-  <item drawable="d_netease_popcorn" />
-  <item drawable="d_mango_tv" />
+  <item drawable="d_netease_popcorn_v1_2_0" />
+  <item drawable="d_mango_tv_v1_2_0" />
   <item drawable="d_ps5" />
   <item drawable="d_nintendo_switch" />
   <item drawable="d_xbox" />
