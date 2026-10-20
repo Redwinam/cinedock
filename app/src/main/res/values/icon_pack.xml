@@ -3,9 +3,9 @@
   <string-array name="icon_pack">
     <item>a_bilibili_tv_v1_2_0</item>
     <item>a_iqiyi_tv_v1_2_0</item>
-    <item>a_newtv_aurora_v1_2_0</item>
+    <item>a_newtv_aurora_v1_2_1</item>
     <item>a_youku_kumiao_v1_2_0</item>
-    <item>a_keep_v1_2_0</item>
+    <item>a_keep_v1_2_1</item>
     <item>a_lebo_cast_v1_2_0</item>
     <item>a_netease_music_v1_2_0</item>
     <item>a_qq_music_v1_2_0</item>
@@ -13,7 +13,7 @@
     <item>a_xunlei_cloud_v1_2_0</item>
     <item>a_aliyun_drive_v1_2_0</item>
     <item>a_115_drive_v1_2_0</item>
-    <item>a_tencent_aurora_v1_2_0</item>
+    <item>a_tencent_aurora_v1_2_1</item>
     <item>a_netease_popcorn_v1_2_0</item>
     <item>a_mango_tv_v1_2_0</item>
     <item>a_ps5_v1_2_0</item>
@@ -22,9 +22,9 @@
     <item>a_gaming_pc_steam_v1_2_0</item>
     <item>b_bilibili_tv_v1_2_0</item>
     <item>b_iqiyi_tv_v1_2_0</item>
-    <item>b_newtv_aurora_v1_2_0</item>
+    <item>b_newtv_aurora_v1_2_1</item>
     <item>b_youku_kumiao_v1_2_0</item>
-    <item>b_keep_v1_2_0</item>
+    <item>b_keep_v1_2_1</item>
     <item>b_lebo_cast_v1_2_0</item>
     <item>b_netease_music_v1_2_0</item>
     <item>b_qq_music_v1_2_0</item>
@@ -32,7 +32,7 @@
     <item>b_xunlei_cloud_v1_2_0</item>
     <item>b_aliyun_drive_v1_2_0</item>
     <item>b_115_drive_v1_2_0</item>
-    <item>b_tencent_aurora_v1_2_0</item>
+    <item>b_tencent_aurora_v1_2_1</item>
     <item>b_netease_popcorn_v1_2_0</item>
     <item>b_mango_tv_v1_2_0</item>
     <item>b_ps5_v1_2_0</item>
@@ -43,7 +43,7 @@
     <item>c_iqiyi_tv_v1_2_0</item>
     <item>c_newtv_aurora</item>
     <item>c_youku_kumiao_v1_2_0</item>
-    <item>c_keep_v1_2_0</item>
+    <item>c_keep_v1_2_1</item>
     <item>c_lebo_cast_v1_2_0</item>
     <item>c_netease_music_v1_2_0</item>
     <item>c_qq_music</item>
@@ -62,7 +62,7 @@
     <item>d_iqiyi_tv_v1_2_0</item>
     <item>d_newtv_aurora</item>
     <item>d_youku_kumiao_v1_2_0</item>
-    <item>d_keep_v1_2_0</item>
+    <item>d_keep_v1_2_1</item>
     <item>d_lebo_cast_v1_2_0</item>
     <item>d_netease_music_v1_2_0</item>
     <item>d_qq_music</item>

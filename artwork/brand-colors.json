@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "1.2.1",
   "policy": "Preserve familiar original brand colors and wordmarks. Every card is rendered from artwork/ by tools/render_cards.cjs.",
   "records": [
     {
@@ -54,13 +54,13 @@
       "key": "newtv_aurora",
       "style": "a",
       "background": "#FFFFFF",
-      "file": "a_newtv_aurora_v1_2_0.png"
+      "file": "a_newtv_aurora_v1_2_1.png"
     },
     {
       "key": "newtv_aurora",
       "style": "b",
       "background": "#FFFFFF",
-      "file": "b_newtv_aurora_v1_2_0.png"
+      "file": "b_newtv_aurora_v1_2_1.png"
     },
     {
       "key": "newtv_aurora",
@@ -102,25 +102,25 @@
       "key": "keep",
       "style": "a",
       "background": "#62536E",
-      "file": "a_keep_v1_2_0.png"
+      "file": "a_keep_v1_2_1.png"
     },
     {
       "key": "keep",
       "style": "b",
       "background": "#62536E",
-      "file": "b_keep_v1_2_0.png"
+      "file": "b_keep_v1_2_1.png"
     },
     {
       "key": "keep",
       "style": "c",
       "background": "#62536E",
-      "file": "c_keep_v1_2_0.png"
+      "file": "c_keep_v1_2_1.png"
     },
     {
       "key": "keep",
       "style": "d",
       "background": "#62536E",
-      "file": "d_keep_v1_2_0.png"
+      "file": "d_keep_v1_2_1.png"
     },
     {
       "key": "lebo_cast",
@@ -294,13 +294,13 @@
       "key": "tencent_aurora",
       "style": "a",
       "background": "#FFFFFF",
-      "file": "a_tencent_aurora_v1_2_0.png"
+      "file": "a_tencent_aurora_v1_2_1.png"
     },
     {
       "key": "tencent_aurora",
       "style": "b",
       "background": "#FFFFFF",
-      "file": "b_tencent_aurora_v1_2_0.png"
+      "file": "b_tencent_aurora_v1_2_1.png"
     },
     {
       "key": "tencent_aurora",

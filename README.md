@@ -61,11 +61,11 @@ CineDock 是为 [Projectivy Launcher](https://github.com/spocky/miproja1) 制作
 
 图标包支持 Android 5.0 及以上。自定义卡片图标需使用支持该功能的 **Projectivy Premium**；其他启动器的兼容性未验证。
 
-1. 按下文构建，取得 `dist/CineDock-1.2.0.apk`。
+1. 按下文构建，取得 `dist/CineDock-1.2.1.apk`。
 2. 通过 U 盘、SD 卡、局域网文件传输或 ADB 将 APK 放到电视上，用文件管理器打开安装。若系统提示，允许该文件管理器安装应用。
 3. 打开 Projectivy，先完成下方的关闭着色设置，再选择图标。
 
-安装图片或图标包不需要刷机。同一签名的新版本可以覆盖安装。图片有更新的图标会换成带版本号的新名称（例如 `a_iqiyi_tv_v1_2_0`），Projectivy 因此不会继续显示旧缓存；更新后请为这些卡片重新选择一次图标，批量应用的在图标包设置中重新应用即可。内容没变的图标保持原名，已选好的不受影响。
+安装图片或图标包不需要刷机。同一签名的新版本可以覆盖安装。图片有更新的图标会换成带版本号的新名称（例如 `a_keep_v1_2_1`），Projectivy 因此不会继续显示旧缓存；更新后请为这些卡片重新选择一次图标，批量应用的在图标包设置中重新应用即可。内容没变的图标保持原名，已选好的不受影响。
 
 ### 必设：关闭图标着色
 
@@ -82,7 +82,7 @@ CineDock 是为 [Projectivy Launcher](https://github.com/spocky/miproja1) 制作
 
 长按应用或 HDMI 卡片 → **更改图标 → 图标包 → 映匣 · CineDock**。
 
-Projectivy 4.72 的内置浏览器直接列出全部图片，不会显示映匣自己的四个样式按钮。按 `a_` / `b_` / `c_` / `d_` 区分样式，名称末尾的 `_v1_2_0` 表示该图在 1.2.0 更新过；设备图标的名称含 `ps5`、`nintendo_switch`、`xbox`、`gaming_pc_steam`。
+Projectivy 4.72 的内置浏览器直接列出全部图片，不会显示映匣自己的四个样式按钮。按 `a_` / `b_` / `c_` / `d_` 区分样式，名称末尾的 `_v1_2_0`、`_v1_2_1` 表示该图在对应版本更新过；设备图标的名称含 `ps5`、`nintendo_switch`、`xbox`、`gaming_pc_steam`。
 
 直接打开映匣应用可以预览四种样式；预览本身不会修改 Projectivy 的卡片。
 
@@ -178,7 +178,7 @@ tests/                            # 独立 Android 兼容性检查应用
 
 ```sh
 python3 tools/build_probe.py
-adb -s <测试设备序列号> install -r dist/CineDock-1.2.0.apk
+adb -s <测试设备序列号> install -r dist/CineDock-1.2.1.apk
 adb -s <测试设备序列号> install -r build/probe/probe.apk
 adb -s <测试设备序列号> shell am start -n com.redwinam.cinedock.probe/.ProbeActivity
 ```
@@ -193,6 +193,7 @@ adb -s <测试设备序列号> shell run-as com.redwinam.cinedock.probe cat file
 
 ## 版本记录
 
+- **1.2.1**：Keep 改用官方的白色圆角徽标；NewTV 极光、云视听极光的字标加粗放大，图标略缩小让出空间。
 - **1.2.0**：字标放大；上下带字改为固定的图标行和文字行；图形与字标按视觉重心对齐并逐张微调，游戏设备字标末尾的 ™ / ® 不计入居中；银河奇异果改用现行奇异果TV图标的绿—青—紫渐变；有变化的图片改用带版本号的新名称，避免 Projectivy 显示旧缓存；全部卡片可由仓库内素材重新渲染。
 - **1.1.0**：九个应用恢复白底、彩色标志和深色字标；加入关闭着色的使用说明与首页提醒。
 - **1.0.1**：修复 Projectivy 内置列表只显示默认应用图、缺少其他样式及 HDMI 图标的问题。

@@ -18,9 +18,11 @@ const size = style => style==='d' ? [512,512] : [640,360];
 // a = mark left / wordmark right, each fitted to its box on the card's midline.
 //     Compact wordmarks (two characters or a short Latin word) get a taller box.
 // b = mark above / wordmark below in two fixed-height rows, so every card stacks alike.
-//     wordScale / iconScale resize one row's element. wordScale also evens out scripts: lowercase
-//     Latin with ascenders and descenders reads small, bold capitals read large next to Chinese.
-//     Text cards are also nudged toward visual balance (see balance()).
+// c, d = the mark alone, centred.
+// scale.<style>.icon / .word resize an entry's element against these boxes. In b it also evens out
+//     scripts: lowercase Latin with ascenders and descenders reads small, bold capitals read large
+//     next to Chinese glyphs of the same height.
+// Text cards are also nudged toward visual balance (see balance()).
 // tweak: hand adjustments in px per style, applied after balancing — icon / word move one element
 //     down, group moves both down, x moves both right (negative values go up / left).
 const layout = {
@@ -48,7 +50,7 @@ function measure(data, info, threshold) {
 // Optical centring: pixels to lift an element so its ink centroid, not its box, sits on the slot's centre.
 const lift = (a, h) => Math.round((a.cy-0.5)*h);
 
-async function asset(file, {crop, color, crisp} = {}) {
+async function asset(file, {crop, color, crisp, bold} = {}) {
   let input = typeof file === 'string' ? path.join(sources,file) : file;
   let p = sharp(input);
   if (crop) p = p.extract({left:crop[0],top:crop[1],width:crop[2],height:crop[3]});
@@ -59,16 +61,22 @@ async function asset(file, {crop, color, crisp} = {}) {
   }
   const {x0,y0,width,height,cy} = measure(data,info,3);
   const png=await sharp(data,{raw:info}).extract({left:x0,top:y0,width,height}).png().toBuffer();
-  return crisp ? sharpen(png,crisp,color) : {width,height,cy,data:png.toString('base64')};
+  return crisp||bold ? sharpen(png,crisp??2,color,bold) : {width,height,cy,data:png.toString('base64')};
 }
-// Small single-colour wordmarks: upsample the coverage mask and tighten its soft edge,
-// so the enlarged glyphs stay crisp without redrawing them.
-async function sharpen(png, scale, color) {
-  const {width,height}=await sharp(png).metadata();
-  const {data,info}=await sharp(png).extractChannel(3).resize(width*scale,height*scale,{kernel:'lanczos3'}).raw().toBuffer({resolveWithObject:true});
+// Single-colour wordmarks: upsample the coverage mask and tighten its soft edge, so enlarged glyphs
+// stay crisp without redrawing them. bold (a fraction of the wordmark's height) thickens every stroke
+// outward by that much: blur the mask with that radius and cut the edge low, where a blurred edge
+// crosses about one radius outside the original outline.
+async function sharpen(png, scale, color, bold=0) {
+  const {width,height}=await sharp(png).metadata(),grow=bold*height*scale;
+  let mask=sharp(png).extractChannel(3).resize(width*scale,height*scale,{kernel:'lanczos3'});
+  // Blurring promotes the mask to sRGB; keep a single channel so the loop below reads it correctly.
+  if(grow) mask=sharp(await mask.png().toBuffer()).blur(grow).extractChannel(0);
+  const {data,info}=await mask.raw().toBuffer({resolveWithObject:true});
+  const [lo,hi]=grow?[0.06,0.26]:[0.3,0.7];
   const pixels=Buffer.alloc(info.width*info.height*4);
   for(let i=0;i<info.width*info.height;i++) {
-    const t=Math.max(0,Math.min(1,(data[i]/255-0.3)/0.4));
+    const t=Math.max(0,Math.min(1,(data[i]/255-lo)/(hi-lo)));
     pixels[i*4+3]=Math.round(t*t*(3-2*t)*255);
   }
   return asset(await sharp(pixels,{raw:{width:info.width,height:info.height,channels:4}}).png().toBuffer(),{color});
@@ -98,6 +106,13 @@ function trademark(data, {width:w,height:h}, {x0,width,height}) {
   return x>=x0&&markWidth<0.08*width&&bottom-top+1<0.35*height ? (x-x0+1)/width : 1;
 }
 const place = (c,[x,y,w,h]) => `<svg x="${x}" y="${y}" width="${w}" height="${h}" viewBox="${c.view.join(' ')}" overflow="hidden">${white_g(c.body)}</svg>`;
+// Keep's own badge from its official lockup: the K knocked out of a white rounded square
+// (corner radius 16% of the side, K 55% of its height), so the mark no longer echoes the "k" of keep.
+async function keepBadge(knockout) {
+  const glyph=(await fs.readFile(path.join(sources,'keep-k.svg'),'utf8')).match(/<path\b[^>]*\/>/)[0].replace(/ fill="[^"]*"/,'');
+  const k=await tight({view:[-100,-100,1400,1400],body:glyph}),kh=550,kw=kh*k.width/k.height;
+  return vector(`<rect width="1000" height="1000" rx="160" fill="${white}"/><svg x="${(1000-kw)/2}" y="${(1000-kh)/2}" width="${kw}" height="${kh}" viewBox="${k.view.join(' ')}"><g fill="${knockout}">${k.body}</g></svg>`,[0,0,1000,1000]);
+}
 const simpleIcon = async slug => (await fs.readFile(path.join(hdmiSources,slug+'.svg'),'utf8')).match(/<path\b[^>]*\/>/g).join('');
 
 function background(fill) {
@@ -127,13 +142,14 @@ const move = ([x,y,w,h], [dx,dy]) => [x+dx,y+dy,w,h];
 
 function appCard(app, style, [dx,dy]=[0,0], tweak={}) {
   const card=size(style),body=background(app.background),x=dx+(tweak.x??0);
+  const {icon:si=1,word:sw=1}=app.scale?.[style]??{};
   const pair=([icon,word])=>body+image(app.icon,move(icon,[x,dy+(tweak.icon??0)]))+image(app.word,move(word,[x,dy+(tweak.word??0)]));
   if(style==='a') {
-    const l=layout.a;
-    return pair(sideBySide(card,app.icon,fit(app.icon,...l.icon),app.word,fit(app.word,...(app.compact?l.compact:l.word)),l.gap));
+    const l=layout.a,[bw,bh]=app.compact?l.compact:l.word;
+    return pair(sideBySide(card,app.icon,fit(app.icon,l.icon[0]*si,l.icon[1]*si),app.word,fit(app.word,bw*sw,bh*sw),l.gap));
   }
-  if(style==='b') return pair(stacked(card,app.icon,app.word,app.wordScale,app.iconScale));
-  const box=style==='d'?256:192;
+  if(style==='b') return pair(stacked(card,app.icon,app.word,sw,si));
+  const box=(style==='d'?256:192)*si;
   return body+image(app.icon,centred(card,app.icon,fit(app.icon,box,box)));
 }
 
@@ -151,7 +167,7 @@ async function hdmiCard(device, style, words, [dx,dy]=[0,0], tweak={}) {
   // Marks with a firm outline (the Xbox and Steam circles, the PlayStation symbol) are judged by that
   // outline; their cut-outs and wide base would otherwise pull the ink centroid down and lift them.
   if(device.outline) icon.cy=0.5;
-  if(style==='b') return pair(stacked(card,icon,word,device.wordScale,device.iconScale));
+  if(style==='b') return pair(stacked(card,icon,word,device.scale?.b?.word,device.scale?.b?.icon));
   // PS5 and Steam keep their lockups' symbol size and spacing with a resized wordmark; the round Xbox
   // mark and its slanted X read tighter than the box gap, so Xbox gets a little more air.
   const ih=device.iconHeight,ww=device.wordWidth;
@@ -191,29 +207,34 @@ async function main() {
   const tencent=await asset('aurora-icon.png');
   const xl=(await fs.readFile(path.join(sources,'xunlei-brand.svg'),'utf8')).match(/<path\b[\s\S]*?<\/path>/g);
   const five=(await fs.readFile(path.join(sources,'115-cloud.svg'),'utf8')).match(/<path\b[\s\S]*?\/>/g).join('').replace(/fill="[^"]+"/g,'fill="#2777F8"');
+  const keepPurple='#62536E',aurora={a:{icon:0.86,word:1.1},b:{icon:0.9,word:1.12}};
   const apps=[
-    {key:'bilibili_tv',background:'#E85C89',icon:await asset('bili-icon.png'),word:await asset('bili-word.png'),wordScale:0.92,tweak:{b:{icon:4}}},
+    {key:'bilibili_tv',background:'#E85C89',icon:await asset('bili-icon.png'),word:await asset('bili-word.png'),scale:{b:{word:0.92}},tweak:{b:{icon:4}}},
     {key:'iqiyi_tv',background:kiwiGradient,icon:await asset('iqiyi-icon.png'),word:await asset('iqiyi-word.png',{color:white,crisp:4}),tweak:{b:{icon:4}}},
-    {key:'newtv_aurora',background:white,icon:tencent,word:await asset('newtv-word.png',{color:ink,crisp:3})},
-    {key:'youku_kumiao',background:white,icon:await asset('youku-icon.png'),word:await asset('youku-word.png',{color:ink}),compact:true,wordScale:1.1,tweak:{a:{x:-8}}},
-    {key:'keep',background:'#62536E',icon:await asset('keep-icon.png'),word:await asset('keep-word.png',{color:white,crisp:3}),compact:true,wordScale:1.25,tweak:{a:{word:8},b:{word:6,icon:4}}},
+    // Both aurora wordmarks are a light weight that reads faint on TV: bolder, larger, with the mark yielding room.
+    {key:'newtv_aurora',background:white,icon:tencent,word:await asset('newtv-word.png',{color:ink,crisp:3,bold:0.014}),scale:aurora},
+    {key:'youku_kumiao',background:white,icon:await asset('youku-icon.png'),word:await asset('youku-word.png',{color:ink}),compact:true,scale:{b:{word:1.1}},tweak:{a:{x:-8}}},
+    // The solid badge outweighs the old outline K, so it sits smaller than the box; side by side it
+    // follows the official lockup, with keep's baseline near the badge's lower edge.
+    {key:'keep',background:keepPurple,icon:await keepBadge(keepPurple),word:await asset('keep-word.png',{color:white,crisp:3}),compact:true,
+     scale:{a:{icon:0.69,word:1.06},b:{icon:0.77,word:1.25},c:{icon:0.8},d:{icon:0.8}},tweak:{a:{icon:-7,word:7}}},
     {key:'lebo_cast',background:'#0878E8',icon:await asset('lebo-icon.png'),word:await asset('lebo-word.png',{color:white,crisp:3})},
-    {key:'netease_music',background:'#DF2638',icon:await asset('netease-icon.png'),word:await asset('netease-word.png'),wordScale:0.9,tweak:{b:{word:-4}}},
+    {key:'netease_music',background:'#DF2638',icon:await asset('netease-icon.png'),word:await asset('netease-word.png'),scale:{b:{word:0.9}},tweak:{b:{word:-4}}},
     {key:'qq_music',background:white,icon:await asset('qqmusic-logo2.png',{crop:[0,0,90,92]}),word:await asset('qqmusic-logo2.png',{crop:[106,0,234,92]})},
     {key:'baidu_netdisk',background:white,icon:await asset('baidu-wp-logo.png',{crop:[0,0,125,90]}),word:await asset('baidu-wp-logo.png',{crop:[134,0,290,90]}),tweak:{b:{icon:6}}},
     {key:'xunlei_cloud',background:white,icon:await vector(xl.slice(0,2).join(''),[0,0,1024,1024]),word:await vector(xl.slice(2).join(''),[1024,0,3672,1024])},
     {key:'aliyun_drive',background:white,icon:await asset('alipan-word.png',{crop:[0,0,115,92]}),word:await asset('alipan-word.png',{crop:[128,0,256,92]})},
     {key:'115_drive',background:white,icon:await vector(five,[0,0,36,36]),word:await asset('115-word.png',{color:ink})},
-    {key:'tencent_aurora',background:white,icon:tencent,word:await asset('aurora-word.png',{color:ink})},
+    {key:'tencent_aurora',background:white,icon:tencent,word:await asset('aurora-word.png',{color:ink,bold:0.024}),scale:aurora},
     {key:'netease_popcorn',background:white,icon:await asset('popcorn-icon.png'),word:await asset('popcorn-word.png',{color:ink,crisp:3}),tweak:{b:{group:5,icon:4}}},
     {key:'mango_tv',background:'#FF5F00',icon:await asset('mango-icon.png'),word:await asset('mango-word.png'),tweak:{b:{group:-5}}},
   ];
   const words=JSON.parse(await fs.readFile(path.join(hdmiSources,'wordmarks.json'),'utf8'));
   const devices=[
-    {key:'ps5',slug:'playstation',outline:true,background:'#003791',iconSize:224,word:'ps5_word',wordScale:0.8,mark:'ps5_mark',iconHeight:104,wordWidth:280,gap:35,tweak:{a:{x:-9},b:{word:-4}}},
+    {key:'ps5',slug:'playstation',outline:true,background:'#003791',iconSize:224,word:'ps5_word',scale:{b:{word:0.8}},mark:'ps5_mark',iconHeight:104,wordWidth:280,gap:35,tweak:{a:{x:-9},b:{word:-4}}},
     {key:'nintendo_switch',slug:'nintendoswitch',background:'#E60012',iconSize:172,word:'switch_word',iconHeight:120,wordWidth:290,tweak:{a:{word:5}}},
-    {key:'xbox',slug:'xbox',outline:true,background:'#107C10',iconSize:176,word:'xbox_word',wordScale:0.86,iconScale:1.07,iconHeight:120,wordWidth:252,gap:36,tweak:{a:{x:-5}}},
-    {key:'gaming_pc_steam',slug:'steam',outline:true,background:'#171A21',iconSize:176,word:'steam_word',wordScale:0.86,mark:'steam_mark',iconHeight:136,wordWidth:312,gap:36,tweak:{a:{x:-12}}},
+    {key:'xbox',slug:'xbox',outline:true,background:'#107C10',iconSize:176,word:'xbox_word',scale:{b:{word:0.86,icon:1.07}},iconHeight:120,wordWidth:252,gap:36,tweak:{a:{x:-5}}},
+    {key:'gaming_pc_steam',slug:'steam',outline:true,background:'#171A21',iconSize:176,word:'steam_word',scale:{b:{word:0.86}},mark:'steam_mark',iconHeight:136,wordWidth:312,gap:36,tweak:{a:{x:-12}}},
   ];
   const drawables=await fs.readdir(out),renames=new Map(),records=[],balanced=[];
   let changed=0;
