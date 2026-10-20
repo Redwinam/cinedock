@@ -1,12 +1,12 @@
 {
-  "version": "1.2.10",
+  "version": "1.2.11",
   "policy": "Preserve familiar original brand colors and wordmarks. Every card is rendered from artwork/ by tools/render_cards.cjs.",
   "records": [
     {
       "key": "bilibili_tv",
       "style": "a",
       "background": "#E85C89",
-      "file": "a_bilibili_tv_v1_2_10.png"
+      "file": "a_bilibili_tv_v1_2_11.png"
     },
     {
       "key": "bilibili_tv",

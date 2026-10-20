@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-  <item component="ComponentInfo{com.xiaodianshi.tv.yst/com.xiaodianshi.tv.yst.ui.main.MainActivity}" drawable="a_bilibili_tv_v1_2_10" />
-  <item component="ComponentInfo{com.xiaodianshi.tv.yst/}" drawable="a_bilibili_tv_v1_2_10" />
-  <item component="ComponentInfo{tv.danmaku.bili/}" drawable="a_bilibili_tv_v1_2_10" />
+  <item component="ComponentInfo{com.xiaodianshi.tv.yst/com.xiaodianshi.tv.yst.ui.main.MainActivity}" drawable="a_bilibili_tv_v1_2_11" />
+  <item component="ComponentInfo{com.xiaodianshi.tv.yst/}" drawable="a_bilibili_tv_v1_2_11" />
+  <item component="ComponentInfo{tv.danmaku.bili/}" drawable="a_bilibili_tv_v1_2_11" />
   <item component="ComponentInfo{com.gitvdemo.video/com.gala.video.app.epg.HomeActivity}" drawable="a_iqiyi_tv_v1_2_10" />
   <item component="ComponentInfo{com.gitvdemo.video/}" drawable="a_iqiyi_tv_v1_2_10" />
   <item component="ComponentInfo{com.gitvvideo/}" drawable="a_iqiyi_tv_v1_2_10" />
@@ -37,7 +37,7 @@
   <item component="ComponentInfo{com.hunantv.market/}" drawable="a_mango_tv_v1_2_2" />
   <item component="ComponentInfo{com.hunantv.imgo.activity/}" drawable="a_mango_tv_v1_2_2" />
   <!--Projectivy 4.72 reads this file for manual selection too; component-less entries expose all styles and HDMI devices.-->
-  <item drawable="a_bilibili_tv_v1_2_10" />
+  <item drawable="a_bilibili_tv_v1_2_11" />
   <item drawable="a_iqiyi_tv_v1_2_10" />
   <item drawable="a_newtv_aurora_v1_2_10" />
   <item drawable="a_youku_kumiao_v1_2_2" />

@@ -212,10 +212,11 @@ async function main() {
   const xl=(await fs.readFile(path.join(sources,'xunlei-brand.svg'),'utf8')).match(/<path\b[\s\S]*?<\/path>/g);
   const five=(await fs.readFile(path.join(sources,'115-cloud.svg'),'utf8')).match(/<path\b[\s\S]*?\/>/g).join('').replace(/fill="[^"]+"/g,'fill="#2777F8"');
   const keepPurple='#62536E',aurora={a:{icon:0.88,word:1.2}};
-  // 云视听小电视, 银河奇异果 and both aurora cards share one mark size side by side (0.88 of the box);
+  // 云视听小电视, 银河奇异果 and both aurora cards share one mark size side by side (0.88 of the box; the
+  // wide 小电视 mark gets 0.94 so it reads as tall as the others);
   // the aurora marks point right, so their long wordmarks can sit a little closer (gap, side by side only).
   const apps=[
-    {key:'bilibili_tv',background:'#E85C89',icon:await asset('bili-icon.png'),word:await asset('bili-word.png'),scale:{a:{icon:0.88,word:1.16},b:{word:0.92}},tweak:{b:{icon:4}}},
+    {key:'bilibili_tv',background:'#E85C89',icon:await asset('bili-icon.png'),word:await asset('bili-word.png'),scale:{a:{icon:0.94,word:1.16},b:{word:0.92}},tweak:{b:{icon:4}}},
     {key:'iqiyi_tv',background:kiwiGradient,icon:await asset('iqiyi-icon.png'),word:await asset('iqiyi-word.png',{color:white,crisp:4}),scale:{a:{icon:0.88,word:1.08}},tweak:{b:{icon:4}}},
     // Both aurora wordmarks are a light weight that reads faint on TV: larger side by side, with the mark
     // yielding room. Stacked cards keep the standard rows.
