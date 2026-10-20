@@ -12,8 +12,8 @@
   <item component="ComponentInfo{com.tencent.qqlivetv/}" drawable="a_newtv_aurora_v1_2_2" />
   <item component="ComponentInfo{com.cibn.tv/}" drawable="a_youku_kumiao_v1_2_2" />
   <item component="ComponentInfo{com.youku.tv/}" drawable="a_youku_kumiao_v1_2_2" />
-  <item component="ComponentInfo{com.gotokeep.keep/}" drawable="a_keep_v1_2_2" />
-  <item component="ComponentInfo{com.gotokeep.keep.tv/}" drawable="a_keep_v1_2_2" />
+  <item component="ComponentInfo{com.gotokeep.keep/}" drawable="a_keep_v1_2_5" />
+  <item component="ComponentInfo{com.gotokeep.keep.tv/}" drawable="a_keep_v1_2_5" />
   <item component="ComponentInfo{com.hpplay.happycast/}" drawable="a_lebo_cast_v1_2_2" />
   <item component="ComponentInfo{com.netease.cloudmusic.tv/}" drawable="a_netease_music_v1_2_2" />
   <item component="ComponentInfo{com.netease.cloudmusic/}" drawable="a_netease_music_v1_2_2" />
@@ -41,7 +41,7 @@
   <item drawable="a_iqiyi_tv_v1_2_2" />
   <item drawable="a_newtv_aurora_v1_2_2" />
   <item drawable="a_youku_kumiao_v1_2_2" />
-  <item drawable="a_keep_v1_2_2" />
+  <item drawable="a_keep_v1_2_5" />
   <item drawable="a_lebo_cast_v1_2_2" />
   <item drawable="a_netease_music_v1_2_2" />
   <item drawable="a_qq_music_v1_2_2" />
@@ -60,7 +60,7 @@
   <item drawable="b_iqiyi_tv_v1_2_2" />
   <item drawable="b_newtv_aurora_v1_2_3" />
   <item drawable="b_youku_kumiao_v1_2_2" />
-  <item drawable="b_keep_v1_2_2" />
+  <item drawable="b_keep_v1_2_5" />
   <item drawable="b_lebo_cast_v1_2_2" />
   <item drawable="b_netease_music_v1_2_2" />
   <item drawable="b_qq_music_v1_2_2" />

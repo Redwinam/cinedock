@@ -1,5 +1,5 @@
 {
-  "version": "1.2.4",
+  "version": "1.2.5",
   "policy": "Preserve familiar original brand colors and wordmarks. Every card is rendered from artwork/ by tools/render_cards.cjs.",
   "records": [
     {
@@ -102,13 +102,13 @@
       "key": "keep",
       "style": "a",
       "background": "#62536E",
-      "file": "a_keep_v1_2_2.png"
+      "file": "a_keep_v1_2_5.png"
     },
     {
       "key": "keep",
       "style": "b",
       "background": "#62536E",
-      "file": "b_keep_v1_2_2.png"
+      "file": "b_keep_v1_2_5.png"
     },
     {
       "key": "keep",

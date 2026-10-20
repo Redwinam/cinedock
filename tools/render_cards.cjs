@@ -219,10 +219,10 @@ async function main() {
     // yielding room. Stacked cards keep the standard rows.
     {key:'newtv_aurora',background:white,icon:tencent,word:await asset('newtv-word.png',{color:ink,crisp:3}),scale:aurora},
     {key:'youku_kumiao',background:white,icon:await asset('youku-icon.png'),word:await asset('youku-word.png',{color:ink}),compact:true,scale:{b:{word:1.1}},tweak:{a:{x:-8}}},
-    // The solid badge outweighs the old outline K, so it sits smaller than the box; side by side it
-    // follows the official lockup, with keep's baseline near the badge's lower edge.
+    // The solid badge outweighs the old outline K, so it sits smaller than the box. Side by side the
+    // badge centres on the x-height of "keep" (not its ascender-to-descender box), on the card's midline.
     {key:'keep',background:keepPurple,icon:await keepBadge(keepPurple),word:await asset('keep-word.png',{color:white,crisp:3}),compact:true,
-     scale:{a:{icon:0.8,word:1.06},b:{icon:0.88,word:1.25},c:{icon:0.9},d:{icon:0.9}},tweak:{a:{icon:-8,word:9}}},
+     scale:{a:{icon:0.88,word:1.06},b:{icon:0.96,word:1.35},c:{icon:0.9},d:{icon:0.9}},tweak:{a:{word:1}}},
     {key:'lebo_cast',background:'#0878E8',icon:await asset('lebo-icon.png'),word:await asset('lebo-word.png',{color:white,crisp:3})},
     {key:'netease_music',background:'#DF2638',icon:await asset('netease-icon.png'),word:await asset('netease-word.png'),scale:{b:{word:0.9}},tweak:{b:{word:-4}}},
     {key:'qq_music',background:white,icon:await asset('qqmusic-logo2.png',{crop:[0,0,90,92]}),word:await asset('qqmusic-logo2.png',{crop:[106,0,234,92]})},
