@@ -18,14 +18,14 @@ def main():
     # Changed images are renamed <style>_<key>_v<x_y_z>; the suffix never runs ahead of the release.
     current = tuple(map(int, version.split('.')))
     for e in entries:
-        for prefix in 'abcd':
+        for prefix in 'abcdefgh':
             match = re.fullmatch(prefix + '_' + re.escape(e['key']) + r'(?:_v(\d+)_(\d+)_(\d+))?', e[prefix])
             assert match, e[prefix]
             assert match.group(1) is None or tuple(map(int, match.groups())) <= current, e[prefix]
-    wanted = {e[prefix] for prefix in 'abcd' for e in entries}
+    wanted = {e[prefix] for prefix in 'abcdefgh' for e in entries}
     listed = [e.attrib['drawable'] for e in ET.parse(SOURCE / 'res/xml/drawable.xml').findall('item')]
-    assert len(listed) == 76 and set(listed) == wanted
-    packaged = {p.stem for p in (SOURCE / 'res/drawable-nodpi').glob('[abcd]_*.png')}
+    assert len(listed) == 152 and set(listed) == wanted
+    packaged = {p.stem for p in (SOURCE / 'res/drawable-nodpi').glob('[a-h]_*.png')}
     assert packaged == wanted, 'Stale or missing card images: ' + ', '.join(sorted(packaged ^ wanted))
     for name in wanted:
         data = (SOURCE / 'res/drawable-nodpi' / (name + '.png')).read_bytes()

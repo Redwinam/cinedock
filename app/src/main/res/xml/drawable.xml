@@ -85,4 +85,88 @@
   <item drawable="d_nintendo_switch_v1_2_2" name="Nintendo Switch" title="Nintendo Switch · D · 方版纯图标" />
   <item drawable="d_xbox_v1_2_2" name="Xbox" title="Xbox · D · 方版纯图标" />
   <item drawable="d_gaming_pc_steam_v1_2_2" name="游戏 PC · Steam" title="游戏 PC · Steam · D · 方版纯图标" />
+  <category title="E · 横向带字 · 光晕 / 应用" />
+  <item drawable="e_bilibili_tv" name="云视听小电视" title="云视听小电视 · E · 横向带字 · 光晕" />
+  <item drawable="e_iqiyi_tv" name="银河奇异果 · 爱奇艺 TV" title="银河奇异果 · 爱奇艺 TV · E · 横向带字 · 光晕" />
+  <item drawable="e_newtv_aurora" name="NewTV 极光" title="NewTV 极光 · E · 横向带字 · 光晕" />
+  <item drawable="e_youku_kumiao" name="酷喵 · 优酷 TV" title="酷喵 · 优酷 TV · E · 横向带字 · 光晕" />
+  <item drawable="e_keep" name="Keep 健身" title="Keep 健身 · E · 横向带字 · 光晕" />
+  <item drawable="e_lebo_cast" name="乐播投屏" title="乐播投屏 · E · 横向带字 · 光晕" />
+  <item drawable="e_netease_music" name="网易云音乐" title="网易云音乐 · E · 横向带字 · 光晕" />
+  <item drawable="e_qq_music" name="QQ 音乐" title="QQ 音乐 · E · 横向带字 · 光晕" />
+  <item drawable="e_baidu_netdisk" name="百度网盘" title="百度网盘 · E · 横向带字 · 光晕" />
+  <item drawable="e_xunlei_cloud" name="迅雷云盘" title="迅雷云盘 · E · 横向带字 · 光晕" />
+  <item drawable="e_aliyun_drive" name="阿里云盘" title="阿里云盘 · E · 横向带字 · 光晕" />
+  <item drawable="e_115_drive" name="115 网盘" title="115 网盘 · E · 横向带字 · 光晕" />
+  <item drawable="e_tencent_aurora" name="云视听极光" title="云视听极光 · E · 横向带字 · 光晕" />
+  <item drawable="e_netease_popcorn" name="网易爆米花" title="网易爆米花 · E · 横向带字 · 光晕" />
+  <item drawable="e_mango_tv" name="芒果 TV" title="芒果 TV · E · 横向带字 · 光晕" />
+  <category title="E · 横向带字 · 光晕 / HDMI" />
+  <item drawable="e_ps5" name="PlayStation 5" title="PlayStation 5 · E · 横向带字 · 光晕" />
+  <item drawable="e_nintendo_switch" name="Nintendo Switch" title="Nintendo Switch · E · 横向带字 · 光晕" />
+  <item drawable="e_xbox" name="Xbox" title="Xbox · E · 横向带字 · 光晕" />
+  <item drawable="e_gaming_pc_steam" name="游戏 PC · Steam" title="游戏 PC · Steam · E · 横向带字 · 光晕" />
+  <category title="F · 上下带字 · 光晕 / 应用" />
+  <item drawable="f_bilibili_tv" name="云视听小电视" title="云视听小电视 · F · 上下带字 · 光晕" />
+  <item drawable="f_iqiyi_tv" name="银河奇异果 · 爱奇艺 TV" title="银河奇异果 · 爱奇艺 TV · F · 上下带字 · 光晕" />
+  <item drawable="f_newtv_aurora" name="NewTV 极光" title="NewTV 极光 · F · 上下带字 · 光晕" />
+  <item drawable="f_youku_kumiao" name="酷喵 · 优酷 TV" title="酷喵 · 优酷 TV · F · 上下带字 · 光晕" />
+  <item drawable="f_keep" name="Keep 健身" title="Keep 健身 · F · 上下带字 · 光晕" />
+  <item drawable="f_lebo_cast" name="乐播投屏" title="乐播投屏 · F · 上下带字 · 光晕" />
+  <item drawable="f_netease_music" name="网易云音乐" title="网易云音乐 · F · 上下带字 · 光晕" />
+  <item drawable="f_qq_music" name="QQ 音乐" title="QQ 音乐 · F · 上下带字 · 光晕" />
+  <item drawable="f_baidu_netdisk" name="百度网盘" title="百度网盘 · F · 上下带字 · 光晕" />
+  <item drawable="f_xunlei_cloud" name="迅雷云盘" title="迅雷云盘 · F · 上下带字 · 光晕" />
+  <item drawable="f_aliyun_drive" name="阿里云盘" title="阿里云盘 · F · 上下带字 · 光晕" />
+  <item drawable="f_115_drive" name="115 网盘" title="115 网盘 · F · 上下带字 · 光晕" />
+  <item drawable="f_tencent_aurora" name="云视听极光" title="云视听极光 · F · 上下带字 · 光晕" />
+  <item drawable="f_netease_popcorn" name="网易爆米花" title="网易爆米花 · F · 上下带字 · 光晕" />
+  <item drawable="f_mango_tv" name="芒果 TV" title="芒果 TV · F · 上下带字 · 光晕" />
+  <category title="F · 上下带字 · 光晕 / HDMI" />
+  <item drawable="f_ps5" name="PlayStation 5" title="PlayStation 5 · F · 上下带字 · 光晕" />
+  <item drawable="f_nintendo_switch" name="Nintendo Switch" title="Nintendo Switch · F · 上下带字 · 光晕" />
+  <item drawable="f_xbox" name="Xbox" title="Xbox · F · 上下带字 · 光晕" />
+  <item drawable="f_gaming_pc_steam" name="游戏 PC · Steam" title="游戏 PC · Steam · F · 上下带字 · 光晕" />
+  <category title="G · 横向带字 · 光晕印记 / 应用" />
+  <item drawable="g_bilibili_tv" name="云视听小电视" title="云视听小电视 · G · 横向带字 · 光晕印记" />
+  <item drawable="g_iqiyi_tv" name="银河奇异果 · 爱奇艺 TV" title="银河奇异果 · 爱奇艺 TV · G · 横向带字 · 光晕印记" />
+  <item drawable="g_newtv_aurora" name="NewTV 极光" title="NewTV 极光 · G · 横向带字 · 光晕印记" />
+  <item drawable="g_youku_kumiao" name="酷喵 · 优酷 TV" title="酷喵 · 优酷 TV · G · 横向带字 · 光晕印记" />
+  <item drawable="g_keep" name="Keep 健身" title="Keep 健身 · G · 横向带字 · 光晕印记" />
+  <item drawable="g_lebo_cast" name="乐播投屏" title="乐播投屏 · G · 横向带字 · 光晕印记" />
+  <item drawable="g_netease_music" name="网易云音乐" title="网易云音乐 · G · 横向带字 · 光晕印记" />
+  <item drawable="g_qq_music" name="QQ 音乐" title="QQ 音乐 · G · 横向带字 · 光晕印记" />
+  <item drawable="g_baidu_netdisk" name="百度网盘" title="百度网盘 · G · 横向带字 · 光晕印记" />
+  <item drawable="g_xunlei_cloud" name="迅雷云盘" title="迅雷云盘 · G · 横向带字 · 光晕印记" />
+  <item drawable="g_aliyun_drive" name="阿里云盘" title="阿里云盘 · G · 横向带字 · 光晕印记" />
+  <item drawable="g_115_drive" name="115 网盘" title="115 网盘 · G · 横向带字 · 光晕印记" />
+  <item drawable="g_tencent_aurora" name="云视听极光" title="云视听极光 · G · 横向带字 · 光晕印记" />
+  <item drawable="g_netease_popcorn" name="网易爆米花" title="网易爆米花 · G · 横向带字 · 光晕印记" />
+  <item drawable="g_mango_tv" name="芒果 TV" title="芒果 TV · G · 横向带字 · 光晕印记" />
+  <category title="G · 横向带字 · 光晕印记 / HDMI" />
+  <item drawable="g_ps5" name="PlayStation 5" title="PlayStation 5 · G · 横向带字 · 光晕印记" />
+  <item drawable="g_nintendo_switch" name="Nintendo Switch" title="Nintendo Switch · G · 横向带字 · 光晕印记" />
+  <item drawable="g_xbox" name="Xbox" title="Xbox · G · 横向带字 · 光晕印记" />
+  <item drawable="g_gaming_pc_steam" name="游戏 PC · Steam" title="游戏 PC · Steam · G · 横向带字 · 光晕印记" />
+  <category title="H · 上下带字 · 光晕印记 / 应用" />
+  <item drawable="h_bilibili_tv" name="云视听小电视" title="云视听小电视 · H · 上下带字 · 光晕印记" />
+  <item drawable="h_iqiyi_tv" name="银河奇异果 · 爱奇艺 TV" title="银河奇异果 · 爱奇艺 TV · H · 上下带字 · 光晕印记" />
+  <item drawable="h_newtv_aurora" name="NewTV 极光" title="NewTV 极光 · H · 上下带字 · 光晕印记" />
+  <item drawable="h_youku_kumiao" name="酷喵 · 优酷 TV" title="酷喵 · 优酷 TV · H · 上下带字 · 光晕印记" />
+  <item drawable="h_keep" name="Keep 健身" title="Keep 健身 · H · 上下带字 · 光晕印记" />
+  <item drawable="h_lebo_cast" name="乐播投屏" title="乐播投屏 · H · 上下带字 · 光晕印记" />
+  <item drawable="h_netease_music" name="网易云音乐" title="网易云音乐 · H · 上下带字 · 光晕印记" />
+  <item drawable="h_qq_music" name="QQ 音乐" title="QQ 音乐 · H · 上下带字 · 光晕印记" />
+  <item drawable="h_baidu_netdisk" name="百度网盘" title="百度网盘 · H · 上下带字 · 光晕印记" />
+  <item drawable="h_xunlei_cloud" name="迅雷云盘" title="迅雷云盘 · H · 上下带字 · 光晕印记" />
+  <item drawable="h_aliyun_drive" name="阿里云盘" title="阿里云盘 · H · 上下带字 · 光晕印记" />
+  <item drawable="h_115_drive" name="115 网盘" title="115 网盘 · H · 上下带字 · 光晕印记" />
+  <item drawable="h_tencent_aurora" name="云视听极光" title="云视听极光 · H · 上下带字 · 光晕印记" />
+  <item drawable="h_netease_popcorn" name="网易爆米花" title="网易爆米花 · H · 上下带字 · 光晕印记" />
+  <item drawable="h_mango_tv" name="芒果 TV" title="芒果 TV · H · 上下带字 · 光晕印记" />
+  <category title="H · 上下带字 · 光晕印记 / HDMI" />
+  <item drawable="h_ps5" name="PlayStation 5" title="PlayStation 5 · H · 上下带字 · 光晕印记" />
+  <item drawable="h_nintendo_switch" name="Nintendo Switch" title="Nintendo Switch · H · 上下带字 · 光晕印记" />
+  <item drawable="h_xbox" name="Xbox" title="Xbox · H · 上下带字 · 光晕印记" />
+  <item drawable="h_gaming_pc_steam" name="游戏 PC · Steam" title="游戏 PC · Steam · H · 上下带字 · 光晕印记" />
 </resources>

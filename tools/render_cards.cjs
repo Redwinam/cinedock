@@ -1,4 +1,4 @@
-// Rebuild all 76 cards from the original marks and wordmarks in artwork/.
+// Rebuild all 152 cards from the original marks and wordmarks in artwork/.
 // No font substitution: every in-card wordmark comes from source artwork.
 const fs = require('node:fs/promises');
 const path = require('node:path');
@@ -23,6 +23,8 @@ const output = style => style==='d' ? [320,320] : [400,225];
 //     Compact wordmarks (two characters or a short Latin word) get a taller box.
 // b = mark above / wordmark below in two fixed-height rows, so every card stacks alike.
 // c, d = the mark alone, centred.
+// e, f = a, b over a soft glow (see backdrop()); g, h add the mark itself as a faint watermark. They keep
+//     the layout, balance and hand tweaks of their plain twin, so only the background changes.
 // scale.<style>.icon / .word resize an entry's element against these boxes. In b it also evens out
 //     scripts: lowercase Latin with ascenders and descenders reads small, bold capitals read large
 //     next to Chinese glyphs of the same height.
@@ -30,6 +32,8 @@ const output = style => style==='d' ? [320,320] : [400,225];
 // tweak: hand adjustments in px per style, applied after balancing — icon / word move one element
 //     down, wordX moves the wordmark right, group moves both down, x moves both right (negative
 //     values go up / left).
+const forms = {e:'a', f:'b', g:'a', h:'b'};
+const form = style => forms[style] ?? style;
 const layout = {
   a: {icon:[140,140], word:[340,84], compact:[240,104], gap:30},
   b: {icon:140, iconMaxWidth:176, word:58, wordMaxWidth:420, gap:30},
@@ -54,6 +58,31 @@ function measure(data, info, threshold) {
 }
 // Optical centring: pixels to lift an element so its ink centroid, not its box, sits on the slot's centre.
 const lift = (a, h) => Math.round((a.cy-0.5)*h);
+
+const hsl = ([r,g,b]) => { const max=Math.max(r,g,b),min=Math.min(r,g,b),d=max-min,l=(max+min)/510;
+  if(!d) return [0,0,l];
+  const h=max===r?((g-b)/d+6)%6:max===g?(b-r)/d+2:(r-g)/d+4;
+  return [h*60,d/255/(1-Math.abs(2*l-1)),l]; };
+// The main colours of a mark, heaviest first: saturated, mid-light pixels binned by 15° of hue; a bin
+// counts with at least 6% of them, 40° or more away from a heavier one.
+async function palette(a) {
+  const {data,info}=await sharp(Buffer.from(a.data,'base64')).ensureAlpha().raw().toBuffer({resolveWithObject:true});
+  const bins=Array.from({length:24},()=>({n:0,sum:[0,0,0]}));
+  for(let i=0;i<info.width*info.height*4;i+=4) {
+    const c=[data[i],data[i+1],data[i+2]],[h,s,l]=hsl(c);
+    if(data[i+3]<200||s<0.35||l<0.2||l>0.85) continue;
+    const bin=bins[Math.floor(h/15)%24]; bin.n++; c.forEach((v,k)=>bin.sum[k]+=v);
+  }
+  const total=bins.reduce((t,b)=>t+b.n,0),picked=[];
+  for(const bin of bins.sort((x,y)=>y.n-x.n)) {
+    if(!bin.n||bin.n<total*0.06) break;
+    const c=bin.sum.map(v=>v/bin.n),h=hsl(c)[0];
+    if(picked.every(p=>Math.min(Math.abs(p.h-h),360-Math.abs(p.h-h))>40))
+      picked.push({h,color:'#'+c.map(v=>Math.round(v).toString(16).padStart(2,'0')).join('').toUpperCase()});
+  }
+  if(!picked.length) throw Error('Mark has no colour to glow with');
+  return picked.map(p=>p.color);
+}
 
 async function asset(file, {crop, color, crisp} = {}) {
   let input = typeof file === 'string' ? path.join(sources,file) : file;
@@ -126,6 +155,23 @@ function background(fill) {
   const stops=fill.map(([offset,color])=>`<stop offset="${offset}" stop-color="${color}"/>`).join('');
   return `<defs><radialGradient id="bg" cx="0" cy="0" r="1.4142">${stops}</radialGradient></defs><rect width="100%" height="100%" fill="url(#bg)"/>`;
 }
+// Backdrop of the E–H cards. Two soft corner lights: on white cards the mark's two main colours from the
+// top right and bottom left, on colour cards a lit top left and a shaded bottom right. G and H also set
+// the card's own mark, enlarged and tilted, as a faint watermark bleeding off the lower right, in one flat
+// tint (the brand colour on white, white on colour). Everything fades out before the mark and wordmark.
+const light = (id, [cx,cy,r], color, opacity) => `<radialGradient id="${id}" gradientUnits="userSpaceOnUse" cx="${cx}" cy="${cy}" r="${r}">`+
+  `<stop offset="0" stop-color="${color}" stop-opacity="${opacity}"/><stop offset="0.55" stop-color="${color}" stop-opacity="${opacity*0.45}"/>`+
+  `<stop offset="1" stop-color="${color}" stop-opacity="0"/></radialGradient><rect width="100%" height="100%" fill="url(#${id})"/>`;
+function backdrop(style, [w,h], fill, mark, draw, colors) {
+  if(form(style)===style) return '';
+  const watermark='gh'.includes(style),k=watermark?0.9:1,onWhite=fill===white;
+  const lights=onWhite ? light('glowA',[w*0.96,-h*0.12,h*1.05],colors[0],0.24*k)+light('glowB',[w*0.02,h*1.12,h*0.95],colors[1]??colors[0],0.18*k)
+    : light('glowA',[w*0.08,-h*0.2,h*1.2],white,0.2*k)+light('glowB',[w*0.98,h*1.2,h*1.1],'#000000',0.22*k);
+  if(!watermark) return lights;
+  const [mw,mh]=fit(mark,h*1.25,h*1.25);
+  return lights+`<filter id="tint" x="0" y="0" width="100%" height="100%"><feFlood flood-color="${onWhite?colors[0]:white}"/><feComposite in2="SourceAlpha" operator="in"/></filter>`+
+    `<g opacity="${onWhite?0.08:0.09}" transform="translate(${w*0.88} ${h*0.7}) rotate(-14)"><g filter="url(#tint)">${draw([-mw/2,-mh/2,mw,mh])}</g></g>`;
+}
 const css = fill => typeof fill === 'string' ? fill : `radial-gradient(at top left, ${fill.map(([o,c])=>`${c} ${Math.round(o*100)}%`).join(', ')})`;
 // Sampled from the current 奇异果TV launcher icon: bright green, then teal and blue, purple in the far corner.
 const kiwiGradient=[[0,'#32EC82'],[0.12,'#2CEA7E'],[0.29,'#18E46C'],[0.42,'#05D862'],[0.55,'#07C970'],[0.62,'#14B686'],
@@ -145,33 +191,35 @@ const centred = ([w,h], a, [aw,ah]) => [(w-aw*core(a))/2,(h-ah)/2-lift(a,ah),aw,
 const move = ([x,y,w,h], [dx,dy]) => [x+dx,y+dy,w,h];
 
 function appCard(app, style, [dx,dy]=[0,0], tweak={}) {
-  const card=size(style),body=background(app.background),x=dx+(tweak.x??0);
-  const {icon:si=1,word:sw=1}=app.scale?.[style]??{};
+  const plain=form(style),card=size(style),x=dx+(tweak.x??0);
+  const body=background(app.background)+backdrop(style,card,app.background,app.icon,box=>image(app.icon,box),app.colors);
+  const {icon:si=1,word:sw=1}=app.scale?.[plain]??{};
   const pair=([icon,word])=>body+image(app.icon,move(icon,[x,dy+(tweak.icon??0)]))+image(app.word,move(word,[x+(tweak.wordX??0),dy+(tweak.word??0)]));
-  if(style==='a') {
+  if(plain==='a') {
     const l=layout.a,[bw,bh]=app.compact?l.compact:l.word;
     return pair(sideBySide(card,app.icon,fit(app.icon,l.icon[0]*si,l.icon[1]*si),app.word,fit(app.word,bw*sw,bh*sw),app.gap??l.gap));
   }
-  if(style==='b') return pair(stacked(card,app.icon,app.word,sw,si));
+  if(plain==='b') return pair(stacked(card,app.icon,app.word,sw,si));
   const box=(style==='d'?256:192)*si;
   return body+image(app.icon,centred(card,app.icon,fit(app.icon,box,box)));
 }
 
 async function hdmiCard(device, style, words, [dx,dy]=[0,0], tweak={}) {
-  const card=size(style),[w,h]=card,geometry=await simpleIcon(device.slug);
-  const body=background(device.background);
+  const plain=form(style),card=size(style),[w,h]=card,geometry=await simpleIcon(device.slug);
+  let body=background(device.background);
   if(style==='c'||style==='d') {
     // Simple Icons 24×24 grid, scaled as a whole so each mark keeps its padding.
     const s=device.iconSize*h/360;
     return body+`<g fill="${white}" transform="translate(${(w-s)/2} ${(h-s)/2}) scale(${s/24})">${geometry}</g>`;
   }
   // Side by side, PS5 and Steam use the symbol from their official lockups; elsewhere the Simple Icons mark.
-  const icon=await tight(style==='a'&&device.mark?words[device.mark]:{view:[0,0,24,24],body:geometry}),word=await tight(words[device.word]);
+  const icon=await tight(plain==='a'&&device.mark?words[device.mark]:{view:[0,0,24,24],body:geometry}),word=await tight(words[device.word]);
+  body+=backdrop(style,card,device.background,icon,box=>place(icon,box));
   const x=dx+(tweak.x??0),pair=([iconBox,wordBox])=>body+place(icon,move(iconBox,[x,dy+(tweak.icon??0)]))+place(word,move(wordBox,[x+(tweak.wordX??0),dy+(tweak.word??0)]));
   // Marks with a firm outline (the Xbox and Steam circles, the PlayStation symbol) are judged by that
   // outline; their cut-outs and wide base would otherwise pull the ink centroid down and lift them.
   if(device.outline) icon.cy=0.5;
-  if(style==='b') return pair(stacked(card,icon,word,device.scale?.b?.word,device.scale?.b?.icon));
+  if(plain==='b') return pair(stacked(card,icon,word,device.scale?.b?.word,device.scale?.b?.icon));
   // PS5 and Steam keep their lockups' symbol size and spacing with a resized wordmark; the round Xbox
   // mark and its slanted X read tighter than the box gap, so Xbox gets a little more air.
   const ih=device.iconHeight,ww=device.wordWidth;
@@ -249,33 +297,39 @@ async function main() {
   ];
   const drawables=await fs.readdir(out),renames=new Map(),records=[],balanced=[];
   let changed=0;
-  for(const entry of [...apps,...devices]) for(const style of 'abcd') {
-    const card=`${style}_${entry.key}`,tweak=entry.tweak?.[style]??{};
+  for(const app of apps) if(app.background===white) app.colors=await palette(app.icon);
+  for(const entry of [...apps,...devices]) { const shifts={}; for(const style of 'abcdefgh') {
+    const card=`${style}_${entry.key}`,tweak=entry.tweak?.[form(style)]??{};
     const draw=(shift,t)=>entry.slug?hdmiCard(entry,style,words,shift,t):appCard(entry,style,shift,t);
-    // Balance is measured on the untweaked layout, so hand adjustments land exactly as written.
-    let body=await draw([0,0],{});
-    const [dx,dy]=await balance(style,entry.background,body),shift=[dx,dy+(tweak.group??0)];
-    if(dx||dy) balanced.push(`${card} ${dx?`←${-dx}`:`↑${-dy}`}`);
-    if(shift[0]||shift[1]||Object.keys(tweak).length) body=await draw(shift,tweak);
+    // Balance is measured on the untweaked layout, so hand adjustments land exactly as written. E–H take
+    // their plain twin's shift; measured on their own, the backdrop would count as weight.
+    let shift=shifts[form(style)],body;
+    if(!shift) {
+      body=await draw([0,0],{});
+      const [dx,dy]=await balance(style,entry.background,body);
+      shift=shifts[style]=[dx,dy+(tweak.group??0)];
+      if(dx||dy) balanced.push(`${card} ${dx?`←${-dx}`:`↑${-dy}`}`);
+    }
+    if(!body||shift[0]||shift[1]||Object.keys(tweak).length) body=await draw(shift,tweak);
     const source=svg(body,...size(style));
     await fs.writeFile(path.join(svgOut,card+'.svg'),source);
     const current=drawables.filter(f=>new RegExp(`^${card}(_v\\d+_\\d+_\\d+)?\\.png$`).test(f));
     if(current.length>1) throw Error(`Expected one PNG for ${card}, found ${current.join(', ')}`);
-    // A new entry starts under its plain name; nothing can have cached it yet.
     let name=current[0]?.slice(0,-4)??card;
     const png=await rasterize(source,output(style));
     if(!await samePixels(path.join(out,name+'.png'),png)) {
-      const next=`${card}_${revision}`;
+      // A new entry starts under its plain name; nothing can have cached it yet.
+      const next=current[0]?`${card}_${revision}`:card;
       await fs.writeFile(path.join(out,next+'.png'),png);
       if(next!==name) { await fs.unlink(path.join(out,name+'.png')); renames.set(name,next); name=next; }
       changed++;
     }
     records.push({key:entry.key,style,background:css(entry.background),file:name+'.png'});
-  }
+  } }
   // Point every catalog, icon-pack list and appfilter entry at the renamed images.
   for(const file of references) {
     const text=await fs.readFile(path.join(root,file),'utf8');
-    await fs.writeFile(path.join(root,file),text.replace(/(?<![a-z0-9_])[abcd]_[a-z0-9_]+(?=\.png|"|<)/g,m=>renames.get(m)??m));
+    await fs.writeFile(path.join(root,file),text.replace(/(?<![a-z0-9_])[a-h]_[a-z0-9_]+(?=\.png|"|<)/g,m=>renames.get(m)??m));
   }
   await fs.writeFile(path.join(root,'artwork/brand-colors.json'),JSON.stringify({version,policy:'Preserve familiar original brand colors and wordmarks. Every card is rendered from artwork/ by tools/render_cards.cjs.',records},null,2)+'\n');
   console.log(`Rendered ${records.length} cards; ${changed} PNGs changed, ${renames.size} renamed to ${revision}.`);

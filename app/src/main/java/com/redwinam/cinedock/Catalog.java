@@ -7,8 +7,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public final class Catalog {
-    public static final String[] PREFIXES = {"a", "b", "c", "d"};
-    public static final String[] STYLES = {"横向带字", "上下带字", "横版纯图标", "方版纯图标"};
+    public static final String[] PREFIXES = {"a", "b", "c", "d", "e", "f", "g", "h"};
+    public static final String[] STYLES = {"横向带字", "上下带字", "横版纯图标", "方版纯图标",
+        "横向带字 · 光晕", "上下带字 · 光晕", "横向带字 · 光晕印记", "上下带字 · 光晕印记"};
+    // The picker offers four layouts (a–d); the two with wordmarks also come over a glow (e, f) or a glow
+    // with the brand mark as a watermark (g, h).
+    public static final int LAYOUTS = 4;
+    public static final String[] BACKDROPS = {"普通", "光晕", "光晕印记"};
+    public static boolean decorated(int layout) { return layout < 2; }
+    public static int style(int layout, int backdrop) {
+        return decorated(layout) && backdrop > 0 ? 2 + 2 * backdrop + layout : layout;
+    }
     public static final class Entry {
         public final String key, title, group;
         // Per-style drawable names; a version suffix marks images changed in that release.
@@ -37,7 +46,7 @@ public final class Catalog {
     }
     public static int resolveIcon(Context context, String name) {
         for (Entry entry : load(context)) {
-            for (int style = 0; style < 4; style++) {
+            for (int style = 0; style < PREFIXES.length; style++) {
                 if (entry.resourceName(style).equals(name)) return entry.resourceId(context, style);
             }
         }

@@ -46,7 +46,7 @@ public class ProbeActivity extends Activity {
             try (XmlResourceParser parser = resources.getXml(catalog)) {
                 while (parser.next() != XmlPullParser.END_DOCUMENT) {
                     if (parser.getEventType() != XmlPullParser.START_TAG || !"item".equals(parser.getName())) continue;
-                    for (String style : new String[]{"a", "b", "c", "d"}) {
+                    for (String style : new String[]{"a", "b", "c", "d", "e", "f", "g", "h"}) {
                         Uri uri = Uri.parse("content://com.redwinam.cinedock.icons/icon/" + parser.getAttributeValue(null, style));
                         BitmapFactory.Options bounds = new BitmapFactory.Options(); bounds.inJustDecodeBounds = true;
                         try (InputStream in = getContentResolver().openInputStream(uri)) { BitmapFactory.decodeStream(in, null, bounds); }
@@ -59,7 +59,7 @@ public class ProbeActivity extends Activity {
                     }
                 }
             }
-            require(verified == 76, "Catalog count differs");
+            require(verified == 152, "Catalog count differs");
             // Projectivy 4.72's native picker enumerates appfilter (not drawable.xml),
             // deduplicates drawable names and returns a ShortcutIconResource.
             Set<String> manualNames = new HashSet<>();
@@ -91,7 +91,7 @@ public class ProbeActivity extends Activity {
                     image.recycle(); manualVerified++;
                 }
             }
-            require(manualVerified == 76, "Projectivy's native picker cannot see all 76 images: " + manualVerified);
+            require(manualVerified == 152, "Projectivy's native picker cannot see all 152 images: " + manualVerified);
             try (OutputStream ignored = getContentResolver().openOutputStream(Uri.parse("content://com.redwinam.cinedock.icons/icon/a_bilibili_tv"))) {
                 throw new AssertionError("Provider accepted a write");
             } catch (java.io.FileNotFoundException expected) {}

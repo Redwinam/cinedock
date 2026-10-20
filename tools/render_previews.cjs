@@ -11,6 +11,10 @@ const styles = [
   {prefix:'b', file:'preview-stacked.png', title:'B · 上下带字', width:400, height:225},
   {prefix:'c', file:'preview-icon-only.png', title:'C · 横版纯图标', width:400, height:225},
   {prefix:'d', file:'preview-square.png', title:'D · 方版纯图标', width:320, height:320},
+  {prefix:'e', file:'preview-glow.png', title:'E · 横向带字 · 光晕', width:400, height:225},
+  {prefix:'f', file:'preview-glow-stacked.png', title:'F · 上下带字 · 光晕', width:400, height:225},
+  {prefix:'g', file:'preview-mark.png', title:'G · 横向带字 · 光晕印记', width:400, height:225},
+  {prefix:'h', file:'preview-mark-stacked.png', title:'H · 上下带字 · 光晕印记', width:400, height:225},
 ];
 
 async function main() {

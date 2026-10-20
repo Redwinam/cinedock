@@ -2,7 +2,7 @@
 
 给电视上的应用和 HDMI 输入源换一套清晰、协调、容易辨认的图标。
 
-CineDock 是为 [Projectivy Launcher](https://github.com/spocky/miproja1) 制作的 Android 图标包。包含 **15 个应用、4 个游戏设备、4 种样式，共 76 张 PNG**，可通过遥控器浏览、预览和选择。
+CineDock 是为 [Projectivy Launcher](https://github.com/spocky/miproja1) 制作的 Android 图标包。包含 **15 个应用、4 个游戏设备、4 种版式，带字的两种另有光晕、印记两种背景，共 152 张 PNG**，可通过遥控器浏览、预览和选择。
 
 [CC BY-NC-SA 4.0](LICENSE) · [许可范围与第三方素材](NOTICE.md)
 
@@ -13,6 +13,7 @@ CineDock 是为 [Projectivy Launcher](https://github.com/spocky/miproja1) 制作
 - 字标在电视上清晰可读：上下带字使用固定的图标行和文字行，图形与字标按视觉重心而不是外框对齐，并逐张校正偏高、偏低或偏右的卡片。
 - 图片更新时自动换用带版本号的新名称，Projectivy 不会继续显示旧缓存。
 - 提供横向带字、上下带字、横版纯图标和方版纯图标。
+- 带字的两种还可选装饰背景：一层取自品牌颜色的淡淡光晕，或在光晕上再加一枚放大的品牌印记，白底卡片不再显得空。
 - 已知应用可自动匹配；HDMI 和未匹配的应用可以手动指定。
 - 图片内置于 APK，安装后无需继续插着 U 盘或 SD 卡。
 - 原生 Android 界面，无广告，不申请联网、存储或其他 Android 权限。
@@ -27,7 +28,7 @@ CineDock 是为 [Projectivy Launcher](https://github.com/spocky/miproja1) 制作
 | 其他 | Keep、乐播投屏 |
 | HDMI 设备 | PlayStation 5、Nintendo Switch、Xbox、游戏 PC / Steam |
 
-### 四种样式
+### 样式与背景
 
 | 文件名前缀 | 样式 | 尺寸 |
 | --- | --- | --- |
@@ -35,11 +36,17 @@ CineDock 是为 [Projectivy Launcher](https://github.com/spocky/miproja1) 制作
 | `b_` | 上下带字：标志在上，字标在下 | 400 × 225 |
 | `c_` | 横版纯图标：标志居中 | 400 × 225 |
 | `d_` | 方版纯图标：标志居中 | 320 × 320 |
+| `e_` | 横向带字 · 光晕 | 400 × 225 |
+| `f_` | 上下带字 · 光晕 | 400 × 225 |
+| `g_` | 横向带字 · 光晕印记 | 400 × 225 |
+| `h_` | 上下带字 · 光晕印记 | 400 × 225 |
+
+`e_` 至 `h_` 与对应的 `a_`、`b_` 排版完全相同，只在背景和标志之间多一层装饰。光晕从两角透进来：白底卡片用图标里最主要的一两种颜色，彩底卡片左上微亮、右下微暗，不改品牌底色。印记版再把应用自己的图形放大、斜放在右下角，只留一成左右的浓度，像水印。装饰都向标志和字标的方向渐隐，不影响辨认。
 
 图片尺寸接近 Projectivy M、S 档卡片在 1080p 界面上的实际显示大小。若图片比显示尺寸大 2 倍以上，启动器缩小时会隔行取样，PlayStation 符号这类长斜边就会出现锯齿；按这个尺寸导出可避免这种情况。卡片调到很大档位时会被略微放大，显得稍软，但不会出锯齿。
 
 
-### 四种样式预览
+### 样式预览
 
 每张预览包含全部 19 个入口，来自 APK 中实际使用的图片。点击图片可查看原尺寸预览。
 
@@ -59,11 +66,27 @@ CineDock 是为 [Projectivy Launcher](https://github.com/spocky/miproja1) 制作
 
 [![D 方版纯图标完整预览](docs/preview-square.png)](docs/preview-square.png)
 
+**E · 横向带字 · 光晕**
+
+[![E 横向带字光晕完整预览](docs/preview-glow.png)](docs/preview-glow.png)
+
+**F · 上下带字 · 光晕**
+
+[![F 上下带字光晕完整预览](docs/preview-glow-stacked.png)](docs/preview-glow-stacked.png)
+
+**G · 横向带字 · 光晕印记**
+
+[![G 横向带字光晕印记完整预览](docs/preview-mark.png)](docs/preview-mark.png)
+
+**H · 上下带字 · 光晕印记**
+
+[![H 上下带字光晕印记完整预览](docs/preview-mark-stacked.png)](docs/preview-mark-stacked.png)
+
 ## 安装与使用
 
 图标包支持 Android 5.0 及以上。自定义卡片图标需使用支持该功能的 **Projectivy Premium**；其他启动器的兼容性未验证。
 
-1. 按下文构建，取得 `dist/CineDock-1.2.13.apk`。
+1. 按下文构建，取得 `dist/CineDock-1.3.0.apk`。
 2. 通过 U 盘、SD 卡、局域网文件传输或 ADB 将 APK 放到电视上，用文件管理器打开安装。若系统提示，允许该文件管理器安装应用。
 3. 打开 Projectivy，先完成下方的关闭着色设置，再选择图标。
 
@@ -84,9 +107,9 @@ CineDock 是为 [Projectivy Launcher](https://github.com/spocky/miproja1) 制作
 
 长按应用或 HDMI 卡片 → **更改图标 → 图标包 → 映匣 · CineDock**。
 
-Projectivy 4.72 的内置浏览器直接列出全部图片，不会显示映匣自己的四个样式按钮。按 `a_` / `b_` / `c_` / `d_` 区分样式，名称末尾的 `_v1_2_2` 等后缀表示该图在对应版本更新过；设备图标的名称含 `ps5`、`nintendo_switch`、`xbox`、`gaming_pc_steam`。
+Projectivy 4.72 的内置浏览器直接列出全部图片，不会显示映匣自己的样式和背景按钮。按 `a_` 至 `h_` 区分样式（见上方的样式表），名称末尾的 `_v1_2_2` 等后缀表示该图在对应版本更新过；设备图标的名称含 `ps5`、`nintendo_switch`、`xbox`、`gaming_pc_steam`。
 
-直接打开映匣应用可以预览四种样式；预览本身不会修改 Projectivy 的卡片。
+直接打开映匣应用，可以用上方的版式按钮和“背景”按钮（普通、光晕、光晕印记）预览全部样式；背景只对横向带字和上下带字有效。预览本身不会修改 Projectivy 的卡片。
 
 ### 批量应用
 
@@ -121,11 +144,11 @@ Java 按 `CINEDOCK_JAVA_HOME`、`JAVA_HOME` 的顺序选择；未配置时尝试
 
 ## 修改图片与新增图标
 
-完整的 76 张成品 PNG 已在 `app/src/main/res/drawable-nodpi/` 中，普通 APK 构建不需要 Node.js。
+完整的 152 张成品 PNG 已在 `app/src/main/res/drawable-nodpi/` 中，普通 APK 构建不需要 Node.js。
 
 ### 重新渲染卡片
 
-应用图形与字标在 `artwork/color-sources/`，游戏设备的矢量符号与字标在 `artwork/hdmi-sources/`，每张卡片的可编辑排版在 `artwork/brand-layouts/`。渲染脚本使用原图形与字标，不用通用字体重新输入应用名称。字号、间距和背景色集中在 `tools/render_cards.cjs` 开头的布局表和条目表中（排版按 640 × 360 / 512 × 512 的坐标书写，导出时再高质量缩小）：横向带字按各自的框适配大小；上下带字使用固定高度的图标行和文字行，每张卡片的两行位置一致。图形与字标都按墨迹重心而不是外框对齐中线，带叶子、天线等突出部分的图形不会显得偏低。渲染时还会测量整张卡片的视觉重心：竖版偏下的略微上提，横版偏右（多为白底黑字）的略微左移，每张调整了多少会在运行结果里列出。个别卡片按目视做的手动微调写在条目表的 `tweak`（位置）和 `wordScale` / `iconScale`（大小）中，在自动平衡之后叠加。
+应用图形与字标在 `artwork/color-sources/`，游戏设备的矢量符号与字标在 `artwork/hdmi-sources/`，每张卡片的可编辑排版在 `artwork/brand-layouts/`。渲染脚本使用原图形与字标，不用通用字体重新输入应用名称。字号、间距和背景色集中在 `tools/render_cards.cjs` 开头的布局表和条目表中（排版按 640 × 360 / 512 × 512 的坐标书写，导出时再高质量缩小）：横向带字按各自的框适配大小；上下带字使用固定高度的图标行和文字行，每张卡片的两行位置一致。图形与字标都按墨迹重心而不是外框对齐中线，带叶子、天线等突出部分的图形不会显得偏低。渲染时还会测量整张卡片的视觉重心：竖版偏下的略微上提，横版偏右（多为白底黑字）的略微左移，每张调整了多少会在运行结果里列出。个别卡片按目视做的手动微调写在条目表的 `tweak`（位置）和 `wordScale` / `iconScale`（大小）中，在自动平衡之后叠加。光晕与印记版（`e_` 至 `h_`）沿用对应 `a_`、`b_` 卡片的平衡结果和微调，装饰的位置、浓度和取色规则写在 `backdrop()` 中。
 
 需要 Node.js 20.9+：
 
@@ -136,14 +159,14 @@ python3 tools/build.py
 python3 tools/verify_bundle.py
 ```
 
-脚本按原素材重新渲染全部 76 张图片。像素没有变化的图片保持原名、不改写；有变化的图片改名为 `<样式>_<key>_v<版本号>`，并同步更新 `catalog.xml`、`drawable.xml`、`appfilter.xml`（含 `assets/` 副本）、`icon_pack.xml` 和 `artwork/catalog.json` 中的引用。因此请先在 `package.json` 与 `AndroidManifest.xml` 中升级版本号，再运行渲染。`package-lock.json` 固定图片处理工具的依赖版本。
+脚本按原素材重新渲染全部 152 张图片。像素没有变化的图片保持原名、不改写；有变化的图片改名为 `<样式>_<key>_v<版本号>`，并同步更新 `catalog.xml`、`drawable.xml`、`appfilter.xml`（含 `assets/` 副本）、`icon_pack.xml` 和 `artwork/catalog.json` 中的引用。因此请先在 `package.json` 与 `AndroidManifest.xml` 中升级版本号，再运行渲染。`package-lock.json` 固定图片处理工具的依赖版本。
 
-更新卡片图片后，运行 `npm run render:previews`，即可重新生成 README 中四种样式的完整预览。预览说明文字使用系统的中文字体；卡片内的品牌字形仍来自图片素材。
+更新卡片图片后，运行 `npm run render:previews`，即可重新生成 README 中各样式的完整预览。预览说明文字使用系统的中文字体；卡片内的品牌字形仍来自图片素材。
 
 ### 增加入口
 
-1. 在 `tools/render_cards.cjs` 的条目表中加入素材并运行 `npm run render:cards`，生成 `a_<key>`、`b_<key>`、`c_<key>`、`d_<key>` 四张 PNG；也可以直接放入按此命名的自制 PNG。
-2. 更新 `res/xml/catalog.xml`（`a`–`d` 属性写明四种样式的资源名）、`res/xml/drawable.xml`、`res/values/icon_pack.xml` 和 `artwork/catalog.json`。
+1. 在 `tools/render_cards.cjs` 的条目表中加入素材并运行 `npm run render:cards`，生成 `a_<key>` 至 `h_<key>` 八张 PNG；也可以直接放入按此命名的自制 PNG。
+2. 更新 `res/xml/catalog.xml`（`a`–`h` 属性写明八种样式的资源名）、`res/xml/drawable.xml`、`res/values/icon_pack.xml` 和 `artwork/catalog.json`。
 3. 更新 `appfilter.xml`：自动匹配条目使用默认横向版；所有样式还需加入不带 `component` 的手动选择条目。
 4. 同步 `res/xml/` 和 `assets/` 下的 `appfilter.xml`、`drawable.xml`，并记录素材来源及包名映射。
 5. 更新界面的入口数量、`tools/verify_bundle.py` 和 `tests/ProbeActivity.java` 中的预期数量，然后重新构建检查。
@@ -155,7 +178,7 @@ Projectivy 4.72 的内置选图器读取 `appfilter.xml`，仅更新 `drawable.x
 ```text
 app/src/main/
 ├── java/                         # 电视界面、图标目录、只读图片接口
-├── res/drawable-nodpi/            # 76 张图标及应用自身标志
+├── res/drawable-nodpi/            # 152 张图标及应用自身标志
 ├── res/xml/                      # 图标目录与应用匹配
 └── assets/                       # 图标包兼容目录
 artwork/
@@ -163,9 +186,9 @@ artwork/
 ├── app-mappings.json             # 已知应用包名与组件
 ├── color-sources/                # 应用的原图形和字标
 ├── hdmi-sources/                 # 游戏设备的矢量符号和字标
-├── brand-layouts/                # 76 张卡片的 SVG 排版
+├── brand-layouts/                # 152 张卡片的 SVG 排版
 └── *SOURCES.txt                  # 第三方素材来源与处理记录
-docs/preview*.png                 # 四种样式的完整预览
+docs/preview*.png                 # 各样式的完整预览
 tools/                            # 构建、资源检查、卡片渲染
 tests/                            # 独立 Android 兼容性检查应用
 ```
@@ -176,11 +199,11 @@ tests/                            # 独立 Android 兼容性检查应用
 
 构建过程校验 APK 签名与对齐。`tools/verify_bundle.py` 检查图片数量、尺寸、不透明 RGB 格式、手动目录、自动映射，以及 APK 内图片资源；还会核对资源名是否符合 `<样式>_<key>[_v<版本号>]` 的规则、版本后缀不超过当前版本、没有遗留的旧图，以及 `package.json` 与 Manifest 的版本一致。
 
-独立测试应用验证主题发现、全部 76 张图片的跨应用读取与绘制、只读限制，以及选图结果返回。它不包含在正式 APK 中：
+独立测试应用验证主题发现、全部 152 张图片的跨应用读取与绘制、只读限制，以及选图结果返回。它不包含在正式 APK 中：
 
 ```sh
 python3 tools/build_probe.py
-adb -s <测试设备序列号> install -r dist/CineDock-1.2.13.apk
+adb -s <测试设备序列号> install -r dist/CineDock-1.3.0.apk
 adb -s <测试设备序列号> install -r build/probe/probe.apk
 adb -s <测试设备序列号> shell am start -n com.redwinam.cinedock.probe/.ProbeActivity
 ```
@@ -195,6 +218,7 @@ adb -s <测试设备序列号> shell run-as com.redwinam.cinedock.probe cat file
 
 ## 版本记录
 
+- **1.3.0**：新增光晕与印记两种装饰背景，横向带字、上下带字各有一套（`e_` 至 `h_`，共 76 张），原有四种样式不变；映匣应用加入“背景”按钮，可在普通、光晕、光晕印记之间切换。
 - **1.2.13**：云视听小电视横版字标略收小；网易云音乐竖版字标略放大。
 - **1.2.12**：云视听小电视横版字标放大（收紧被小云撑大的间距）；网易云音乐横版字标放大。
 - **1.2.11**：云视听小电视横版图标单独放大，与另外三张看起来同高。
