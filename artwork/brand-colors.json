@@ -1,5 +1,5 @@
 {
-  "version": "1.2.2",
+  "version": "1.2.3",
   "policy": "Preserve familiar original brand colors and wordmarks. Every card is rendered from artwork/ by tools/render_cards.cjs.",
   "records": [
     {
@@ -60,7 +60,7 @@
       "key": "newtv_aurora",
       "style": "b",
       "background": "#FFFFFF",
-      "file": "b_newtv_aurora_v1_2_2.png"
+      "file": "b_newtv_aurora_v1_2_3.png"
     },
     {
       "key": "newtv_aurora",
@@ -300,7 +300,7 @@
       "key": "tencent_aurora",
       "style": "b",
       "background": "#FFFFFF",
-      "file": "b_tencent_aurora_v1_2_2.png"
+      "file": "b_tencent_aurora_v1_2_3.png"
     },
     {
       "key": "tencent_aurora",
