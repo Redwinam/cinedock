@@ -63,7 +63,7 @@ CineDock 是为 [Projectivy Launcher](https://github.com/spocky/miproja1) 制作
 
 图标包支持 Android 5.0 及以上。自定义卡片图标需使用支持该功能的 **Projectivy Premium**；其他启动器的兼容性未验证。
 
-1. 按下文构建，取得 `dist/CineDock-1.2.7.apk`。
+1. 按下文构建，取得 `dist/CineDock-1.2.8.apk`。
 2. 通过 U 盘、SD 卡、局域网文件传输或 ADB 将 APK 放到电视上，用文件管理器打开安装。若系统提示，允许该文件管理器安装应用。
 3. 打开 Projectivy，先完成下方的关闭着色设置，再选择图标。
 
@@ -180,7 +180,7 @@ tests/                            # 独立 Android 兼容性检查应用
 
 ```sh
 python3 tools/build_probe.py
-adb -s <测试设备序列号> install -r dist/CineDock-1.2.7.apk
+adb -s <测试设备序列号> install -r dist/CineDock-1.2.8.apk
 adb -s <测试设备序列号> install -r build/probe/probe.apk
 adb -s <测试设备序列号> shell am start -n com.redwinam.cinedock.probe/.ProbeActivity
 ```
@@ -195,6 +195,7 @@ adb -s <测试设备序列号> shell run-as com.redwinam.cinedock.probe cat file
 
 ## 版本记录
 
+- **1.2.8**：云视听小电视、银河奇异果、两个极光的横版图标统一大小；Keep 横版整组左移。
 - **1.2.7**：银河奇异果横版字标收小，与其他卡片匀称；Keep 横版字标下移。
 - **1.2.6**：云视听小电视、银河奇异果、NewTV 极光、云视听极光的横版字标放大。
 - **1.2.5**：Keep 横版徽标放大并与 keep 的字母主体对齐；竖版徽标与字标放大。

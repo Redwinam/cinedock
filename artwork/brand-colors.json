@@ -1,12 +1,12 @@
 {
-  "version": "1.2.7",
+  "version": "1.2.8",
   "policy": "Preserve familiar original brand colors and wordmarks. Every card is rendered from artwork/ by tools/render_cards.cjs.",
   "records": [
     {
       "key": "bilibili_tv",
       "style": "a",
       "background": "#E85C89",
-      "file": "a_bilibili_tv_v1_2_6.png"
+      "file": "a_bilibili_tv_v1_2_8.png"
     },
     {
       "key": "bilibili_tv",
@@ -30,7 +30,7 @@
       "key": "iqiyi_tv",
       "style": "a",
       "background": "radial-gradient(at top left, #32EC82 0%, #2CEA7E 12%, #18E46C 29%, #05D862 42%, #07C970 55%, #14B686 62%, #2FA29B 69%, #4C88B9 75%, #7374CF 80%, #A25CE5 88%, #C64AE7 92%, #D343E6 100%)",
-      "file": "a_iqiyi_tv_v1_2_7.png"
+      "file": "a_iqiyi_tv_v1_2_8.png"
     },
     {
       "key": "iqiyi_tv",
@@ -54,7 +54,7 @@
       "key": "newtv_aurora",
       "style": "a",
       "background": "#FFFFFF",
-      "file": "a_newtv_aurora_v1_2_6.png"
+      "file": "a_newtv_aurora_v1_2_8.png"
     },
     {
       "key": "newtv_aurora",
@@ -102,7 +102,7 @@
       "key": "keep",
       "style": "a",
       "background": "#62536E",
-      "file": "a_keep_v1_2_7.png"
+      "file": "a_keep_v1_2_8.png"
     },
     {
       "key": "keep",
@@ -294,7 +294,7 @@
       "key": "tencent_aurora",
       "style": "a",
       "background": "#FFFFFF",
-      "file": "a_tencent_aurora_v1_2_6.png"
+      "file": "a_tencent_aurora_v1_2_8.png"
     },
     {
       "key": "tencent_aurora",

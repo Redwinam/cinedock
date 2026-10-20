@@ -211,10 +211,11 @@ async function main() {
   const tencent=await asset('aurora-icon.png');
   const xl=(await fs.readFile(path.join(sources,'xunlei-brand.svg'),'utf8')).match(/<path\b[\s\S]*?<\/path>/g);
   const five=(await fs.readFile(path.join(sources,'115-cloud.svg'),'utf8')).match(/<path\b[\s\S]*?\/>/g).join('').replace(/fill="[^"]+"/g,'fill="#2777F8"');
-  const keepPurple='#62536E',aurora={a:{icon:0.74,word:1.24}};
+  const keepPurple='#62536E',aurora={a:{icon:0.8,word:1.22}};
+  // 云视听小电视, 银河奇异果 and both aurora cards share one mark size side by side (0.8 of the box).
   const apps=[
-    {key:'bilibili_tv',background:'#E85C89',icon:await asset('bili-icon.png'),word:await asset('bili-word.png'),scale:{a:{icon:0.93,word:1.1},b:{word:0.92}},tweak:{b:{icon:4}}},
-    {key:'iqiyi_tv',background:kiwiGradient,icon:await asset('iqiyi-icon.png'),word:await asset('iqiyi-word.png',{color:white,crisp:4}),scale:{a:{icon:0.92,word:1.08}},tweak:{b:{icon:4}}},
+    {key:'bilibili_tv',background:'#E85C89',icon:await asset('bili-icon.png'),word:await asset('bili-word.png'),scale:{a:{icon:0.8,word:1.1},b:{word:0.92}},tweak:{b:{icon:4}}},
+    {key:'iqiyi_tv',background:kiwiGradient,icon:await asset('iqiyi-icon.png'),word:await asset('iqiyi-word.png',{color:white,crisp:4}),scale:{a:{icon:0.8,word:1.08}},tweak:{b:{icon:4}}},
     // Both aurora wordmarks are a light weight that reads faint on TV: larger side by side, with the mark
     // yielding room. Stacked cards keep the standard rows.
     {key:'newtv_aurora',background:white,icon:tencent,word:await asset('newtv-word.png',{color:ink,crisp:3}),scale:aurora},
@@ -223,7 +224,7 @@ async function main() {
     // badge centres on the x-height of "keep" (not its ascender-to-descender box) on the card's midline,
     // with the word then set a little lower by eye.
     {key:'keep',background:keepPurple,icon:await keepBadge(keepPurple),word:await asset('keep-word.png',{color:white,crisp:3}),compact:true,
-     scale:{a:{icon:0.88,word:1.06},b:{icon:0.96,word:1.35},c:{icon:0.9},d:{icon:0.9}},tweak:{a:{word:7}}},
+     scale:{a:{icon:0.88,word:1.06},b:{icon:0.96,word:1.35},c:{icon:0.9},d:{icon:0.9}},tweak:{a:{word:7,x:-6}}},
     {key:'lebo_cast',background:'#0878E8',icon:await asset('lebo-icon.png'),word:await asset('lebo-word.png',{color:white,crisp:3})},
     {key:'netease_music',background:'#DF2638',icon:await asset('netease-icon.png'),word:await asset('netease-word.png'),scale:{b:{word:0.9}},tweak:{b:{word:-4}}},
     {key:'qq_music',background:white,icon:await asset('qqmusic-logo2.png',{crop:[0,0,90,92]}),word:await asset('qqmusic-logo2.png',{crop:[106,0,234,92]})},
